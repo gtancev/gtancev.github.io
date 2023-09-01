@@ -2,7 +2,7 @@
 title: About Me
 subtitle: I am a scientist and engineer with a passion for optimizing existing products and processes through digitalization or designing new ones by innovation. Next to that, I enjoy photography and philosophy.
 description: Hello, I am Georgi.
-featured_image: /images/demo/demo-landscape.jpg
+featured_image: /images/photography/mexico/holbox_1.jpeg
 ---
 
 ![](/images/photography/mexico/holbox_1.jpeg)
