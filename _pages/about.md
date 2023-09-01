@@ -5,7 +5,7 @@ description: Hello, I'm Georgi.
 featured_image: /images/photography/me/picture.jpg
 ---
 
-![](/images/photography/me/picture.jpg)
+![](/images/me/picture.jpg)
 
 ## Summary
 
