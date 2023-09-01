@@ -5,7 +5,7 @@ description: Hello, I am Georgi.
 featured_image: /images/demo/demo-landscape.jpg
 ---
 
-![](/images/photography/holbox_1)
+![](/images/photography/mexico/holbox_1.jpeg)
 
 ## Summary
 
