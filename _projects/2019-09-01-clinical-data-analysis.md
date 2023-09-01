@@ -24,4 +24,4 @@ Various parameters must be considered for dialysis intensity dosing in pediatric
 	<img src="/images/projects/clinical-data-analysis/dr_final_analysis_app.png">
 </div>
 
-The analysis showed that some variables are indeed more relevant than others. Some are merely biomarkers and were already known from the literature, other were new and required careful discussion. Interestingly, the result was that the therapy was already quite optimal in terms of dose.
+The analysis showed that some variables are indeed more relevant than others. Some are merely biomarkers and were already known from the literature, other were new and required careful discussion. Interestingly, one of the main results was that the therapy was already quite optimal in terms of dosage.
