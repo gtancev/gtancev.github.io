@@ -1,7 +1,7 @@
-site: Duet Jekyll Theme
+site: Georgi Tancev, PhD
 
-url: 
-baseurl: 
+url: https://gtancev.github.io/
+baseurl:
 
 collections:
   pages:
