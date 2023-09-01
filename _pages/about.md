@@ -5,13 +5,7 @@ description: Hello, I'm Georgi.
 featured_image: /images/photography/me/picture.jpg
 ---
 
-<div class="gallery" data-columns="5">
-	<img src="/images/me/1.jpeg">
-	<img src="/images/me/2.jpeg">
-    <img src="/images/me/3.jpeg">
-    <img src="/images/me/4.jpeg">
-    <img src="/images/me/5.jpeg">
-</div>
+> We live in a world that was shaped by dead people. It's our turn now to create tomorrow's world.
 
 I'm a scientist with degrees in **engineering** and **computer science** - with a passion for optimizing existing products and processes through **digitalization** or designing new ones by **innovation**. For this purpose, I identify current weaknesses and capture people's needs. I like to ask if and how the established can be rethought. When it comes to generating ideas, I get inspiration by other domains, as similar problems may have already been solved elsewhere.
 
@@ -24,3 +18,11 @@ In previous activities, for instance, I have:
 * or enabled **environmental authorities** perform reliable measurements through the **automation** and **data-driven design** of **maintenance operations**.
 
 I spend my spare time with travelling, photography, writing, and sports.
+
+<div class="gallery" data-columns="5">
+	<img src="/images/me/1.jpeg">
+	<img src="/images/me/2.jpeg">
+    <img src="/images/me/3.jpeg">
+    <img src="/images/me/4.jpeg">
+    <img src="/images/me/5.jpeg">
+</div>
