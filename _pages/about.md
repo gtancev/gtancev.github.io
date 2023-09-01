@@ -1,34 +1,20 @@
 ---
-title: About Duet
-subtitle: Duet is a beautiful Jekyll portfolio theme designed to showcase your work in style. Perfect for designers, artists, photographers and developers to use for their portfolio website.
-description: Duet is a beautiful Jekyll portfolio theme.
+title: About Me
+subtitle: I am a scientist and engineer with a passion for optimizing existing products and processes through digitalization or designing new ones by innovation. Next to that, I enjoy photography and philosophy.
+description: Hello, I am Georgi.
 featured_image: /images/demo/demo-landscape.jpg
 ---
 
-![](/images/demo/demo-landscape.jpg)
+![](/images/photography/holbox_1)
 
-## Features
+## Summary
 
-We've packed Duet full of powerful features to help showcase your work:
+I am a scientist with degrees in engineering and computer science - with a passion for optimizing existing products and processes through digitalization or designing new ones by innovation. For this purpose, I identify current weaknesses and capture people's needs. I like to ask if and how the established can be rethought. When it comes to the conceptual design, I get inspiration by other domains, as similar problems may have already been solved elsewhere.
 
-* Beautiful, minimal design
-* Two-column masonry grid layout
-* Responsive – works perfectly on all devices
-* Portfolio post type
-* Blog with pagination
-* Sleek Ajax navigation and page transitions
-* Unique 'gallery' feature for image grids and carousels
-* Built-in contact form with Formspree integration
-* Full markdown support and code highlighting
-* Social media icons
-* Fast page rendering
-* Built with SEO best practices in mind
-* Customize everything – colors, spacing, fonts, sizes etc. – via a simple settings file
-* Works with GitHub Pages
-* Updated and supported by the developers
+To elaborate designs and solution strategies, I make use of my learning mindset. Data and extracting knowledge from them through algorithms have also become part of my craft, but I have learned to question whether the desired information is available at all. The philosophical aspects of my work are close to my heart because today's solutions can become tomorrow's problems. I firmly believe that with creativity, collaboration, and communication, great things can be created. Once the goal is set, I push to make sure it is achieved.
 
-## Get Duet
+In previous activities, for instance, I have:
 
-Duet is created and supported by [Jekyll Themes](https://jekyllthemes.io), and is available for $49.
-
-<a href="https://jekyllthemes.io/theme/duet-portfolio-jekyll-theme" class="button button--large">Get This Theme</a>
+* helped pharmaceutical companies become more efficient at evaluating process steps by developing decision-support tools based on experimental data and numerical simulations,
+* assisted physicians predict mortality and assess existing therapies by machine learning applied to clinical data,
+* or enabled authorities perform reliable measurements through the automation and data-driven design of maintenance operations.
