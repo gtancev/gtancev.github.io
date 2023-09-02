@@ -17,7 +17,7 @@ I'm a scientist with degrees in **engineering** and **computer science** - with 
 
 My **continuous learning** mindset comes in handy when elaborating designs and solution strategies. Data and extracting knowledge from them through algorithms have also become part of my craft, but I have learned to question whether the desired information is available at all. The philosophical aspects of my work are close to my heart because today's solutions can become tomorrow's problems. I firmly believe that with **creativity**, **collaboration**, and **communication**, great things can be created. Once the goal is set, I push to make sure it is achieved.
 
-> We live in a world that was designed according to the dreams of dead people. It is now up to us to fulfill our dreams.
+> We are the creators of tomorrow's world.
 
 In previous activities, for instance, I have:
 
