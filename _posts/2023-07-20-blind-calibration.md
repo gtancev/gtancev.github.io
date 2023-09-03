@@ -19,7 +19,7 @@ How to keep sensor networks calibrated has therefore been the subject of researc
 
 ## Theoretical Background
 
-The starting point is a sensor network consisting of $n$ nodes, each sensing a certain process. At time $t$, the individual measurements are collected as in a vector $\mathbf{y}$ = [$y_1$, …, $y_n$]. If the individual sensors "see the same thing", their signals will be **correlated** to a large degree. Such correlation can happen if the phenomenon to be measured behaves similarly at different locations or all sensors are at the same location measuring the same or different processes that are coupled. As a consequence, the collection of measurements will lie in a subspace of dimensionality $r < n$. Although the sensors will be calibrated initially, gain $\alpha \in \mathbb{R}^n$ and offset $\beta \in \mathbb{R}^n$ drift (shown in the figure below) will make recalibration necessary, that is,
+The starting point is a sensor network consisting of $n$ nodes, each sensing a certain process. At time $t$, the individual measurements are collected as in a vector $\mathbf{y} = [y_1, …, y_n]$. If the individual sensors "see the same thing", their signals will be **correlated** to a large degree. Such correlation can happen if the phenomenon to be measured behaves similarly at different locations or all sensors are at the same location measuring the same or different processes that are coupled. As a consequence, the collection of measurements will lie in a subspace of dimensionality $r < n$. Although the sensors will be calibrated initially, gain $\alpha \in \mathbb{R}^n$ and offset $\beta \in \mathbb{R}^n$ drift (shown in the figure below) will make recalibration necessary, that is,
 
 $x = \mathbf{Y}\alpha + \beta$,
 
