@@ -67,5 +67,5 @@ The loss (Eq. \ref{mse}) remains but an analytical solution does not exist. The 
 
 \begin{align}
 \label{backprop2}
-\mathbf{W}^{[l]}_{(t+1)} \gets \mathbf{W}^{[l]}_{(t)} -\gamma\left.\frac{\partial \mathcal{L}}{\partial \mathbf{W}^{[l]}}\right\vert_{ \mathbf{W}^{[l]}= \mathbf{W}^{[l]}_{(t)}}
+\mathbf{W}^{[l]} \gets \mathbf{W}^{[l]} -\gamma\left.\frac{\partial \mathcal{L}}{\partial \mathbf{W}^{[l]}}\right\vert_{ \mathbf{W}^{[l]}= \mathbf{W}^{[l]}}
 \end{align}
