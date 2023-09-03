@@ -9,11 +9,11 @@ featured_image: '/images/posts/blind-calibration/title.jpg'
 
 ## Introduction
 
-Wireless sensor networks have emerged as a technology that enables the monitoring and control of processes in manufacturing plants or smart cities. In the case of air quality monitoring in smart cities, for example, particularly polluted places could be identified in real-time and citizens protected from the effects of air pollution. These networks consist of many distributed sensor nodes that collect data and transmit them to a central place where they can be processed.
+**Wireless sensor networks** have emerged as a technology that enables the monitoring and control of processes in manufacturing plants or smart cities. In the case of air quality monitoring in smart cities, for example, particularly polluted places could be identified in real-time and citizens protected from the effects of air pollution. These networks consist of many distributed sensor nodes that collect data and transmit them to a central place where they can be processed.
 
-Such measurement systems, however, place new demands on calibration, e.g., in terms of scale and frequency. More precisely, these countless sensors are often of inferior quality and therefore need calibration more often. Manually calibrating each node or collecting all nodes and bringing them to a laboratory (for calibration) would be too tedious, if not impossible, and would also result in downtime and missing data. Still, calibrations are necessary because they make measurements comparable in space and time. If sensors drift, their measured values do not correspond to the truth. As a result, decisions based on such data will be unreasonable.
+Such measurement systems, however, place new demands on calibration, e.g., in terms of scale and frequency. More precisely, these countless sensors are often of inferior quality and therefore need calibration more often. Manually calibrating each node or collecting all nodes and bringing them to a laboratory (for calibration) would be too tedious, if not impossible, and would also result in downtime and missing data. [Still, calibrations are necessary because they make measurements comparable in space and time](https://www.nist.gov/metrology/metrological-traceability#5.1). If sensors drift, their measured values do not correspond to the truth. As a result, decisions based on such data will be unreasonable.
 
-How to keep sensor networks calibrated has therefore been the subject of research, giving rise to so-called [blind calibration algorithms](https://link.springer.com/chapter/10.1007/978-0-387-68845-9_1) (among other types of automated calibration techniques), which aim at improving the data quality of measurements of the sensors and delay (or even omit) expensive manual calibrations. Simply put, they use an initial calibration as a reference; the key idea is to exploit correlations between sensor signals, allowing to compute new calibration coefficients using techniques from linear algebra and mathematical optimization. This article explains the theory behind such algorithms and demonstrates their potential and limitations with a practical example.
+How to keep sensor networks calibrated has therefore been the subject of research, giving rise to so-called [blind calibration algorithms](https://link.springer.com/chapter/10.1007/978-0-387-68845-9_1) (among other types of automated calibration techniques), which aim at improving the data quality of measurements of the sensors and delay (or even omit) expensive manual calibrations. Simply put, they use an initial calibration as a reference; the key idea is to exploit correlations between sensor signals, allowing to compute new calibration coefficients using techniques from **linear algebra** and **mathematical optimization**. This article explains the theory behind such algorithms and demonstrates their potential and limitations with a practical example.
 
 ## Theoretical Background
 
@@ -57,7 +57,7 @@ One interesting question is how many snapshots to collect, i.e., what value to c
 
 ### Step 0: Get some data.
 
-This example makes use of some chemical process data. One of the sensor readings is taken and replicated several times to simulate the sensor network. In addition, some noise is added, the signals are standardized. Finally, some drift is injected.
+This example makes use of some [chemical process data](https://www.kaggle.com/datasets/amarhaiqal/aspen-hysys-distillation-column-data). One of the sensor readings is taken and replicated several times to simulate the sensor network. In addition, some noise is added, the signals are standardized. Finally, some drift is injected.
 
 ```python
 import pandas as pd
@@ -88,7 +88,7 @@ X_drift = np.add(np.multiply(X, slope), intercept)
 
 ### Step 1: Finding the subspaces.
 
-The subspaces are found by principal component analysis. Because the signals replicates, it suffices to set r = 1. In the general case, however, this needs to be determined experimentally.
+The subspaces are found by principal component analysis. Because the signals replicates, it suffices to set $r = 1$. In the general case, however, this needs to be determined experimentally.
 
 ```python
 from sklearn.preprocessing import StandardScaler
@@ -105,7 +105,7 @@ P = pca.components_[r:, :]  # extract projection matrix
 
 ### Step 2: Taking snapshots.
 
-In a next step, k = 10 snapshots are taken.
+In a next step, $k = 10$ snapshots are taken.
 
 ```python
 T_s = 301  # when to start taking snapshots
@@ -121,7 +121,7 @@ for i in range(k):
 
 ### Step 3: Calibrating the gains.
 
-To calibrate the gains, a constrained optimization problem is solved.
+To calibrate the gains, the constrained optimization problem is solved.
 
 ```python
 from scipy.optimize import minimize, NonlinearConstraint
