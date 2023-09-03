@@ -17,41 +17,41 @@ How to keep sensor networks calibrated has therefore been the subject of researc
 
 ## Theoretical Background
 
-The starting point is a sensor network consisting of n nodes, each sensing a certain process. At time t, the individual measurements are collected as in a vector $y$ = [y<sub>1</sub>, …, y<sub>n</sub>]. If the individual sensors “see the same thing”, their signals will be correlated to a large degree. Such correlation can happen if the phenomenon to be measured behaves similarly at different locations or all sensors are at the same location measuring the same or different processes that are coupled. As a consequence, the collection of measurements will lie in a subspace of dimensionality r < n. Although the sensors will be calibrated initially, gain α ∈ ℝⁿ and offset β ∈ ℝⁿ drift (shown in the figure below) will make recalibration necessary, that is,
+The starting point is a sensor network consisting of $n$ nodes, each sensing a certain process. At time $t$, the individual measurements are collected as in a vector $\mathbf{y}$ = [$y_1$, …, $y_n$]. If the individual sensors “see the same thing”, their signals will be correlated to a large degree. Such correlation can happen if the phenomenon to be measured behaves similarly at different locations or all sensors are at the same location measuring the same or different processes that are coupled. As a consequence, the collection of measurements will lie in a subspace of dimensionality $r < n$. Although the sensors will be calibrated initially, gain $\alpha \in \mathbb{R}^n$ and offset $\beta \in \mathbb{R}^n$ drift (shown in the figure below) will make recalibration necessary, that is,
 
-x = 𝐘α + β,
+$x = \mathbf{Y}\alpha + \beta$,
 
-with 𝐘 = diag(y).
+with $\mathbf{Y}$ = diag($\mathbf{y}$).
 
 <div class="gallery" data-columns="1">
 	<img src="/images/posts/blind-calibration/signals.png">
 </div>
 
-If we learn the projection matrix 𝐏 of dimensionality n - r associated with the signal nullspace (i.e., the orthogonal complement to the signal subspace 𝒮), we can try to estimate the correct gain and offset coefficients. The idea is that the true signals should remain in the signal subspace 𝒮 at all times, that is,
+If we learn the projection matrix $\mathbf{P}$ of dimensionality $n - r$ associated with the signal nullspace (i.e., the orthogonal complement to the signal subspace $\mathcal{S}$), we can try to estimate the correct gain and offset coefficients. The idea is that the true signals should remain in the signal subspace $\mathcal{S}$ at all times, that is,
 
-𝐏x = 𝐏(𝐘α + β) = 0.
+$\mathbf{P}x = \mathbf{P}(\alpha + \beta) = 0$.
 
-The part of the drift in 𝒮, however, cannot be recovered, so it must be assumed that the average signal has a zero mean. Note that too much noise destroys existing correlations. Another important prerequisite is that the basis is robust (the correlations have to persistent). This projection matrix 𝐏 can easily be found by collecting measurements in an initial phase (in which the sensors have no drift at all) and by performing a principal component analysis.
+The part of the drift in $\mathcal{S}$, however, cannot be recovered, so it must be assumed that the average signal has a zero mean. Note that too much noise destroys existing correlations. Another important prerequisite is that the basis is robust (the correlations have to persistent). This projection matrix $\mathbf{P}$ can easily be found by collecting measurements in an initial phase (in which the sensors have no drift at all) and by performing a principal component analysis.
 
-Then, if we collect k snapshots,
+Then, if we collect $k$ snapshots,
 
-𝐏(𝐘<sub>i</sub>α + β) = 0 with i = {1, …, k},
+$\mathbf{P}(\mathbf{Y}_i \alpha + \beta) = 0$, with $i = {1, …, k}$,
 
-we can use them to compute the calibration factors (almost) blindly. The formula above holds for any Y, in particular also for the average Y̅. From this observation, we can conclude that
+we can use them to compute the calibration factors (almost) blindly. The formula above holds for any $\mathbf{Y}$, in particular also for the average $\bar{\mathbf{Y}}$. From this observation, we can conclude that
 
-β̂ = −Y̅α.
+$\hat{\beta} = −\bar{\mathbf{Y}}\alpha$.
 
-Inserting this expression for β, we obtain
+Inserting this expression for $\beta$, we obtain
 
-𝐏(𝐘<sub>i</sub>−Y̅)α = 0, for i = {1, …, k}.
+$\mathbf{P}(\mathbf{Y}_i−\bar{\mathbf{Y}})\alpha = 0$, for $i = {1, …, k}$.
 
-The individual snapshots 𝐏(𝐘<sub>i</sub>−Y̅) can be stacked in a matrix 𝐂. Because the observations are noise, we minimize a squared loss with respect to the gain vector α to obtain
+The individual snapshots $\mathbf{P}(\mathbf{Y}_i−\bar{\mathbf{Y}})$ can be stacked in a matrix $\mathbf{C}$. Because the observations are noise, we minimize a squared loss with respect to the gain vector $\alpha$ to obtain
 
-α̂ = arg min<sub>α</sub> αᵀ 𝐂ᵀ 𝐂 α
+$\hat{\alpha} = \arg \min_{\alpha} \alpha^{T} \mathbf{C}^{T} \mathbf{C} \alpha$
 
-with the constraint that α<sub>1</sub> = α<sub>true</sub>, that is, we need to know at least one gain factor, but it does not matter which one. Alternatively, we could also fix any of the gains to 1, and the other gains would be relative to this so-called global gain factor. Such a constraint can be interpreted physically to mean that all sensors are calibrated to the gain characteristics of sensor 1. The raison d’être for the constraint is that the solution will be α̂ = 0 without it, which is not what we want.
+with the constraint that $\alpha_1 = \alpha_{true}$, that is, we need to know at least one gain factor, but it does not matter which one. Alternatively, we could also fix any of the gains to 1, and the other gains would be relative to this so-called global gain factor. Such a constraint can be interpreted physically to mean that all sensors are calibrated to the gain characteristics of sensor 1. The raison d’être for the constraint is that the solution will be $\hat{\alpha} = 0$ without it, which is not what we want.
 
-One interesting question is how many snapshots to collect, i.e., what value to choose for k. For the gains, it holds that k ≥ ⌈(n - 1)/(n - r)⌉. Since the offsets are then computed from an average, more snapshots will generally lead to a more precise estimate.
+One interesting question is how many snapshots to collect, i.e., what value to choose for $k$. For the gains, it holds that $k \geq \lfloor \dfrac{n - 1}{n - r} \rfloor$. Since the offsets are then computed from an average, more snapshots will generally lead to a more precise estimate.
 
 ## Methods
 
