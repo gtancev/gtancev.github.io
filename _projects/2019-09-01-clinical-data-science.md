@@ -1,8 +1,8 @@
 ---
-title: 'Clinical Data Analysis'
+title: 'Clinical Data Science'
 subtitle: 'Searching for risk factors of mortality.'
 date: 2019-09-01 00:00:00
-description: Clinical Data Analysis
+description: Clinical Data Science
 featured_image: '/images/projects/clinical-data-analysis/1.jpg'
 ---
 
