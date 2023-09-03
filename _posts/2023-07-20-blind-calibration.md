@@ -166,8 +166,18 @@ for i in range(n):
 
 ## Results
 
+The left plot illustrates the original signals and the ones after blind calibration. It becomes clear that the drift could be almost completely eliminated. In addition, the correct signal was restored because the individual signals overlapped with the dashed line.
+
+The middle plot relates the estimated gains and offsets to the correct ones. By and large, the parameters match, although a slight mismatch can be observed in the gain.
+
+Finally, the right plot compares the improvement of the measurement with respect to the root-mean-square error. Here we can clearly see that the improvement is not negligible.
+
 <div class="gallery" data-columns="3">
 	<img src="/images/posts/blind-calibration/error_reduction_2.png">
-	<img src="/images/posts/blind-calibration/error_reduction.png">
 	<img src="/images/posts/blind-calibration/parameters.png">
+	<img src="/images/posts/blind-calibration/error_reduction.png">
 </div>
+
+## Conclusion
+
+This article has shown the benefit of blind calibration. This idea has evolved over time and lead to a class of algorithms that can also be used to estimate drift and subtract it from the signal. Nevertheless, the approach is not suitable for all sensor networks. First and foremost, the correlation assumption must be given. For this reason, the data quality must be sufficient, otherwise the correlations will be break apart. In addition, the projection matrices must remain stable over time, which is not always the case. Finally, the signal must average out over time, i.e. its mean must be zero. For all other cases, alternatives have been developed, for example calibration by means of mobile references.
