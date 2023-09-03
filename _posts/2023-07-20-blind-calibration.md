@@ -7,8 +7,6 @@ featured_image: '/images/posts/blind-calibration/title.jpg'
 
 ![](/images/posts/blind-calibration/title.jpg)
 
-> "Algorithms that keep your sensors calibrated."
-
 ## Introduction
 
 [Wireless sensor networks](https://en.wikipedia.org/wiki/Wireless_sensor_network) have emerged as a technology that enables the monitoring and control of processes in manufacturing plants or smart cities. In the case of air quality monitoring in smart cities, for example, particularly polluted places could be identified in real-time and citizens protected from the effects of air pollution. These networks consist of many distributed sensor nodes that collect data and transmit them to a central place where they can be processed.
@@ -35,7 +33,7 @@ The part of the drift in $\mathcal{S}$, however, cannot be recovered, so it must
 
 Then, if we collect $k$ snapshots,
 
-$\mathbf{P}(\mathbf{Y}_i \alpha + \beta) = 0$, with $i = \{1, …, k\}$,
+$\mathbf{P}(\mathbf{Y}_i \alpha + \beta) = 0$, for $i = \{1, …, k\}$,
 
 we can use them to compute the calibration factors (almost) blindly. The formula above holds for any $\mathbf{Y}$, in particular also for the average $\bar{\mathbf{Y}}$. From this observation, we can conclude that
 
