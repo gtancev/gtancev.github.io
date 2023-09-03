@@ -18,7 +18,7 @@ How to keep sensor networks calibrated has therefore been the subject of researc
 
 ## Theoretical Background
 
-The starting point is a sensor network consisting of n nodes, each sensing a certain process. At time t, the individual measurements are collected as in a vector **y** = [y<sub>1</sub>, …, y<sub>n</sub>]. If the individual sensors “see the same thing”, their signals will be correlated to a large degree. Such correlation can happen if the phenomenon to be measured behaves similarly at different locations or all sensors are at the same location measuring the same or different processes that are coupled. As a consequence, the collection of measurements will lie in a subspace of dimensionality r < n. Although the sensors will be calibrated initially, gain α ∈ ℝⁿ and offset β ∈ ℝⁿ drift (shown in Fig. 1) will make recalibration necessary, that is,
+The starting point is a sensor network consisting of n nodes, each sensing a certain process. At time t, the individual measurements are collected as in a vector **y** = [y<sub>1</sub>, …, y<sub>n</sub>]. If the individual sensors “see the same thing”, their signals will be correlated to a large degree. Such correlation can happen if the phenomenon to be measured behaves similarly at different locations or all sensors are at the same location measuring the same or different processes that are coupled. As a consequence, the collection of measurements will lie in a subspace of dimensionality r < n. Although the sensors will be calibrated initially, gain α ∈ ℝⁿ and offset β ∈ ℝⁿ drift (shown in the figure below) will make recalibration necessary, that is,
 
 x = 𝐘α + β,
 
@@ -166,11 +166,21 @@ for i in range(n):
 
 ## Results
 
-The **left** plot illustrates the original signals and the ones after blind calibration. It becomes clear that the drift could be almost completely eliminated. In addition, the correct signal was restored because the individual signals overlapped with the dashed line. The **middle** plot relates the estimated gains and offsets to the correct ones. By and large, the parameters match, although a slight mismatch can be observed in the gain. Finally, the **right** plot compares the improvement of the measurement with respect to the root-mean-square error. Here we can clearly see that the improvement is not negligible.
+The first plot illustrates the original signals and the ones after blind calibration. It becomes clear that the drift could be almost completely eliminated. In addition, the correct signal was restored because the individual signals overlapped with the dashed line. 
 
-<div class="gallery" data-columns="3">
+<div class="gallery" data-columns="1">
 	<img src="/images/posts/blind-calibration/error_reduction_2.png">
+</div>
+
+The second plot relates the estimated gains and offsets to the correct ones. By and large, the parameters match, although a slight mismatch can be observed in the gain. 
+
+<div class="gallery" data-columns="1">
 	<img src="/images/posts/blind-calibration/parameters.png">
+</div>
+
+Finally, the third and last plot compares the improvement of the measurement with respect to the root-mean-square error. Here we can clearly see that the improvement is not negligible.
+
+<div class="gallery" data-columns="1">
 	<img src="/images/posts/blind-calibration/error_reduction.png">
 </div>
 
