@@ -4,7 +4,7 @@ basic_settings:
 
 header_settings:
   logo_image: 
-  logo_width: 200
+  logo_width: 120
 
 menu_settings:
   menu_items:
@@ -19,8 +19,8 @@ menu_settings:
 
 footer_settings:
   logo_image: '/images/logo.png'
-  logo_width: 200
-  footer_tagline: Georgi Tancev, PhD
+  logo_width: 120
+  footer_tagline: 
 
 grid_settings:
   overlay_opacity: 0.8
