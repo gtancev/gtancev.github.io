@@ -41,6 +41,8 @@ w_{(t+1)} \gets w_{(t)} - \gamma\left.\frac{\partial \mathcal{L}}{\partial w}\ri
 
 Instead of using the complete data set of $n$ samples, a mini-batch or only the $k$-th random sample $x_{k}^T$ can be picked and the update is performed only with instance. This is known as stochastic gradient descent. Updating parameters with single observations is reasonable in situations in which new data are becoming available, i.e., in online learning, and when models need to be updated due to changes in the underlying probability distributions. If the underlying relationships are non-linear, it is beneficial to add additional variables to $\mathbf{X}$ via basis expansion ($X_i^2$, $X_iX_j$, etc). If interpretability is not crucial, one can apply a cascade of $L-1$ non-linear transformations instead, e.g., the sigmoid $\phi(z) = \frac{1}{1+e^{-z}} = \sigma(z)$, and a last affine ("linear") transformation, each parameterized by a set of parameters $\mathbf{W}^{[l]} \in \mathbb{R}^{n_{l}\times n_{l-1}}$ for transformation $l$ (Eq. \ref{nn}). The approach is supported by an universal approximation theorem and the resulting model is known as multilayer perceptron or feedforward artificial neural network (figure below).
 
+<embed src="/images/posts/machine-learning/mlp_alt.pdf" width="500" height="375" type="application/pdf">
+
 \begin{equation}
 \label{nn}
 \mathbf{y}^T = \phi_{\mathbf{W}^{[L]}} \circ \phi_{\mathbf{W}^{[L-1]}} \circ ... \circ \phi_{\mathbf{W}^{[1]}}(\mathbf{X}^T) +\boldsymbol\epsilon^T = \mathbf{W}^{[L]}\sigma(\mathbf{W}^{[L-1]}\sigma(...\sigma(\mathbf{W}^{[1]}\mathbf{X}^T)))+\boldsymbol\epsilon^T
