@@ -19,7 +19,7 @@ How to keep sensor networks calibrated has therefore been the subject of researc
 
 ## Theoretical Background
 
-The starting point is a sensor network consisting of $n$ nodes, each sensing a certain process. At time $t$, the individual measurements are collected as in a vector $\mathbf{y} = [y_1, …, y_n]$. If the individual sensors "see the same thing", their signals will be **correlated** to a large degree. Such correlation can happen if the phenomenon to be measured behaves similarly at different locations or all sensors are at the same location measuring the same or different processes that are coupled. As a consequence, the collection of measurements will lie in a subspace of dimensionality $r < n$. Although the sensors will be calibrated initially, gain $\alpha \in \mathbb{R}^n$ and offset $\beta \in \mathbb{R}^n$ drift (shown in the figure below) will make recalibration necessary, that is,
+The starting point is a sensor network consisting of $n$ nodes, each sensing a certain process. At time $t$, the individual measurements are collected as in a vector $\mathbf{y} = \[y_1, …, y_n\]$. If the individual sensors "see the same thing", their signals will be **correlated** to a large degree. Such correlation can happen if the phenomenon to be measured behaves similarly at different locations or all sensors are at the same location measuring the same or different processes that are coupled. As a consequence, the collection of measurements will lie in a subspace of dimensionality $r < n$. Although the sensors will be calibrated initially, gain $\alpha \in \mathbb{R}^n$ and offset $\beta \in \mathbb{R}^n$ drift (shown in the figure below) will make recalibration necessary, that is,
 
 $x = \mathbf{Y}\alpha + \beta$,
 
@@ -35,7 +35,7 @@ The part of the drift in $\mathcal{S}$, however, cannot be recovered, so it must
 
 Then, if we collect $k$ snapshots,
 
-$\mathbf{P}(\mathbf{Y}_i \alpha + \beta) = 0$, with $i = {1, …, k}$,
+$\mathbf{P}(\mathbf{Y}_i \alpha + \beta) = 0$, with $i = \{1, …, k\}$,
 
 we can use them to compute the calibration factors (almost) blindly. The formula above holds for any $\mathbf{Y}$, in particular also for the average $\bar{\mathbf{Y}}$. From this observation, we can conclude that
 
@@ -43,7 +43,7 @@ $\hat{\beta} = −\bar{\mathbf{Y}}\alpha$.
 
 Inserting this expression for $\beta$, we obtain
 
-$\mathbf{P}(\mathbf{Y}_i−\bar{\mathbf{Y}})\alpha = 0$, for $i = {1, …, k}$.
+$\mathbf{P}(\mathbf{Y}_i−\bar{\mathbf{Y}})\alpha = 0$, for $i = \{1, …, k\}$.
 
 The individual snapshots $\mathbf{P}(\mathbf{Y}_i−\bar{\mathbf{Y}})$ can be stacked in a matrix $\mathbf{C}$. Because the observations are noise, we minimize a squared loss with respect to the gain vector $\alpha$ to obtain
 
