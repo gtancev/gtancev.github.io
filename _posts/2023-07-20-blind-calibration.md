@@ -5,7 +5,7 @@ description: An algorithm that keeps your sensor networks calibrated.
 featured_image: '/images/demo/demo-square.jpg'
 ---
 
-![](/images/demo/demo-landscape.jpg)
+![](/images/posts/blind-calibration/title.png)
 
 ## Introduction
 
@@ -22,6 +22,10 @@ The starting point is a sensor network consisting of n nodes, each sensing a cer
 x = Yα + β,
 
 with Y = diag(y).
+
+<div class="gallery" data-columns="3">
+	<img src="/images/posts/blind-calibration/signals.png">
+</div>
 
 If we learn the projection matrix 𝐏 of dimensionality n - r associated with the signal nullspace (i.e., the orthogonal complement to the signal subspace 𝒮), we can try to estimate the correct gain and offset coefficients. The idea is that the true signals should remain in the signal subspace 𝒮 at all times, that is,
 
@@ -45,9 +49,124 @@ The individual snapshots 𝐏(𝐘ᵢ−Y̅) can be stacked in a matrix 𝐂. Be
 
 α̂ = arg min αᵀ 𝐂ᵀ 𝐂 α
 
-with the constraint that α₁ = αₜᵣᵤₑ, that is, we need to know at least one gain factor, but it does not matter which one. Alternatively, we could also fix any of the gains to 1, and the other gains would be relative to this so-called global gain factor. Such a constraint can be interpreted physically to mean that all sensors are calibrated to the gain characteristics of sensor 1. The raison d’être for the constraint is that the solution will be α̂ = 0 without it, which is not what we want.
+with the constraint that α₁ = α<sub>true</sub>, that is, we need to know at least one gain factor, but it does not matter which one. Alternatively, we could also fix any of the gains to 1, and the other gains would be relative to this so-called global gain factor. Such a constraint can be interpreted physically to mean that all sensors are calibrated to the gain characteristics of sensor 1. The raison d’être for the constraint is that the solution will be α̂ = 0 without it, which is not what we want.
 
 One interesting question is how many snapshots to collect, i.e., what value to choose for k. For the gains, it holds that k ≥ ⌈(n - 1)/(n - r)⌉. Since the offsets are then computed from an average, more snapshots will generally lead to a more precise estimate.
 
 ## Methods
 
+### Step 0: Get some data.
+
+This example makes use of some chemical process data. One of the sensor readings is taken and replicated several times to simulate the sensor network. In addition, some noise is added, the signals are standardized. Finally, some drift is injected.
+
+```python
+import pandas as pd
+import numpy as np
+
+# Load data.
+data = pd.read_excel("Distillation Column Dataset.xlsx", index_col=0)
+data.index = pd.to_timedelta(data.index, unit="seconds")
+data = data.rolling(window="600 s").mean()
+
+# Create replicate sensor data (to have correlations).
+n_sensors = 10
+S = np.repeat(np.expand_dims(data.Sensor1.values, 
+                             axis=0), 
+              repeats=n_sensors, axis=0).T
+S += np.random.normal(0.0, 0.002, S.shape)  # add some noise
+
+# Standardize data.
+scaler = StandardScaler()
+X = scaler.fit_transform(S)
+
+# Let sensor data drift.
+_, n = X.shape
+slope = np.random.normal(1, 0.2, size=(n))
+intercept = np.random.normal(0, 1.0, size=(1, n))
+X_drift = np.add(np.multiply(X, slope), intercept)
+```
+
+### Step 1: Finding the subspaces.
+
+The subspaces are found by principal component analysis. Because the signals replicates, it suffices to set r = 1. In the general case, however, this needs to be determined experimentally.
+
+```python
+from sklearn.preprocessing import StandardScaler
+from sklearn.decomposition import PCA
+
+_, n = X.shape  # get shape of sensor data set
+pca = PCA(n_components=n, random_state=0)
+T = 300  # duration of initial calibration
+pca.fit(X[:T, :])  # fit pca on calibrated sensor data
+
+r = 1  # pick dimensionality of r
+P = pca.components_[r:, :]  # extract projection matrix
+```
+
+### Step 2: Taking snapshots.
+
+In a next step, k = 10 snapshots are taken.
+
+```python
+T_s = 301  # when to start taking snapshots
+k = 10  # number of snapshots
+Y = X_drift[(T_s):(T_s+k), :]
+Y_bar = np.mean(Y, axis=0)  # compute average snapshot
+
+# Construct data set.
+C = np.zeros((k*(n-r),n))
+for i in range(k):
+    C[i*(n-r):(i+1)*(n-r),:] = (P @ (np.diag(Y[i,:]) - np.diag(Y_bar)))
+```
+
+### Step 3: Calibrating the gains.
+
+To calibrate the gains, a constrained optimization problem is solved.
+
+```python
+from scipy.optimize import minimize, NonlinearConstraint
+
+# Define some variables.
+n_variables = n
+n_constraints = 1
+
+# Define objective function.
+def objective(a):
+    return (a.T @ C.T) @ (C @ a)
+
+# Define constraints.
+def system(a):
+    return a[0] - 1/gain[0]  # we need to know at least one gain
+nonlinear_constraint = NonlinearConstraint(system, 
+                                           np.zeros((n_constraints)), 
+                                           np.zeros((n_constraints)))
+
+# Define starting point of optimization.
+a0 = np.ones((n_variables))
+
+# Run optimization.
+res = minimize(objective, a0, method="trust-constr",
+               constraints=[nonlinear_constraint],
+               options={"verbose": 1, "maxiter": 50000},
+               tol=1e-20)
+gains = res.x
+```
+
+### Step 4: Calibrating the offsets.
+
+Having obtained the gains, the offsets can be computed.
+
+```python
+# Get offsets.
+offsets = np.zeros((n))
+for i in range(n):
+    offsets[i] = - gains[i] * Y_bar[i]
+```
+
+## Results
+
+<div class="gallery" data-columns="3">
+	<img src="/images/posts/blind-calibration/error_reduction_2.png">
+	<img src="/images/posts/blind-calibration/error_reduction.png">
+	<img src="/images/posts/blind-calibration/parameters.png">
+</div>
