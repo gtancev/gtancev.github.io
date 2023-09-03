@@ -36,7 +36,7 @@ The part of the drift in 𝒮, however, cannot be recovered, so it must be assum
 
 Then, if we collect k snapshots,
 
-𝐏(𝐘ᵢα + β) = 0 with i = {1, …, k},
+𝐏(𝐘<sub>i</sub>α + β) = 0 with i = {1, …, k},
 
 we can use them to compute the calibration factors (almost) blindly. The formula above holds for any Y, in particular also for the average Y̅. From this observation, we can conclude that
 
@@ -46,9 +46,9 @@ Inserting this expression for β, we obtain
 
 𝐏(𝐘<sub>i</sub>−Y̅)α = 0, for i = {1, …, k}.
 
-The individual snapshots 𝐏(𝐘ᵢ−Y̅) can be stacked in a matrix 𝐂. Because the observations are noise, we minimize a squared loss with respect to the gain vector α to obtain
+The individual snapshots 𝐏(𝐘<sub>i</sub>−Y̅) can be stacked in a matrix 𝐂. Because the observations are noise, we minimize a squared loss with respect to the gain vector α to obtain
 
-α̂ = arg min αᵀ 𝐂ᵀ 𝐂 α
+α̂ = arg min<sub>α</sub> αᵀ 𝐂ᵀ 𝐂 α
 
 with the constraint that α<sub>1</sub> = α<sub>true</sub>, that is, we need to know at least one gain factor, but it does not matter which one. Alternatively, we could also fix any of the gains to 1, and the other gains would be relative to this so-called global gain factor. Such a constraint can be interpreted physically to mean that all sensors are calibrated to the gain characteristics of sensor 1. The raison d’être for the constraint is that the solution will be α̂ = 0 without it, which is not what we want.
 
