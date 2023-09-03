@@ -1,6 +1,5 @@
 ---
 title: 'Blind Calibration'
-subtitle: 'An algorithm that keeps your sensor networks calibrated.'
 date: 2023-07-20 00:00:00
 description: Blind Calbration
 featured_image: '/images/posts/blind-calibration/title.jpg'
@@ -186,4 +185,4 @@ Finally, the third and last plot compares the improvement of the measurement wit
 
 ## Conclusion
 
-This article has shown the benefit of blind calibration. This idea has evolved over time and lead to a class of algorithms that can also be used to estimate drift and subtract it from the signal. Nevertheless, the approach is not suitable for all sensor networks. First and foremost, the correlation assumption must be given. For this reason, the data quality must be sufficient, otherwise the correlations will be break apart. In addition, the projection matrices must remain stable over time, which is not always the case. Finally, the signal must average out over time, i.e. its mean must be zero. For all other cases, alternatives have been developed, for example calibration by means of mobile references.
+This article has shown the benefit of blind calibration. This idea has evolved over time and lead to a class of algorithms that can also be used to estimate drift and subtract it from the signal. Nevertheless, the approach is not suitable for all sensor networks. First and foremost, the correlation assumption must be given. For this reason, the data quality must be sufficient, otherwise the correlations will be break apart. In addition, the projection matrices must remain stable over time, which is not always the case. Finally, the signal must average out over time, i.e. its mean must be zero. For all other cases, alternatives have been developed, for example [calibration by means of mobile references](https://ieeexplore.ieee.org/abstract/document/9690889).
