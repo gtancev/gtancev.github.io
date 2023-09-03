@@ -9,7 +9,7 @@ featured_image: '/images/posts/machine-learning/google-deepmind.jpg'
 
 ## Supervised Learning
 
-Calibration of sensor systems & networks is essentially supervised learning. The following post looks at the theoretical aspects and motivates [stochastic online calibration](https://ieeexplore.ieee.org/abstract/document/9690889).
+Calibration of sensor systems and sensor networks is essentially supervised learning. The following post looks at the theoretical aspects and motivates [stochastic online calibration](https://ieeexplore.ieee.org/abstract/document/9690889).
 
 ### Linear Models, Neural Networks, and Gradient-Based Optimization
 
