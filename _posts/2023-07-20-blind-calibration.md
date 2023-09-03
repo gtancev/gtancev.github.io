@@ -7,6 +7,8 @@ featured_image: '/images/posts/blind-calibration/title.jpg'
 
 ![](/images/posts/blind-calibration/title.jpg)
 
+> "Algorithms that keep your sensors calibrated."
+
 ## Introduction
 
 [Wireless sensor networks](https://en.wikipedia.org/wiki/Wireless_sensor_network) have emerged as a technology that enables the monitoring and control of processes in manufacturing plants or smart cities. In the case of air quality monitoring in smart cities, for example, particularly polluted places could be identified in real-time and citizens protected from the effects of air pollution. These networks consist of many distributed sensor nodes that collect data and transmit them to a central place where they can be processed.
