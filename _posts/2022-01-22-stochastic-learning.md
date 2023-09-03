@@ -50,16 +50,22 @@ The variables $L$ and $n_l$ for $l\in\{1, ... , L-1\}$ are design parameters. De
 
 \begin{align}
 \label{nn1}
-\mathbf{A}^{[l]} &= \mathbf{W}^{[l]}\mathbf{Z}^{[l-1]}\\
+\mathbf{A}^{[l]} = \mathbf{W}^{[l]}\mathbf{Z}^{[l-1]}
+\end{align}
+
+\begin{align}
 \label{nn2}
-\mathbf{Z}^{[l]} &= \sigma(\mathbf{A}^{[l]})
+\mathbf{Z}^{[l]} = \sigma(\mathbf{A}^{[l]})
 \end{align}
 
 The loss (Eq. \ref{mse}) remains but an analytical solution does not exist. The algorithm to optimize the model parameters is a variant of gradient descent (with an excessive use of the chain rule) known as backpropagation. Eqs. \ref{backprop1} \& \ref{backprop2} describe the backward pass.
 
 \begin{align}
 \label{backprop1}
-\frac{\partial \mathcal{L}}{\partial \mathbf{W}^{[l]}} &= \frac{\partial \mathcal{L}}{\partial \mathbf{Z}^{[L]}} \frac{\partial \mathbf{Z}^{[L]}}{\partial \mathbf{A}^{[L]}} \frac{\partial \mathbf{A}^{[L]}}{\partial \mathbf{Z}^{[L-1]}}...\frac{\partial \mathbf{Z}^{[l+1]}}{\partial \mathbf{A}^{[l]}}  \frac{\partial \mathbf{A}^{[l]}}{\partial \mathbf{W}^{[l]}} \\
+\frac{\partial \mathcal{L}}{\partial \mathbf{W}^{[l]}} = \frac{\partial \mathcal{L}}{\partial \mathbf{Z}^{[L]}} \frac{\partial \mathbf{Z}^{[L]}}{\partial \mathbf{A}^{[L]}} \frac{\partial \mathbf{A}^{[L]}}{\partial \mathbf{Z}^{[L-1]}}...\frac{\partial \mathbf{Z}^{[l+1]}}{\partial \mathbf{A}^{[l]}}  \frac{\partial \mathbf{A}^{[l]}}{\partial \mathbf{W}^{[l]}}
+\end{align}
+
+\begin{align}
 \label{backprop2}
-\mathbf{W}^{[l]}_{(t+1)} &\gets \mathbf{W}^{[l]}_{(t)} -\gamma\left.\frac{\partial \mathcal{L}}{\partial \mathbf{W}^{[l]}}\right\vert_{ \mathbf{W}^{[l]}= \mathbf{W}^{[l]}_{(t)}}
+\mathbf{W}^{[l]}_{(t+1)} \gets \mathbf{W}^{[l]}_{(t)} -\gamma\left.\frac{\partial \mathcal{L}}{\partial \mathbf{W}^{[l]}}\right\vert_{ \mathbf{W}^{[l]}= \mathbf{W}^{[l]}_{(t)}}
 \end{align}
