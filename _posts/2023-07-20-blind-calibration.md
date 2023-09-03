@@ -23,7 +23,7 @@ $x = \mathbf{Y}\alpha + \beta$,
 
 with $\mathbf{Y}$ = diag($\mathbf{y}$).
 
-![Sensors signals after drift.](/images/posts/blind-calibration/signals.png)
+![Sensors signals after drift.](/images/posts/blind-calibration/signals.png "Sensors signals after drift.")
 
 If we learn the projection matrix $\mathbf{P}$ of dimensionality $n - r$ associated with the signal nullspace (i.e., the orthogonal complement to the signal subspace $\mathcal{S}$), we can try to estimate the correct gain and offset coefficients. The idea is that the true signals should remain in the signal subspace $\mathcal{S}$ at all times, that is,
 
@@ -165,15 +165,15 @@ for i in range(n):
 
 The first plot illustrates the original signals and the ones after blind calibration. It becomes clear that the drift could be almost completely eliminated. In addition, the correct signal was restored because the individual signals overlapped with the dashed line. 
 
-![Uncorrected versus corrected sensor signals. Dashed line corresponds to ground truth.](/images/posts/blind-calibration/error_reduction_2.png)
+![Uncorrected versus corrected sensor signals. Dashed line corresponds to ground truth.](/images/posts/blind-calibration/error_reduction_2.png "Uncorrected versus corrected sensor signals. Dashed line corresponds to ground truth.")
 
 The second plot relates the estimated gains and offsets to the correct ones. By and large, the parameters match, although a slight mismatch can be observed in the gain. 
 
-![Estimated vs. true gains and offsets.](/images/posts/blind-calibration/parameters.png)
+![Estimated vs. true gains and offsets.](/images/posts/blind-calibration/parameters.png "Estimated vs. true gains and offsets.")
 
 Finally, the third and last plot compares the improvement of the measurement with respect to the root-mean-square error. Here we can clearly see that the improvement is not negligible.
 
-![Reduction of root-mean-square error after blind calibration.](/images/posts/blind-calibration/error_reduction.png)
+![Reduction of root-mean-square error after blind calibration.](/images/posts/blind-calibration/error_reduction.png "Reduction of root-mean-square error after blind calibration.")
 
 ## Conclusion
 
