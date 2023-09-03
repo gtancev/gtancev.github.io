@@ -39,7 +39,7 @@ w_{(t+1)} \gets w_{(t)} - \gamma\left.\frac{\partial \mathcal{L}}{\partial w}\ri
 	<img src="/images/theory/loss_NN.png">
 </div>
 
-Instead of using the complete data set of $n$ samples, a mini-batch or only the $k$-th random sample $x_{k}^T$ can be picked and the update is performed only with instance. This is known as stochastic gradient descent. Updating parameters with single observations is reasonable in situations in which new data are becoming available, i.e., in online learning, and when models need to be updated due to changes in the underlying probability distributions. If the underlying relationships are non-linear, it is beneficial to add additional variables to $\mathbf{X}$ via basis expansion ($X_i^2$, $X_iX_j$, etc). If interpretability is not crucial, one can apply a cascade of $L-1$ non-linear transformations instead, e.g., the sigmoid $\phi(z) = \frac{1}{1+e^{-z}} = \sigma(z)$, and a last affine ("linear") transformation, each parameterized by a set of parameters $\mathbf{W}^{[l]} \in \mathbb{R}^{n_{l}\times n_{l-1}}$ for transformation $l$ (Eq. \ref{nn}). The approach is supported by an universal approximation theorem \cite{Cybenko1989} and the resulting model is known as multilayer perceptron or feedforward artificial neural network (figure below).
+Instead of using the complete data set of $n$ samples, a mini-batch or only the $k$-th random sample $x_{k}^T$ can be picked and the update is performed only with instance. This is known as stochastic gradient descent. Updating parameters with single observations is reasonable in situations in which new data are becoming available, i.e., in online learning, and when models need to be updated due to changes in the underlying probability distributions. If the underlying relationships are non-linear, it is beneficial to add additional variables to $\mathbf{X}$ via basis expansion ($X_i^2$, $X_iX_j$, etc). If interpretability is not crucial, one can apply a cascade of $L-1$ non-linear transformations instead, e.g., the sigmoid $\phi(z) = \frac{1}{1+e^{-z}} = \sigma(z)$, and a last affine ("linear") transformation, each parameterized by a set of parameters $\mathbf{W}^{[l]} \in \mathbb{R}^{n_{l}\times n_{l-1}}$ for transformation $l$ (Eq. \ref{nn}). The approach is supported by an universal approximation theorem and the resulting model is known as multilayer perceptron or feedforward artificial neural network (figure below).
 
 \begin{equation}
 \label{nn}
@@ -49,17 +49,17 @@ Instead of using the complete data set of $n$ samples, a mini-batch or only the 
 The variables $L$ and $n_l$ for $l\in\{1, ... , L-1\}$ are design parameters. Decomposing the expression from above, with $\mathbf{Z}^{[0]} = \mathbf{X}^T$ and $\mathbf{Z}^{[L]} = \mathbf{y}^T$, results in the intermediate values $\mathbf{Z}^{[l]}$ of the hidden nodes in layers $l\in \{1, ..., L\}$. Eqs. \ref{nn1} \& \ref{nn2} are the so-called forward pass.
 
 \begin{align}
-	\label{nn1}
-	\mathbf{A}^{[l]} &= \mathbf{W}^{[l]}\mathbf{Z}^{[l-1]}\\
-	\label{nn2}
-	\mathbf{Z}^{[l]} &= \sigma(\mathbf{A}^{[l]})
+\label{nn1}
+\mathbf{A}^{[l]} &= \mathbf{W}^{[l]}\mathbf{Z}^{[l-1]}\\
+\label{nn2}
+\mathbf{Z}^{[l]} &= \sigma(\mathbf{A}^{[l]})
 \end{align}
 
 The loss (Eq. \ref{mse}) remains but an analytical solution does not exist. The algorithm to optimize the model parameters is a variant of gradient descent (with an excessive use of the chain rule) known as backpropagation. Eqs. \ref{backprop1} \& \ref{backprop2} describe the backward pass.
 
 \begin{align}
-	\label{backprop1}
-	\frac{\partial \mathcal{L}}{\partial \mathbf{W}^{[l]}} &= \frac{\partial \mathcal{L}}{\partial \mathbf{Z}^{[L]}} \frac{\partial \mathbf{Z}^{[L]}}{\partial \mathbf{A}^{[L]}} \frac{\partial \mathbf{A}^{[L]}}{\partial \mathbf{Z}^{[L-1]}}...\frac{\partial \mathbf{Z}^{[l+1]}}{\partial \mathbf{A}^{[l]}}  \frac{\partial \mathbf{A}^{[l]}}{\partial \mathbf{W}^{[l]}} \\
-	\label{backprop2}
-	\mathbf{W}^{[l]}_{(t+1)} &\gets \mathbf{W}^{[l]}_{(t)} -\gamma\left.\frac{\partial \mathcal{L}}{\partial \mathbf{W}^{[l]}}\right\vert_{ \mathbf{W}^{[l]}= \mathbf{W}^{[l]}_{(t)}}
+\label{backprop1}
+\frac{\partial \mathcal{L}}{\partial \mathbf{W}^{[l]}} &= \frac{\partial \mathcal{L}}{\partial \mathbf{Z}^{[L]}} \frac{\partial \mathbf{Z}^{[L]}}{\partial \mathbf{A}^{[L]}} \frac{\partial \mathbf{A}^{[L]}}{\partial \mathbf{Z}^{[L-1]}}...\frac{\partial \mathbf{Z}^{[l+1]}}{\partial \mathbf{A}^{[l]}}  \frac{\partial \mathbf{A}^{[l]}}{\partial \mathbf{W}^{[l]}} \\
+\label{backprop2}
+\mathbf{W}^{[l]}_{(t+1)} &\gets \mathbf{W}^{[l]}_{(t)} -\gamma\left.\frac{\partial \mathcal{L}}{\partial \mathbf{W}^{[l]}}\right\vert_{ \mathbf{W}^{[l]}= \mathbf{W}^{[l]}_{(t)}}
 \end{align}
