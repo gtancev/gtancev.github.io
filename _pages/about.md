@@ -7,8 +7,8 @@ featured_image: /images/photography/me/picture.jpg
 
 <div class="gallery" data-columns="5">
 	<img src="/images/me/1.jpeg">
-	<img src="/images/me/2.jpeg">
-    <img src="/images/me/3.jpeg">
+	<!-- <img src="/images/me/2.jpeg">
+    <img src="/images/me/3.jpeg"> -->
     <img src="/images/me/4.jpeg">
     <img src="/images/me/5.jpeg">
 </div>
