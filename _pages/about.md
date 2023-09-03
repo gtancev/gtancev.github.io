@@ -1,6 +1,6 @@
 ---
-title: About Me
-subtitle: Hello, I'm Georgi.
+title: Hello, I'm Georgi.
+subtitle: Nice to meet you!
 description: Hello, I'm Georgi.
 featured_image: /images/photography/me/picture.jpg
 ---
