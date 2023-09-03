@@ -67,5 +67,5 @@ The loss (Eq. \ref{mse}) remains but an analytical solution does not exist. The 
 
 \begin{align}
 \label{backprop2}
-\mathbf{W}^{[l]} \gets \mathbf{W}^{[l]} -\gamma\left.\frac{\partial \mathcal{L}}{\partial \mathbf{W}^{[l]}}\right\vert_{ \mathbf{W}^{[l]}= \mathbf{W}^{[l]}}
+\mathbf{W}^{[l]} \gets \mathbf{W}^{[l]} -\gamma \frac{\partial \mathcal{L}}{\partial \mathbf{W}^{[l]}}
 \end{align}
