@@ -1,7 +1,8 @@
 ---
 title: 'Blind Calibration'
+subtitle: 'An algorithm that keeps your sensor networks calibrated.'
 date: 2023-07-20 00:00:00
-description: An algorithm that keeps your sensor networks calibrated.
+description: Blind Calbration
 featured_image: '/images/demo/demo-square.jpg'
 ---
 
