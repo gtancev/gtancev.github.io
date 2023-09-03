@@ -9,6 +9,8 @@ featured_image: '/images/posts/machine-learning/google-deepmind.jpg'
 
 ## Supervised Learning
 
+Calibration of sensor systems & networks is essentially supervised learning. In essence, this post motivates [stochastic online calibration](https://ieeexplore.ieee.org/abstract/document/9690889).
+
 ### Linear Models, Neural Networks, and Gradient-Based Optimization
 
 Once a data set $\mathbf{X} = [\mathbf{x}_1, ..., \mathbf{x}_p] = [x_1, ..., x_n]^T \in \mathbb{R}^{n\times p}$ in $n$ samples and $p$ independent variables (or features) $X_i \in \mathcal{X}$, $i\in\{1, ..., p\}$ is collected (with $n > p$), the influence of the independent variables on the dependent variables $Y_k \in \mathcal{Y}$, $k\in\{1, ..., q\}$ can be evaluated. In this notation, $\mathbf{X}$ contains a column with 1's for the intercept. The aim is to find a function $f$ that maps from $\mathcal{X}$ to $\mathcal{Y}$, i.e., $f: \mathcal{X}\to\mathcal{Y}$. This is a supervised learning problem because the output is known. If the output is also continuous ($Y \in \mathbb{R}$), this particular type of task is called regression. For instance, calibrating a low-cost sensor system is a typical regression problem.
@@ -39,7 +41,7 @@ w_{(t+1)} \gets w_{(t)} - \gamma\left.\frac{\partial \mathcal{L}}{\partial w}\ri
 	<img src="/images/theory/loss_NN.png">
 </div>
 
-Instead of using the complete data set of $n$ samples, a mini-batch or only the $k$-th random sample $x_{k}^T$ can be picked and the update is performed only with instance. This is known as stochastic gradient descent. Updating parameters with single observations is reasonable in situations in which new data are becoming available, i.e., in online learning, and when models need to be updated due to changes in the underlying probability distributions. If the underlying relationships are non-linear, it is beneficial to add additional variables to $\mathbf{X}$ via basis expansion ($X_i^2$, $X_iX_j$, etc). If interpretability is not crucial, one can apply a cascade of $L-1$ non-linear transformations instead, e.g., the sigmoid $\phi(z) = \frac{1}{1+e^{-z}} = \sigma(z)$, and a last affine ("linear") transformation, each parameterized by a set of parameters $\mathbf{W}^{[l]} \in \mathbb{R}^{n_{l}\times n_{l-1}}$ for transformation $l$ (Eq. \ref{nn}). The approach is supported by an universal approximation theorem and the resulting model is known as multilayer perceptron or feedforward artificial neural network.
+Instead of using the complete data set of $n$ samples, a mini-batch or only the $k$-th random sample $x_{k}^T$ can be picked and the update is performed only with instance. This is known as stochastic gradient descent. Updating parameters with single observations is reasonable in situations in which new data are becoming available, i.e., in [online learning](https://en.wikipedia.org/wiki/Online_machine_learning), and when models need to be updated due to [changes in the underlying probability distributions](https://en.wikipedia.org/wiki/Concept_drift). If the underlying relationships are non-linear, it is beneficial to add additional variables to $\mathbf{X}$ via basis expansion ($X_i^2$, $X_iX_j$, etc). If interpretability is not crucial, one can apply a cascade of $L-1$ non-linear transformations instead, e.g., the sigmoid $\phi(z) = \frac{1}{1+e^{-z}} = \sigma(z)$, and a last affine ("linear") transformation, each parameterized by a set of parameters $\mathbf{W}^{[l]} \in \mathbb{R}^{n_{l}\times n_{l-1}}$ for transformation $l$ (Eq. \ref{nn}). The approach is supported by an [universal approximation theorem](https://en.wikipedia.org/wiki/Universal_approximation_theorem) and the resulting model is known as multilayer perceptron or feedforward artificial neural network.
 
 \begin{equation}
 \label{nn}
@@ -58,7 +60,7 @@ The variables $L$ and $n_l$ for $l\in\{1, ... , L-1\}$ are design parameters. De
 \mathbf{Z}^{[l]} = \sigma(\mathbf{A}^{[l]})
 \end{align}
 
-The loss (Eq. \ref{mse}) remains but an analytical solution does not exist. The algorithm to optimize the model parameters is a variant of gradient descent (with an excessive use of the chain rule) known as backpropagation. Eqs. \ref{backprop1} & \ref{backprop2} describe the backward pass.
+The loss (Eq. \ref{mse}) remains but an analytical solution does not exist. The algorithm to optimize the model parameters is a variant of gradient descent (with an excessive use of the chain rule) known as [backpropagation](https://en.wikipedia.org/wiki/Backpropagation). Eqs. \ref{backprop1} & \ref{backprop2} describe the backward pass.
 
 \begin{align}
 \label{backprop1}
@@ -70,4 +72,4 @@ The loss (Eq. \ref{mse}) remains but an analytical solution does not exist. The 
 \mathbf{W}^{[l]} \gets \mathbf{W}^{[l]} - \gamma \frac{\partial \mathcal{L}}{\partial \mathbf{W}^{[l]}}
 \end{align}
 
-![Multi-layer perceptron.](/images/posts/machine-learning/mlp.png)
+![Multilayer perceptron.](/images/posts/machine-learning/mlp.png)
