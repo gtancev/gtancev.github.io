@@ -49,9 +49,9 @@ The individual snapshots $\mathbf{P}(\mathbf{Y}_i−\bar{\mathbf{Y}})$ can be st
 
 $\hat{\alpha} = \arg \min_{\alpha} \alpha^{T} \mathbf{C}^{T} \mathbf{C} \alpha$
 
-with the constraint that $\alpha_1 = \alpha_{true}$, that is, we need to know at least one gain factor, but it does not matter which one. Alternatively, we could also fix any of the gains to 1, and the other gains would be relative to this so-called global gain factor. Such a constraint can be interpreted physically to mean that all sensors are calibrated to the gain characteristics of sensor 1. The raison d’être for the constraint is that the solution will be $\hat{\alpha} = 0$ without it, which is not what we want.
+with the constraint that $\alpha_1 = \alpha_{true}$, that is, we need to know at least one gain factor, but it does not matter which one. Alternatively, we could also fix any of the gains to $1$, and the other gains would be relative to this so-called global gain factor. Such a constraint can be interpreted physically to mean that all sensors are calibrated to the gain characteristics of the first sensor. The raison d’être for the constraint is that the solution will be $\hat{\alpha} = 0$ without it, which is not what we want.
 
-One interesting question is how many snapshots to collect, i.e., what value to choose for $k$. For the gains, it holds that $k \geq \lfloor \dfrac{n - 1}{n - r} \rfloor$. Since the offsets are then computed from an average, more snapshots will generally lead to a more precise estimate.
+One interesting question is how many snapshots to collect, i.e., what value to choose for $k$. For the gains, it holds that $k \geq \lceil \dfrac{n - 1}{n - r} \rceil$. Since the offsets are then computed from an average, more snapshots will generally lead to a more precise estimate.
 
 ## Methods
 
