@@ -20,7 +20,7 @@ menu_settings:
 footer_settings:
   logo_image: '/images/logo.png'
   logo_width: 120
-  footer_tagline: 
+  footer_tagline: "I have not failed. I've just found 10,000 ways that won't work."
 
 grid_settings:
   overlay_opacity: 0.8
