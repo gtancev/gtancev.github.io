@@ -5,7 +5,7 @@ description: Hello, I'm Georgi.
 featured_image: /images/photography/me/picture.jpg
 ---
 
-<div class="gallery" data-columns="5">
+<div class="gallery" data-columns="3">
 	<img src="/images/me/1.jpeg">
 	<!-- <img src="/images/me/2.jpeg">
     <img src="/images/me/3.jpeg"> -->
