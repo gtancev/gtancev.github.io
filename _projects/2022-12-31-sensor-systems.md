@@ -18,7 +18,7 @@ Firstly, the [relocation problem with field calibrated systems](https://www.mdpi
  
 Lastly, a theoretical concept for the [stochastic online recalibration of gas sensor networks by means of mobile reference instruments](https://ieeexplore.ieee.org/abstract/document/9690889) was presented. Recently developed gradient update rules such as RMSProp (with and without momentum) are explored. The analysis demonstrates that the reliability of the measurements could be maintained in this manner as sensor aging and concept drift are continuously compensated.
 
-<div class="gallery" data-columns="1">
+<div class="gallery" data-columns="2">
 	<img src="/images/projects/sensor-systems/wf_1.png">
 	<img src="/images/projects/sensor-systems/wf_2.png">
 	<img src="/images/projects/sensor-systems/wf_3.png">
