@@ -18,8 +18,8 @@ Various parameters must be considered for **dialysis** intensity dosing in **ped
 <div class="gallery" data-columns="3">
 	<img src="/images/projects/clinical-data-analysis/feature_importance.png">
 	<img src="/images/projects/clinical-data-analysis/pdp_hist_joint.png">
-	<img src="/images/projects/clinical-data-analysis/pdp_joint.png">
 	<img src="/images/projects/clinical-data-analysis/correlations_app.png">
+	<img src="/images/projects/clinical-data-analysis/pdp_joint.png">
 	<img src="/images/projects/clinical-data-analysis/dr_final_analysis_app.png">
 	<img src="/images/projects/clinical-data-analysis/ROC_curve_app.png">
 </div>
