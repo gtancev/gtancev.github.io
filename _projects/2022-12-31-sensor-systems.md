@@ -12,7 +12,7 @@ featured_image: '/images/projects/sensor-systems/1.jpg'
 
 High levels of air pollution are harmful to health. Measurement devices are often expensive and therefore sparsely distributed spatially. In some parts of the world, access is even lacking. Furthermore, research has shown that air pollution can vary heavily in small scales, so the personal exposure is often not known. The hope is that such gaps can be filled using low-cost gas sensor systems and networks. However, their reliability is low. The goal of this project was to identify failure modes and design protocols so that trustworthiness can be increased or tracked. I worked on [this project](https://www.aramis.admin.ch/Beteiligte/?ProjectID=44523) as a research scientist at [METAS](https://www.metas.ch/metas/en/home.html) and the results, i.e., published works, became the basis for my doctoral degree.
 
-Firstly, the relocation problem with field calibrated systems was revised and [traced back to lacking representativeness of the calibration data](https://www.mdpi.com/1424-8220/20/21/6198), typically followed by concept drift. 
+Firstly, the relocation problem with field calibrated systems was revised and [traced back to lacking representativeness of the calibration data](https://www.mdpi.com/1424-8220/20/21/6198), typically followed by concept drift.
 
 <img src="/images/projects/sensor-systems/wf_1.png" width="800">
 
@@ -27,4 +27,3 @@ With this knowledge, a [compact continuous-flow automaton](https://ieeexplore.ie
 Lastly, a theoretical concept for the [stochastic online recalibration](https://gtancev.github.io/blog/stochastic-calibration) of gas sensor networks by means of mobile reference instruments was presented. Recently developed gradient update rules such as RMSProp (with and without momentum) are explored. [The analysis suggested that the reliability of the measurements could be maintained in this manner as sensor aging and concept drift are continuously compensated](https://ieeexplore.ieee.org/abstract/document/9690889).
 
 <img src="/images/projects/sensor-systems/wf_4.png" width="800">
-
