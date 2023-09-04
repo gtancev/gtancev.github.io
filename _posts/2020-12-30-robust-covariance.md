@@ -34,6 +34,6 @@ Note that the squared distance $d^2$ follows a $\chi^2$-distribution with $p$ de
 
 This algorithm is implemented in the [elliptic envelope class of scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.covariance.EllipticEnvelope.html). Its most important hyperparameter is the amount of contamination $\nu$, which is related to the parameter $h$ in the original algorithm, since $\nu = 1-\frac{h}{n}$. This hyperparameter has to be tuned to obtain the desired performance.
 
-## Non-Parametric Methods
+## Non-Parametric Methods
 
 The Mahalanobis distance is a simple and intuitive method that can perform well when the data is close to normally distributed. In other cases, the envelope might be not fit perfectly around the data, which is why non-parametric methods such as one-class support vector machine or isolation forest have been developed. In practice, different algorithms have to be evaluated — including hyperparameter optimization. Embedding these models in machines and devices can bring a lot of added-value and lead to competitive advantage, now it is up to research and development engineers/managers to spot such opportunities.
