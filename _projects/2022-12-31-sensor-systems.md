@@ -16,11 +16,11 @@ Firstly, the relocation problem with field calibrated systems was revised and [t
 
  For field calibrated systems, which are heavily affected by concept drift, [machine learning algorithms that monitor the trustworthiness of incoming measurements](https://www.mdpi.com/1424-8220/21/9/3298) were proposed and discussed. Anomalies are detected by estimating the support of the sensor signal distribution and by assessing the position of new signals with respected to this support. Moreover, it is demonstrated how such algorithms might be evaluated with strategies from software validation.
  
-Lastly, a theoretical concept for the [stochastic online recalibration of gas sensor networks by means of mobile reference instruments](https://ieeexplore.ieee.org/abstract/document/9690889) was presented. Recently developed gradient update rules such as RMSProp (with and without momentum) are explored. The analysis demonstrates that the reliability of the measurements could be maintained in this manner as sensor aging and concept drift are continuously compensated.
+Lastly, a theoretical concept for the [stochastic online recalibration](https://gtancev.github.io/blog/stochastic-calibration) of gas sensor networks by means of mobile reference instruments was presented. Recently developed gradient update rules such as RMSProp (with and without momentum) are explored. [The analysis suggested that the reliability of the measurements could be maintained in this manner as sensor aging and concept drift are continuously compensated](https://ieeexplore.ieee.org/abstract/document/9690889).
 
 <div class="gallery" data-columns="2">
 	<img src="/images/projects/sensor-systems/wf_1.png">
+	<img src="/images/projects/sensor-systems/wf_2.png">
 	<img src="/images/projects/sensor-systems/wf_3.png">
 	<img src="/images/projects/sensor-systems/wf_4.png">
-	<img src="/images/projects/sensor-systems/wf_2.png">
 </div>
