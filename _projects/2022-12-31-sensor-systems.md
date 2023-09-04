@@ -1,6 +1,6 @@
 ---
 title: 'Low-Cost Gas Sensor Systems and Networks'
-subtitle: 'Defining reliable protocols for air quality monitoring in smart cities.'
+subtitle: 'Defining reliable protocols for air quality monitoring.'
 date: 2022-12-31 00:00:00
 description: Low-Cost Gas Sensor Systems and Networks
 featured_image: '/images/projects/sensor-systems/1.jpg'
@@ -34,7 +34,7 @@ With this knowledge, a [compact continuous-flow automaton](https://ieeexplore.ie
 
 For field calibrated systems, which are heavily affected by concept drift, [machine learning algorithms that monitor the trustworthiness of incoming measurements](https://www.mdpi.com/1424-8220/21/9/3298) were proposed and discussed. Anomalies are detected by estimating the support of the sensor signal distribution and by assessing the position of new signals with respected to this support. Moreover, it is demonstrated how such algorithms might be evaluated with strategies from software validation.
 
- <img src="/images/projects/sensor-systems/wf_3.png" width="800">
+<img src="/images/projects/sensor-systems/wf_3.png" width="800">
 
 ---
 
