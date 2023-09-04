@@ -89,11 +89,11 @@ The central problem in frequentist statistics is that the collected data are ran
 More formally, the expected squared difference (mean squared error) $\Delta^2$ between observed $y=f(x)+\epsilon$ and predicted $\hat{f}(x)$ is given by Eq. \ref{biasvariancetradeoff}.[^1]
 
 \begin{equation}
-\Delta^2 = \sigma^2_{\epsilon} + \textnormal{E}[f-\hat{f}]^2 + \textnormal{E}[(\hat{f}-\textnormal{E}[\hat{f}])^2]
+\Delta^2 = \sigma^2_{\epsilon} + \text{E}[f-\hat{f}]^2 + \text{E}[(\hat{f}-\text{E}[\hat{f}])^2]
 \label{biasvariancetradeoff}
 \end{equation}
 
-[^1]: The derivation requires $\textnormal{E}[X+Y] = \textnormal{E}[X] + \textnormal{E}[Y]$ and $\textnormal{Var}[X] = \textnormal{E}[(X-\textnormal{E}[X])^2] = \textnormal{E}[X^2]-\textnormal{E}[X]^2$.
+[^1]: The derivation requires $\text{E}[X+Y] = \text{E}[X] + \text{E}[Y]$ and $\text{Var}[X] = \text{E}[(X-\text{E}[X])^2] = \text{E}[X^2]-\text{E}[X]^2$.
 
 This derivation shows that there are three components to $\Delta^2$: the irreducible noise, the squared bias (deviation from the true value), and the variance (variability around the expected value). If there is a large contribution from the bias, the model is too simplistic and is "underfitting"; if the contribution stems mainly from the variance, the model is too complex and is "overfitting". The lowest possible error is the inherent noise in the data. Intuitively, it seems that the middle subplot depicts the correct model, and the question arises how to get to it. The solution is called regularization and the idea is to penalize the magnitude of the parameter vector $w$ in the loss from Eq. \ref{mse}, controlled by a hyperparameter $\lambda$ (Eq. \ref{regularization}).
 
@@ -104,4 +104,6 @@ This derivation shows that there are three components to $\Delta^2$: the irreduc
 
 This regulates the complexity as the magnitude of $w$ contributes to the loss so that explaining observations has a cost. For large values of $\lambda$, solutions with low values of $w$ will be preferred (and vice versa). The next question that arises is how to choose the value of $\lambda$ (as directly optimizing for it results in $\lambda = 0$). For this purpose, cross-validation has been developed. It requires splitting the observations into $B$ equally sized sets; training the model with $B-1$ sets; and calculating $\Delta^2$ for the remaining set; this is done for all $B$ sets and different values of $\lambda$. The value of $\lambda$ associated with the lowest $\Delta^2$ leads to the optimal complexity.
 
-![Cross-validation.](/images/theory/cv.png)
+<!--![Cross-validation.](/images/theory/cv.png) -->
+
+<img src="/images/theory/cv.png" width="800"/>
