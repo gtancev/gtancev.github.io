@@ -24,7 +24,7 @@ Thus, it is also known as $2^k$ full factorial design (left sketch below). With 
     <img src="/images/theory/fracfact.png">
 </div>
 
-The more factors are included in a design, the higher the order of potential interaction effects that can be estimated, although it is questionable if interactions higher than order two or three are significant. Reducing the set of potential interactions decreases the number of parameters and increases the number of degrees of freedom (the difference between number of data points and number of free parameters), and in that case, more efficient designs with less degrees of freedom (hence higher efficiency) would be preferred. 
+The more factors are included in a design, the higher the order of potential interaction effects that can be estimated, although it is questionable if interactions higher than order two or three are significant. Reducing the set of potential interactions decreases the number of parameters and increases the number of degrees of freedom (the difference between number of data points and number of free parameters), and in that case, more efficient designs with less degrees of freedom (hence higher efficiency) would be preferred.
 
 ## Fractional Factorial Designs
 
@@ -45,7 +45,7 @@ The last column covers the values for the interaction effect, which is obtained 
 
 ### Alias Structure
 
-The described concept can be extended to any set of variables \{$X_1$, $...$, $X_k$\}, whereas it is possible to specify the design resolution for a fixed number of variables to actively control the possible terms that can be included in the model. The collection of effects that are aliased with each other is called alias structure. For larger sets of variables, the alias structure becomes more complex but it should be tracked as it puts constraints on a linear model. Unintended aliasing should be avoided because it leads to wrong conclusions. 
+The described concept can be extended to any set of variables \{$X_1$, $...$, $X_k$\}, whereas it is possible to specify the design resolution for a fixed number of variables to actively control the possible terms that can be included in the model. The collection of effects that are aliased with each other is called alias structure. For larger sets of variables, the alias structure becomes more complex but it should be tracked as it puts constraints on a linear model. Unintended aliasing should be avoided because it leads to wrong conclusions.
 
 The alias structure is identified as follows. Let $\mathbb{I}$ be the identity vector (a vector with $+1$'s) with same dimension as any variable vector in the design. Properties of the orthogonal design matrix are ($\odot$ denotes the Hadamard, i.e., element-wise, product):
 
