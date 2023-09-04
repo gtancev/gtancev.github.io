@@ -16,7 +16,7 @@ featured_image: '/images/projects/sensor-systems/1.jpg'
 
 ### Identifying failure modes of field calibration.
 
-First, the relocation problem with field calibrated systems was revised and [traced back to lacking representativeness of the calibration data](https://www.mdpi.com/1424-8220/20/21/6198), typically followed by concept drift. In other words, the performance of the equipment degrades when it is moved to a different location, but it can also degrade over time after it has been in the same location. This work replicated such calibrations and examined the data and models. The main finding was that the cause was the lack of representativeness of the calibration data and the correlations between the measured variables. If the relationships between the variables change, the calibration model also becomes invalid. It was concluded that this problem could be solved by using orthogonal designs.
+First, the relocation problem with field calibrated systems was revised and [traced back to lacking representativeness of the calibration data](https://www.mdpi.com/1424-8220/20/21/6198), typically followed by concept drift. In other words, the performance of the equipment degrades when it is moved to a different location, but it can also degrade over time after it has been in the same location. This work replicated such calibrations and examined the data and models. The main finding was that the cause was the lack of representativeness of the calibration data and the correlations between the measured variables. If the relationships between the variables change, the calibration model also becomes invalid. It was concluded that this problem could be solved by using orthogonal experimental designs.
 
 <img src="/images/projects/sensor-systems/wf_1.png" width="800">
 
@@ -24,7 +24,7 @@ First, the relocation problem with field calibrated systems was revised and [tra
 
 ### Developing a robust calibration method for the laboratory.
 
-With this knowledge, a [compact continuous-flow automaton](https://ieeexplore.ieee.org/abstract/document/9856703) that allows characterizing cross-sensitivities and interferences with environmental factors as well as resolving spatial and temporal relocation problems was developed. It generates orthogonal atmospheres, i.e., gas mixtures at different relative humidities and temperatures, in an efficient manner using fractional factorial designs for the simultaneous calibration of an array of low-cost sensor systems in the laboratory. Such devices might be used to calibrate other devices by using them as mobile reference instruments.
+With this knowledge, a [compact continuous-flow automaton](https://ieeexplore.ieee.org/abstract/document/9856703) that allows characterizing cross-sensitivities and interferences with environmental factors as well as resolving spatial and temporal relocation problems was developed. It generates orthogonal atmospheres, i.e., gas mixtures at different relative humidities and temperatures, in an efficient manner using fractional factorial designs for the simultaneous calibration of an array of low-cost sensor systems in the laboratory. By using them as mobile reference devices, the devices calibrated in the laboratory could then be used to recalibrate other low-cost devices.
 
 <img src="/images/projects/sensor-systems/wf_2.png" width="800">
 
@@ -38,7 +38,7 @@ For field calibrated systems, which are heavily affected by concept drift, [mach
 
 ---
 
-### Designing a field calibration method.
+### Designing a field recalibration method.
 
 Finally, a theoretical concept for the [stochastic online recalibration](https://gtancev.github.io/blog/stochastic-calibration) of gas sensor networks by means of mobile reference instruments was presented. In essence, measured values would be compared during encounters and the calibration models would be adjusted by means of stochastic gradient updates. Recently developed gradient update rules such as RMSProp (with and without momentum) were explored. [The analysis suggested that the reliability of the measurements could be maintained in this manner as sensor aging and concept drift are continuously compensated](https://ieeexplore.ieee.org/abstract/document/9690889).
 
