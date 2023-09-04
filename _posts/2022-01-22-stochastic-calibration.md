@@ -7,9 +7,9 @@ featured_image: '/images/posts/machine-learning/dice.jpg'
 
 ![](/images/posts/machine-learning/dice.jpg)
 
-Calibration of sensor systems and sensor networks is essentially a supervised learning problem. The following post looks at the theoretical aspects and motivates [stochastic online calibration](https://ieeexplore.ieee.org/abstract/document/9690889).
+Calibration of measurement instruments such as sensor systems and sensor networks is essentially a supervised learning problem. The following post looks at the theoretical aspects and motivates [stochastic online calibration](https://ieeexplore.ieee.org/abstract/document/9690889).
 
-## Linear Models, Neural Networks, and Gradient-Based Optimization
+## Linear Models
 
 Once a data set $\mathbf{X} = [\mathbf{x}_1, ..., \mathbf{x}_p] = [x_1, ..., x_n]^T \in \mathbb{R}^{n\times p}$ in $n$ samples and $p$ independent variables (or features) $X_i \in \mathcal{X}$, $i\in\{1, ..., p\}$ is collected (with $n > p$), the influence of the independent variables on the dependent variables $Y_k \in \mathcal{Y}$, $k\in\{1, ..., q\}$ can be evaluated. In this notation, $\mathbf{X}$ contains a column with 1's for the intercept. The aim is to find a function $f$ that maps from $\mathcal{X}$ to $\mathcal{Y}$, i.e., $f: \mathcal{X}\to\mathcal{Y}$. This is a supervised learning problem because the output is known. If the output is also continuous ($Y \in \mathbb{R}$), this particular type of task is called regression. For instance, calibrating a low-cost sensor system is a typical regression problem.
 
@@ -27,6 +27,8 @@ The loss function $\mathcal{L}$ can be motivated from an algebraic perspective b
 \hat{w} = (\mathbf{X}^T\mathbf{X})^{-1}\mathbf{X}^T\mathbf{y}
 \end{equation}
 
+## Gradient-Based Optimization
+
 Solving the system in this manner is not always possible because an analytical solution does not exist in every case. Fortunately, the problem is also solvable in an iterative manner by means of gradient descent (see figures below). The main idea is to move along the loss landscape towards the steepest direction (i.e., the gradient) in small steps $t$ until reaching an optimum. To do so, the objective function must be differentiable; also, a starting point $w_{(0)}$ and a learning rate $\gamma$ are required. The update rule in Eq. \ref{sgd} is then applied until convergence.
 
 \begin{equation}
@@ -39,7 +41,11 @@ w_{(t+1)} \gets w_{(t)} - \gamma\left.\frac{\partial \mathcal{L}}{\partial w}\ri
 	<img src="/images/theory/loss_NN.png">
 </div>
 
-Instead of using the complete data set of $n$ samples, a mini-batch or only the $k$-th random sample $x_{k}^T$ can be picked and the update is performed only with instance. This is known as stochastic gradient descent. Updating parameters with single observations is reasonable in situations in which new data are becoming available, i.e., in [online learning](https://en.wikipedia.org/wiki/Online_machine_learning), and when models need to be updated due to [changes in the underlying probability distributions](https://en.wikipedia.org/wiki/Concept_drift). If the underlying relationships are non-linear, it is beneficial to add additional variables to $\mathbf{X}$ via basis expansion ($X_i^2$, $X_iX_j$, etc). If interpretability is not crucial, one can apply a cascade of $L-1$ non-linear transformations instead, e.g., the sigmoid $\phi(z) = \frac{1}{1+e^{-z}} = \sigma(z)$, and a last affine ("linear") transformation, each parameterized by a set of parameters $\mathbf{W}^{[l]} \in \mathbb{R}^{n_{l}\times n_{l-1}}$ for transformation $l$ (Eq. \ref{nn}). The approach is supported by an [universal approximation theorem](https://en.wikipedia.org/wiki/Universal_approximation_theorem) and the resulting model is known as multilayer perceptron or feedforward artificial neural network.
+Instead of using the complete data set of $n$ samples, a mini-batch or only the $k$-th random sample $x_{k}^T$ can be picked and the update is performed only with instance. This is known as stochastic gradient descent. Updating parameters with single observations is reasonable in situations in which new data are becoming available, i.e., in [online learning](https://en.wikipedia.org/wiki/Online_machine_learning), and when models need to be updated due to [changes in the underlying probability distributions](https://en.wikipedia.org/wiki/Concept_drift). 
+
+## Neural Networks
+
+If the underlying relationships are non-linear, it is beneficial to add additional variables to $\mathbf{X}$ via basis expansion ($X_i^2$, $X_iX_j$, etc). If interpretability is not crucial, one can apply a cascade of $L-1$ non-linear transformations instead, e.g., the sigmoid $\phi(z) = \frac{1}{1+e^{-z}} = \sigma(z)$, and a last affine ("linear") transformation, each parameterized by a set of parameters $\mathbf{W}^{[l]} \in \mathbb{R}^{n_{l}\times n_{l-1}}$ for transformation $l$ (Eq. \ref{nn}). The approach is supported by an [universal approximation theorem](https://en.wikipedia.org/wiki/Universal_approximation_theorem) and the resulting model is known as multilayer perceptron or feedforward artificial neural network.
 
 \begin{equation}
 \label{nn}
