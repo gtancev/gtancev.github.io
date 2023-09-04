@@ -9,11 +9,11 @@ featured_image: '/images/posts/robust-covariance/1.jpg'
 
 ## Introduction
 
-New technologies like the internet of things combined with artificial intelligence are enablers of interesting applications such as predictive maintenance, i.e., autonomously assessing the condition of equipment in order to estimate when maintenance should be performed. For this purpose, it is important to have mathematical models that can distinguish between "normal" and "non-normal" behavior of the equipment, a task called anomaly detection. Equipped with all kinds of sensors, a machine or device can use this collection of sensor data (e.g., temperature, fan speed, pressure, flow rate, etc.) to assess its state and call for service if necessary; the more its behavior deviates from its reference state just after fabrication, the more it will need maintenance.
+Connectivity (i.e., the **internet of things**) combined with **machine learning** are enablers of interesting applications such as **predictive maintenance**, i.e., autonomously assessing the condition of equipment in order to estimate when maintenance should be performed. For this purpose, it is important to have mathematical models that can distinguish between "normal" and "non-normal" behavior of the equipment, a task called anomaly detection. Equipped with all kinds of sensors, a machine or device can use this collection of sensor data (e.g., temperature, fan speed, pressure, flow rate, etc.) to assess its state and call for service if necessary; the more its behavior deviates from its reference state just after fabrication, the more it will need maintenance.
 
 ## Mahalanobis Distance
 
-In statistics, deviation can be assessed by the $Z$-score. The generalization of the $Z$-score for a point $x$ in the case of a $p$-dimensional multi-variate probability distribution with some mean $\mu$ and covariance matrix $\Sigma$ is known as Mahalanobis distance $d$, which is given by Eq. \ref{Mahalanobis}.
+In statistics, deviation can be assessed by the $Z$-score. The generalization of the $Z$-score for a point $x$ in the case of a $p$-dimensional multi-variate probability distribution with some mean $\mu$ and covariance matrix $\Sigma$ is known as **Mahalanobis distance** $d$, which is given by Eq. \ref{Mahalanobis}.
 
 \begin{equation}
 d = \sqrt{(x - \mu)^T \Sigma^{-1} (x - \mu)}
@@ -33,3 +33,7 @@ Robust covariance methods are based on the fact that outliers lead to an increas
 Note that the squared distance $d^2$ follows a $\chi^2$-distribution with $p$ degrees of freedom. To compute a critical distance (threshold) for the envelope, a quantile, i.e., the probability of observing a squared distance as extreme as the threshold — also known as p-value — is chosen, and the critical distance is then computed from the inverse cumulative distribution. (For one variable and a probability threshold/p-value of $0.05$, the critical $\chi^2$ value is $3.84$, which corresponds to the squared distance; the square root of that is $1.96$, which is consistent with the intuition for one dimension, e.g., from statistical tests.)
 
 This algorithm is implemented in the [elliptic envelope class of scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.covariance.EllipticEnvelope.html). Its most important hyperparameter is the amount of contamination $\nu$, which is related to the parameter $h$ in the original algorithm, since $\nu = 1-\frac{h}{n}$. This hyperparameter has to be tuned to obtain the desired performance.
+
+## Non-Parametric Methods
+
+The Mahalanobis distance is a simple and intuitive method that can perform well when the data is close to normally distributed. In other cases, the envelope might be not fit perfectly around the data, which is why non-parametric methods such as one-class support vector machine or isolation forest have been developed. In practice, different algorithms have to be evaluated — including hyperparameter optimization. Embedding these models in machines and devices can bring a lot of added-value and lead to competitive advantage, now it is up to research and development engineers/managers to spot such opportunities.
