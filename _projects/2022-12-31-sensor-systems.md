@@ -10,13 +10,13 @@ featured_image: '/images/projects/sensor-systems/1.jpg'
 
 ## Summary
 
-[High levels of air pollution are harmful to health](https://doi.org/10.1016/S2542-5196(20)30272-2) and thus need to be monitored. However, measurement devices are generally expensive and therefore sparsely distributed spatially. In some parts of the world, access is even lacking. [Meanwhile, research has shown that air pollution can vary heavily on small scales](https://doi.org/10.1021/acs.est.7b00891), so personal exposure at the current density is unknown. The hope is that such gaps can be filled by means of low-cost gas sensor systems and networks, but their reliability is still quite low. The goal of this project was to first identify failure modes and, in a second step, design protocols to increase or track trustworthiness. I worked on [this project](https://www.aramis.admin.ch/Beteiligte/?ProjectID=44523) as a research scientist at [METAS](https://www.metas.ch/metas/en/home.html) and the peer-reviewed publications became the basis for my doctoral degree in the end.
+[High levels of air pollution are harmful to health](https://doi.org/10.1016/S2542-5196(20)30272-2) and thus need to be monitored. However, measurement devices are generally expensive and therefore sparsely distributed spatially. In some parts of the world, access is even lacking. [Meanwhile, research has shown that air pollution can vary heavily on small scales](https://doi.org/10.1021/acs.est.7b00891), so personal exposure at the current density is unknown. The hope is that such gaps can be filled by means of low-cost gas sensor systems and networks, but their reliability is quite low. Typically, these systems are calibrated using field data and machine learning algorithms to overcome the deficiencies. The goal of this project was to first identify remaining failure modes (e.g., sensor aging) and, in a second step, design protocols to increase or track trustworthiness. I worked on [this project](https://www.aramis.admin.ch/Beteiligte/?ProjectID=44523) as a research scientist at [METAS](https://www.metas.ch/metas/en/home.html) and the peer-reviewed publications became the basis for my doctoral degree in the end.
 
 ---
 
 ### Identifying failure modes of field calibration.
 
-Firstly, the relocation problem with field calibrated systems was revised and [traced back to lacking representativeness of the calibration data](https://www.mdpi.com/1424-8220/20/21/6198), typically followed by concept drift.
+Firstly, the relocation problem with field calibrated systems was revised and [traced back to lacking representativeness of the calibration data](https://www.mdpi.com/1424-8220/20/21/6198), typically followed by concept drift. In other words, the performance of the devices degrades when they are moved to other locations, but it can also degrade over time after at the same location. In this work, such calibrations were replicated and the data and models were examined. The main finding was that the cause was the lack of representativeness of the calibration data and the correlations between the measured variables. If the relationships between the variables change, the calibration model also becomes invalid. The conclusion was that this problem may be solved with the help of orthogonal experimental designs.
 
 <img src="/images/projects/sensor-systems/wf_1.png" width="800">
 
@@ -24,7 +24,7 @@ Firstly, the relocation problem with field calibrated systems was revised and [t
 
 ### Developing a robust calibration method for the laboratory.
 
-With this knowledge, a [compact continuous-flow automaton](https://ieeexplore.ieee.org/abstract/document/9856703) that allows characterizing cross-sensitivities and interferences with environmental factors as well as resolving spatial and temporal relocation problems was developed. It generates orthogonal atmospheres, i.e., gas mixtures at different relative humidities and temperatures, in an efficient manner using fractional factorial designs for the simultaneous calibration of an array of low-cost sensor systems in the laboratory.
+With this knowledge, a [compact continuous-flow automaton](https://ieeexplore.ieee.org/abstract/document/9856703) that allows characterizing cross-sensitivities and interferences with environmental factors as well as resolving spatial and temporal relocation problems was developed. It generates orthogonal atmospheres, i.e., gas mixtures at different relative humidities and temperatures, in an efficient manner using fractional factorial designs for the simultaneous calibration of an array of low-cost sensor systems in the laboratory. Such "golden" devices might be used to calibrate other devices by using them as mobile reference instruments.
 
 <img src="/images/projects/sensor-systems/wf_2.png" width="800">
 
@@ -40,6 +40,6 @@ For field calibrated systems, which are heavily affected by concept drift, [mach
 
 ### Designing a robust field calibration method.
 
-Lastly, a theoretical concept for the [stochastic online recalibration](https://gtancev.github.io/blog/stochastic-calibration) of gas sensor networks by means of mobile reference instruments was presented. Recently developed gradient update rules such as RMSProp (with and without momentum) are explored. [The analysis suggested that the reliability of the measurements could be maintained in this manner as sensor aging and concept drift are continuously compensated](https://ieeexplore.ieee.org/abstract/document/9690889).
+Lastly, a theoretical concept for the [stochastic online recalibration](https://gtancev.github.io/blog/stochastic-calibration) of gas sensor networks by means of mobile reference instruments was presented. In essence, measured values would be compared during encounters and the calibration models would be adjusted by means of stochastic gradient updates. Recently developed gradient update rules such as RMSProp (with and without momentum) were explored. [The analysis suggested that the reliability of the measurements could be maintained in this manner as sensor aging and concept drift are continuously compensated](https://ieeexplore.ieee.org/abstract/document/9690889).
 
 <img src="/images/projects/sensor-systems/wf_4.png" width="800">
