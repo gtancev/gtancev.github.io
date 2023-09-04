@@ -46,10 +46,9 @@ Instead of using the complete data set of $n$ samples, a mini-batch or only the 
 
 If the underlying relationships are non-linear, it is beneficial to add additional variables to $\mathbf{X}$ via basis expansion ($X_i^2$, $X_iX_j$, etc). If interpretability is not crucial, one can apply a cascade of $L-1$ non-linear transformations instead, e.g., the sigmoid $\phi(z) = \frac{1}{1+e^{-z}} = \sigma(z)$, and a last affine ("linear") transformation, each parameterized by a set of parameters $\mathbf{W}^{[l]} \in \mathbb{R}^{n_{l}\times n_{l-1}}$ for transformation $l$ (Eq. \ref{nn}). The approach is supported by an [universal approximation theorem](https://en.wikipedia.org/wiki/Universal_approximation_theorem) and the resulting model is known as multilayer perceptron or feedforward artificial neural network.
 
-\begin{equation}
-\label{nn}
-\mathbf{y}^T = \phi_{\mathbf{W}^{[L]}} \circ \phi_{\mathbf{W}^{[L-1]}} \circ ... \circ \phi_{\mathbf{W}^{[1]}}(\mathbf{X}^T) +\boldsymbol\epsilon^T = \mathbf{W}^{[L]}\sigma(\mathbf{W}^{[L-1]}\sigma(...\sigma(\mathbf{W}^{[1]}\mathbf{X}^T)))+\boldsymbol\epsilon^T
-\end{equation}
+\begin{eqnarray}
+\mathbf{y}^T $=$ \phi_{\mathbf{W}^{[L]}} \circ \phi_{\mathbf{W}^{[L-1]}} \circ ... \circ \phi_{\mathbf{W}^{[1]}}(\mathbf{X}^T) +\boldsymbol\epsilon^T $=$ \mathbf{W}^{[L]}\sigma(\mathbf{W}^{[L-1]}\sigma(...\sigma(\mathbf{W}^{[1]}\mathbf{X}^T)))+\boldsymbol\epsilon^T \label{nn}
+\end{eqnarray}
 
 The variables $L$ and $n_l$ for $l\in\{1, ... , L-1\}$ are design parameters. Decomposing the expression from above, with $\mathbf{Z}^{[0]} = \mathbf{X}^T$ and $\mathbf{Z}^{[L]} = \mathbf{y}^T$, results in the intermediate values $\mathbf{Z}^{[l]}$ of the hidden nodes in layers $l\in \{1, ..., L\}$. Eqs. \ref{nn1} & \ref{nn2} are the so-called forward pass.
 
