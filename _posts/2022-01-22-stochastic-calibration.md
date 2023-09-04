@@ -1,13 +1,13 @@
 ---
-title: 'Stochastic Calibration'
+title: 'Stochastic Online Calibration'
 date: 2022-01-22 00:00:00
-description: Stochastic Calibration
+description: Stochastic Online Calibration
 featured_image: '/images/posts/machine-learning/MC.jpg'
 ---
 
 ![](/images/posts/machine-learning/MC.jpg)
 
-Calibration of measurement instruments such as sensor systems and sensor networks is essentially a supervised learning problem. The following post looks at the theoretical aspects and motivates [stochastic online calibration](https://ieeexplore.ieee.org/abstract/document/9690889).
+If mobile references are available, measured values can be synchronized between devices during encounters. This was one idea of [CaliBree](https://link.springer.com/chapter/10.1007/978-3-540-79576-6_9), which interpreted calibration as a filtering problem. Calibration of measurement instruments such as sensor systems and sensor networks is also a supervised learning problem. By interpreting this differently, the field of gradient-based optimization opens up. In addition, more modern methods from deep learning, e.g., RMSProp, can then be used. The following post looks at the theoretical aspects and motivates [stochastic online calibration](https://ieeexplore.ieee.org/abstract/document/9690889).
 
 ## Linear Models
 
