@@ -9,7 +9,7 @@ featured_image: '/images/posts/design-of-experiments/1.jpg'
 
 ## Introduction
 
-Experiments are essential when exploring systems. They generate data that can be used to record relationships between variables. However, care is needed in the design, as undesirable correlations (i.e., non-orthogonality) between variables can lead to false conclusions. In addition, the workload explodes with too many variables. This article explains how to get rid of such problems.[^1]
+Experiments are essential when exploring systems.[^1] They generate data that can be used to evaluate relationships between variables. However, care is needed in the design, as undesirable correlations (i.e., non-orthogonality) between variables can lead to false conclusions. In addition, the workload explodes with too many variables. This article explains how to get rid of such problems.
 
 [^1]: D. Montogmery, Design and Analysis of Experiments, 8th Edition, Wiley.
 
