@@ -20,7 +20,7 @@ Lastly, a theoretical concept for the [stochastic online recalibration of gas se
 
 <div class="gallery" data-columns="2">
 	<img src="/images/projects/sensor-systems/wf_1.png">
-	<img src="/images/projects/sensor-systems/wf_2.png">
 	<img src="/images/projects/sensor-systems/wf_3.png">
 	<img src="/images/projects/sensor-systems/wf_4.png">
+	<img src="/images/projects/sensor-systems/wf_2.png">
 </div>
