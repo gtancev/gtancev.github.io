@@ -104,4 +104,6 @@ This derivation shows that there are three components to $\Delta^2$: the irreduc
 
 This regulates the complexity as the magnitude of $w$ contributes to the loss so that explaining observations has a cost. For large values of $\lambda$, solutions with low values of $w$ will be preferred (and vice versa). The next question that arises is how to choose the value of $\lambda$ (as directly optimizing for it results in $\lambda = 0$). For this purpose, cross-validation has been developed. It requires splitting the observations into $B$ equally sized sets; training the model with $B-1$ sets; and calculating $\Delta^2$ for the remaining set; this is done for all $B$ sets and different values of $\lambda$. The value of $\lambda$ associated with the lowest $\Delta^2$ leads to the optimal complexity.
 
-![Cross-validation.](/images/theory/cv.png)
+<!--![Cross-validation.](/images/theory/cv.png) -->
+
+<img src="/images/theory/cv.png" width="800">
