@@ -1,6 +1,6 @@
 ---
 title: 'Robust Covariance'
-date: 2022-08-16 00:00:00
+date: 2020-12-30 00:00:00
 description: Robust Covariance
 featured_image: '/images/posts/robust-covariance/1.jpg'
 ---
