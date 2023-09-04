@@ -1,17 +1,15 @@
 ---
-title: 'Stochastic Learning'
+title: 'Stochastic Calibration'
 date: 2022-01-22 00:00:00
-description: Stochastic Learning
+description: Stochastic Calibration
 featured_image: '/images/posts/machine-learning/google-deepmind.jpg'
 ---
 
 ![](/images/posts/machine-learning/google-deepmind.jpg)
 
-## Supervised Learning
+Calibration of sensor systems and sensor networks is essentially a supervised learning problem. The following post looks at the theoretical aspects and motivates [stochastic online calibration](https://ieeexplore.ieee.org/abstract/document/9690889).
 
-Calibration of sensor systems and sensor networks is essentially supervised learning. The following post looks at the theoretical aspects and motivates [stochastic online calibration](https://ieeexplore.ieee.org/abstract/document/9690889).
-
-### Linear Models, Neural Networks, and Gradient-Based Optimization
+## Linear Models, Neural Networks, and Gradient-Based Optimization
 
 Once a data set $\mathbf{X} = [\mathbf{x}_1, ..., \mathbf{x}_p] = [x_1, ..., x_n]^T \in \mathbb{R}^{n\times p}$ in $n$ samples and $p$ independent variables (or features) $X_i \in \mathcal{X}$, $i\in\{1, ..., p\}$ is collected (with $n > p$), the influence of the independent variables on the dependent variables $Y_k \in \mathcal{Y}$, $k\in\{1, ..., q\}$ can be evaluated. In this notation, $\mathbf{X}$ contains a column with 1's for the intercept. The aim is to find a function $f$ that maps from $\mathcal{X}$ to $\mathcal{Y}$, i.e., $f: \mathcal{X}\to\mathcal{Y}$. This is a supervised learning problem because the output is known. If the output is also continuous ($Y \in \mathbb{R}$), this particular type of task is called regression. For instance, calibrating a low-cost sensor system is a typical regression problem.
 
