@@ -14,7 +14,7 @@ featured_image: '/images/projects/sensor-systems/1.jpg'
 
 ---
 
-### Identify failur modes of field calibration.
+### Identifying failure modes of field calibration.
 
 Firstly, the relocation problem with field calibrated systems was revised and [traced back to lacking representativeness of the calibration data](https://www.mdpi.com/1424-8220/20/21/6198), typically followed by concept drift.
 
