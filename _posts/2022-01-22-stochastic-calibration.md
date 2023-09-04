@@ -40,7 +40,7 @@ w_{(t+1)} \gets w_{(t)} - \gamma\left.\frac{\partial \mathcal{L}}{\partial w}\ri
 
 <img src="/images/theory/gradient.png" width="400">
 
-Instead of using the complete data set of $n$ samples, a mini-batch or only the $k$-th random sample $x_{k}^T$ can be picked and the update is performed only with instance. This is known as stochastic gradient descent. Updating parameters with single observations is reasonable in situations in which new data are becoming available, i.e., in [online learning](https://en.wikipedia.org/wiki/Online_machine_learning), and when models need to be updated due to [changes in the underlying probability distributions](https://en.wikipedia.org/wiki/Concept_drift). 
+Instead of using the complete data set of $n$ samples, a mini-batch or only the $k$-th random sample $x_{k}^T$ can be picked and the update is performed only with instance. This is known as stochastic gradient descent. Updating parameters with single observations is reasonable in situations in which new data are becoming available, i.e., in [online learning](https://en.wikipedia.org/wiki/Online_machine_learning), and when models need to be updated due to [changes in the underlying probability distributions](https://en.wikipedia.org/wiki/Concept_drift).
 
 ## Neural Networks
 
