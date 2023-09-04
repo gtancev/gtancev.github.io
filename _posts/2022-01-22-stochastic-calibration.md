@@ -2,10 +2,10 @@
 title: 'Stochastic Calibration'
 date: 2022-01-22 00:00:00
 description: Stochastic Calibration
-featured_image: '/images/posts/machine-learning/google-deepmind.jpg'
+featured_image: '/images/posts/machine-learning/dice.jpg'
 ---
 
-![](/images/posts/machine-learning/google-deepmind.jpg)
+![](/images/posts/machine-learning/dice.jpg)
 
 Calibration of sensor systems and sensor networks is essentially a supervised learning problem. The following post looks at the theoretical aspects and motivates [stochastic online calibration](https://ieeexplore.ieee.org/abstract/document/9690889).
 
