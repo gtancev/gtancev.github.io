@@ -16,7 +16,7 @@ featured_image: '/images/projects/sensor-systems/1.jpg'
 
 ### Identifying failure modes of field calibration.
 
-First, the relocation problem with field calibrated systems was revised and [traced back to lacking representativeness of the calibration data](https://www.mdpi.com/1424-8220/20/21/6198), typically followed by concept drift. In other words, the performance of the equipment degrades when it is moved to a different location, but it can also degrade over time after it has been in the same location. This work replicated such calibrations and examined the data and models. The main finding was that the cause was the lack of representativeness of the calibration data and the correlations between the measured variables. If the relationships between the variables change, the calibration model also becomes invalid. It was concluded that this problem could be solved by using [orthogonal experimental designs](https://gtancev.github.io/blog/design-of-experiments).
+First, the relocation problem with field calibrated systems was revised and [traced back to lacking representativeness of the calibration data](https://www.mdpi.com/1424-8220/20/21/6198), typically followed by concept drift. In other words, the performance of the equipment degrades when it is moved to a different location, but it can also degrade over time after it has been in the same location. This work replicated such calibrations and examined the data and models. The main finding was that the cause was the lack of representativeness of the calibration data and the strong correlations between the measured variables. If the relationships between the variables change, the calibration model also becomes invalid. It was concluded that this problem could be solved by using [orthogonal experimental designs](https://gtancev.github.io/blog/design-of-experiments).
 
 <img src="/images/projects/sensor-systems/wf_1.png" width="800">
 
@@ -24,7 +24,7 @@ First, the relocation problem with field calibrated systems was revised and [tra
 
 ### Developing a robust calibration method for the laboratory.
 
-With this knowledge, a [compact continuous-flow automaton](https://ieeexplore.ieee.org/abstract/document/9856703) that allows characterizing cross-sensitivities and interferences with environmental factors as well as resolving spatial and temporal relocation problems was developed. It generates orthogonal atmospheres, i.e., gas mixtures at different relative humidities and temperatures, in an efficient manner using [fractional factorial designs](https://gtancev.github.io/blog/design-of-experiments) for the simultaneous calibration of an array of low-cost sensor systems in the laboratory. Such devices can then serve as mobile references (e.g., on top of buses or trams) to recalibrate other low-cost devices.
+With this knowledge, a [compact continuous-flow automaton](https://ieeexplore.ieee.org/abstract/document/9856703) that allows characterizing cross-sensitivities and interferences with environmental factors as well as resolving spatial and temporal relocation problems was developed. It generates orthogonal atmospheres, i.e., gas mixtures at different relative humidities and temperatures, in an efficient manner using fractional factorial designs for the simultaneous calibration of an array of low-cost sensor systems in the laboratory. Such devices can then serve as mobile references (e.g., on top of buses or trams) to recalibrate other low-cost devices.
 
 <img src="/images/projects/sensor-systems/wf_2.png" width="800">
 
