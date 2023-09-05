@@ -24,7 +24,7 @@ First, the relocation problem with field calibrated systems was revised and [tra
 
 ### Developing a robust calibration method for the laboratory.
 
-With this knowledge, a [compact continuous-flow automaton](https://ieeexplore.ieee.org/abstract/document/9856703) that allows characterizing cross-sensitivities and interferences with environmental factors as well as resolving spatial and temporal relocation problems was developed. It generates orthogonal atmospheres, i.e., gas mixtures at different relative humidities and temperatures, in an efficient manner using [fractional factorial designs](https://gtancev.github.io/blog/design-of-experiments) for the simultaneous calibration of an array of low-cost sensor systems in the laboratory. Such devices can then serve as mobile references to recalibrate other low-cost devices.
+With this knowledge, a [compact continuous-flow automaton](https://ieeexplore.ieee.org/abstract/document/9856703) that allows characterizing cross-sensitivities and interferences with environmental factors as well as resolving spatial and temporal relocation problems was developed. It generates orthogonal atmospheres, i.e., gas mixtures at different relative humidities and temperatures, in an efficient manner using [fractional factorial designs](https://gtancev.github.io/blog/design-of-experiments) for the simultaneous calibration of an array of low-cost sensor systems in the laboratory. Such devices can then serve as mobile references (e.g., on top of buses or trams) to recalibrate other low-cost devices.
 
 <img src="/images/projects/sensor-systems/wf_2.png" width="800">
 
