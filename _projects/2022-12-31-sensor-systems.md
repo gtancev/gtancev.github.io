@@ -32,7 +32,7 @@ With this knowledge, a [compact continuous-flow automaton](https://ieeexplore.ie
 
 ### Using predictive maintanance.
 
-For field calibrated systems, which are heavily affected by concept drift, [machine learning algorithms that monitor the trustworthiness of incoming measurements](https://www.mdpi.com/1424-8220/21/9/3298) were proposed and discussed. [Anomalies are detected by estimating the support of the sensor signal distribution and by assessing the position of new signals with respected to this support](https://gtancev.github.io/blog/robust-covariance). Moreover, it was demonstrated how such algorithms might be evaluated with strategies from software validation (i.e., evaluation in virtual evironments via simulations).
+For field calibrated systems, which are heavily affected by concept drift, [machine learning algorithms that monitor the trustworthiness of incoming measurements](https://www.mdpi.com/1424-8220/21/9/3298) were proposed and discussed. [Anomalies are detected by estimating the support of the sensor signal distribution and by assessing the position of new signals with respected to this support](https://gtancev.github.io/blog/robust-covariance). Moreover, it was demonstrated how such algorithms might be evaluated with strategies from software validation (i.e., evaluation in virtual evironments via numerical simulations).
 
 <img src="/images/projects/sensor-systems/wf_3.png" width="800">
 
