@@ -17,7 +17,7 @@ How to keep sensor networks calibrated has therefore been the subject of researc
 
 ## Theoretical Background
 
-The starting point is a sensor network consisting of $n$ nodes, each sensing a certain process. At time $t$, the individual measurements are collected as in a vector $\mathbf{y} = \[y_1, …, y_n\]$. If the individual sensors "see the same thing", their signals will be **correlated** to a large degree. Such correlation can happen if the phenomenon to be measured behaves similarly at different locations or all sensors are at the same location measuring the same or different processes that are coupled. As a consequence, the collection of measurements will lie in a subspace of dimensionality $r < n$. Although the sensors will be calibrated initially, gain $\alpha \in \mathbb{R}^n$ and offset $\beta \in \mathbb{R}^n$ drift (shown in the figure below) will make recalibration necessary (Eq. \ref{eq1}),
+The starting point is a sensor network consisting of $n$ nodes, each sensing a certain process. At time $t$, the individual measurements are collected as in a vector $\mathbf{y} = \[y_1, …, y_n\]$. If the individual sensors "see the same thing", their signals will be **correlated** to a large degree. Such correlation can happen if the phenomenon to be measured behaves similarly at different locations or all sensors are at the same location measuring the same or different processes that are coupled. As a consequence, the collection of measurements will lie in a subspace of dimensionality $r < n$. Although the sensors will be calibrated initially, gain $\alpha \in \mathbb{R}^n$ and offset $\beta \in \mathbb{R}^n$ drift (shown in the Fig. below) will make recalibration necessary (Eq. \ref{eq1}),
 
 \begin{equation}
 x = \mathbf{Y}\alpha + \beta,
@@ -181,15 +181,15 @@ for i in range(n):
 
 ## Results
 
-The first plot illustrates the original signals and the ones after blind calibration. It becomes clear that the drift could be almost completely eliminated. In addition, the correct signal was restored because the individual signals overlapped with the dashed line. 
+The first Fig. illustrates the original signals and the ones after blind calibration. It becomes clear that the drift could be almost completely eliminated. In addition, the correct signal was restored because the individual signals overlapped with the dashed line. 
 
 ![Uncorrected versus corrected sensor signals. Dashed line corresponds to ground truth.](/images/posts/blind-calibration/error_reduction_2.png "Uncorrected versus corrected sensor signals. Dashed line corresponds to ground truth.")
 
-The second plot relates the estimated gains and offsets to the correct ones. By and large, the parameters match, although a slight mismatch can be observed in the gain. 
+The second Fig. relates the estimated gains and offsets to the correct ones. By and large, the parameters match, although a slight mismatch can be observed in the gain. 
 
 ![Estimated vs. true gains and offsets.](/images/posts/blind-calibration/parameters.png "Estimated vs. true gains and offsets.")
 
-Finally, the third and last plot compares the improvement of the measurement with respect to the root-mean-square error. Here we can clearly see that the improvement is not negligible.
+Finally, the third and last Fig. compares the improvement of the measurement with respect to the root-mean-square error. Here we can clearly see that the improvement is not negligible.
 
 ![Reduction of root-mean-square error after blind calibration.](/images/posts/blind-calibration/error_reduction.png "Reduction of root-mean-square error after blind calibration.")
 
