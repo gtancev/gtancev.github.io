@@ -58,7 +58,7 @@ Inserting this expression for $\beta$, we obtain (Eq. \ref{eq5})
 \label{eq5}
 \end{equation}
 
-The individual snapshots $\mathbf{P}(\mathbf{Y}_i−\bar{\mathbf{Y}})$ can be stacked in a matrix $\mathbf{C}$. Because the observations are noise, we minimize a squared loss with respect to the gain vector $\alpha$ to obtain (Eq. \ref{eq6})
+The individual snapshots $\mathbf{P}(\mathbf{Y}_i−\bar{\mathbf{Y}})$ can be stacked in a matrix $\mathbf{C}$. Because the observations are noisy, we have to minimize a squared loss with respect to the gain vector $\alpha$ to obtain (Eq. \ref{eq6})
 
 \begin{equation}
 \hat{\alpha} = \arg \min_{\alpha} \alpha^{T} \mathbf{C}^{T} \mathbf{C} \alpha
