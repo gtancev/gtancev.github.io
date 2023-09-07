@@ -43,7 +43,7 @@ To provide a better intuition for aliasing, a full factorial design for two vari
 <caption><b>Tab. 1:</b> Orthogonal experimental design.</caption>
 
 | Experiment | $X_1$ | $X_2$ | $X_1 X_2 = X_3$ |
-|:----------:|:-----:|:-----:|:---------------:|
+|------------|-------|-------|-----------------|
 | 1          | $-1$  | $-1$  | $+1$            |
 | 2          | $-1$  | $+1$  | $-1$            |
 | 3          | $+1$  | $-1$  | $-1$            |
