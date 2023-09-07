@@ -31,20 +31,25 @@ The loss function $\mathcal{L}$ can be motivated from an algebraic perspective b
 
 ## Gradient-Based Optimization
 
-Solving the system in this manner is not always possible because an analytical solution does not exist in every case. Fortunately, the problem is also solvable in an iterative manner by means of gradient descent (see figures below). The main idea is to move along the loss landscape towards the steepest direction (i.e., the gradient) in small steps $t$ until reaching an optimum. To do so, the objective function must be differentiable; also, a starting point $w_{(0)}$ and a learning rate $\gamma$ are required. The update rule in Eq. \ref{sgd} is then applied until convergence.
+Solving the system in this manner is not always possible because an analytical solution does not exist in every case. Fortunately, the problem is also solvable in an iterative manner by means of gradient descent (Fig. 1). The main idea is to move along the loss landscape towards the steepest direction (i.e., the gradient) in small steps $t$ until reaching an optimum. To do so, the objective function must be differentiable; also, a starting point $w_{(0)}$ and a learning rate $\gamma$ are required. The update rule in Eq. \ref{sgd} is then applied until convergence.
 
 \begin{equation}
 \label{sgd}
 w_{(t+1)} \gets w_{(t)} - \gamma\left.\frac{\partial \mathcal{L}}{\partial w}\right\vert_{w=w_{(t)}} = w_{(t)} - \gamma\mathbf{X}^T(\mathbf{y}-\mathbf{X}w_{(t)})
 \end{equation}
 
+<center>
+<figure>
 <img src="/images/theory/gradient.png" width="400">
+<figcaption><b>Fig. 1:</b> Gradient-based optimization.</figcaption>
+</figure>
+</center>
 
 Instead of using the complete data set of $n$ samples, a mini-batch or only the $k$-th random sample $x_{k}^T$ can be picked and the update is performed only with instance. This is known as stochastic gradient descent. Updating parameters with single observations is reasonable in situations in which new data are becoming available, i.e., in [online learning](https://en.wikipedia.org/wiki/Online_machine_learning), and when models need to be updated due to [changes in the underlying probability distributions](https://en.wikipedia.org/wiki/Concept_drift).
 
 ## Neural Networks
 
-If the underlying relationships are non-linear, it is beneficial to add additional variables to $\mathbf{X}$ via basis expansion ($X_i^2$, $X_iX_j$, etc). If interpretability is not crucial, one can apply a cascade of $L-1$ non-linear transformations instead, e.g., the sigmoid $\phi(z) = \frac{1}{1+e^{-z}} = \sigma(z)$, and a last affine ("linear") transformation, each parameterized by a set of parameters $\mathbf{W}^{[l]} \in \mathbb{R}^{n_{l}\times n_{l-1}}$ for transformation $l$ (Eq. \ref{nn}). The approach is supported by an [universal approximation theorem](https://en.wikipedia.org/wiki/Universal_approximation_theorem) and the resulting model is known as multilayer perceptron or feedforward artificial neural network.
+If the underlying relationships are non-linear, it is beneficial to add additional variables to $\mathbf{X}$ via basis expansion ($X_i^2$, $X_iX_j$, etc). If interpretability is not crucial, one can apply a cascade of $L-1$ non-linear transformations instead, e.g., the sigmoid $\phi(z) = \frac{1}{1+e^{-z}} = \sigma(z)$, and a last affine ("linear") transformation, each parameterized by a set of parameters $\mathbf{W}^{[l]} \in \mathbb{R}^{n_{l}\times n_{l-1}}$ for transformation $l$ (Eq. \ref{nn}). The approach is supported by an [universal approximation theorem](https://en.wikipedia.org/wiki/Universal_approximation_theorem) and the resulting model is known as multilayer perceptron or feedforward artificial neural network (Fig. 2).
 
 \begin{align}
 \mathbf{y}^T = \phi_{\mathbf{W}^{[L]}} \circ \phi_{\mathbf{W}^{[L-1]}} \circ ... \circ \phi_{\mathbf{W}^{[1]}}(\mathbf{X}^T) +\boldsymbol\epsilon^T = \mathbf{W}^{[L]}\sigma(\mathbf{W}^{[L-1]}\sigma(...\sigma(\mathbf{W}^{[1]}\mathbf{X}^T)))+\boldsymbol\epsilon^T \label{nn}
@@ -74,13 +79,23 @@ The loss (Eq. \ref{mse}) remains but an analytical solution does not exist. The 
 \mathbf{W}^{[l]} \gets \mathbf{W}^{[l]} - \gamma \frac{\partial \mathcal{L}}{\partial \mathbf{W}^{[l]}}
 \end{align}
 
+<center>
+<figure>
 <img src="/images/posts/machine-learning/mlp.png" width="600">
+<figcaption><b>Fig. 2:</b> Multilayer perceptron.</figcaption>
+</figure>
+</center>
 
 ## Bias-Variance Trade-Off and Regularization
 
-The central problem in frequentist statistics is that the collected data are random and all deduced quantities, such as the estimated function $\hat{f}(x)$, are thus random as well. Very deep or wide neural networks, for instance, can have large model capacity and are able to express quite complex relationships between inputs and output; on one side, however, the estimated function might vary significantly around its expected value $\text{E}[\hat{f}(x)]$ upon exchange of data followed by re-estimation (e.g., because it fits the noise). On the other side, the model capacity might also be insufficient (e.g., because not all variables that would be theoretically necessary for a good fit are part of the model); as a consequence, the outputs of $\hat{f}(x)$ could be far away from the observed values $y=f(x)+\epsilon$ (with $\text{E}[\epsilon] = 0$) generated by the true model $f(x)$. In summary, the estimated function $\hat{f}(x)$ could be too simplistic, too complex, or optimal, illustrated in the figure below.
+The central problem in frequentist statistics is that the collected data are random and all deduced quantities, such as the estimated function $\hat{f}(x)$, are thus random as well. Very deep or wide neural networks, for instance, can have large model capacity and are able to express quite complex relationships between inputs and output; on one side, however, the estimated function might vary significantly around its expected value $\text{E}[\hat{f}(x)]$ upon exchange of data followed by re-estimation (e.g., because it fits the noise). On the other side, the model capacity might also be insufficient (e.g., because not all variables that would be theoretically necessary for a good fit are part of the model); as a consequence, the outputs of $\hat{f}(x)$ could be far away from the observed values $y=f(x)+\epsilon$ (with $\text{E}[\epsilon] = 0$) generated by the true model $f(x)$. In summary, the estimated function $\hat{f}(x)$ could be too simplistic, too complex, or optimal (Fig. 3).
 
+<center>
+<figure>
 <img src="/images/theory/bias_variance.png" width="1200">
+<figcaption><b>Fig. 3:</b> Bias-variance trade-off.</figcaption>
+</figure>
+</center>
 
 More formally, the expected squared difference (mean squared error) $\Delta^2$ between observed $y=f(x)+\epsilon$ and predicted $\hat{f}(x)$ is given by Eq. \ref{biasvariancetradeoff}.[^1]
 
@@ -98,6 +113,11 @@ This derivation shows that there are three components to $\Delta^2$: the irreduc
 \hat{w} = \arg \min_{w} \mathcal{L}(w) + \lambda w^Tw
 \end{equation}
 
-This regulates the complexity as the magnitude of $w$ contributes to the loss so that explaining observations has a cost. For large values of $\lambda$, solutions with low values of $w$ will be preferred (and vice versa). The next question that arises is how to choose the value of $\lambda$ (as directly optimizing for it results in $\lambda = 0$). For this purpose, cross-validation has been developed. It requires splitting the observations into $B$ equally sized sets; training the model with $B-1$ sets; and calculating $\Delta^2$ for the remaining set; this is done for all $B$ sets and different values of $\lambda$. The value of $\lambda$ associated with the lowest $\Delta^2$ leads to the optimal complexity.
+This regulates the complexity as the magnitude of $w$ contributes to the loss so that explaining observations has a cost. For large values of $\lambda$, solutions with low values of $w$ will be preferred (and vice versa). The next question that arises is how to choose the value of $\lambda$ (as directly optimizing for it results in $\lambda = 0$). For this purpose, cross-validation has been developed. It requires splitting the observations into $B$ equally sized sets; training the model with $B-1$ sets; and calculating $\Delta^2$ for the remaining set; this is done for all $B$ sets and different values of $\lambda$. The value of $\lambda$ associated with the lowest $\Delta^2$ leads to the optimal model complexity (Fig. 4).
 
+<center>
+<figure>
 <img src="/images/theory/cv.png" width="400">
+<figcaption><b>Fig. 4:</b> Optimal model complexity.</figcaption>
+</figure>
+</center>

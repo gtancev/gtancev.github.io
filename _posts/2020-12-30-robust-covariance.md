@@ -22,9 +22,14 @@ d = \sqrt{(x - \mu)^T \Sigma^{-1} (x - \mu)}
 
 This metric assesses how many standard deviations $\sigma$ away point $x$ is from $\mu$, thereby being dimensionless. An extreme observation has a large distance from the center of a distribution. It is useful in predictive maintenance as it enables finding unusual behavior of a system; upcoming down-times and malfunction can be targeted and identified, which is particularly important since finding faults in equipment, machines, and devices early can reduce the extent of the damage.
 
-Given a data set $\mathbf{X}$ with $n$ samples in $p$ variables (i.e, data from $p$ sensors), mean and covariance matrix are easily computed. However, in the presence of outliers, both are distorted and the Mahalanobis distance is rendered useless, hence a robust method, i.e., a method that is little affected by outliers, would be desired. In the plot below, a Gaussian distribution for some two-dimensional sensor data set $\mathbf{X}$ is plotted; just like with the $Z$-score (e.g., $\pm 1.96\sigma$), an envelope around the data set can be constructed by choosing a critical value of the Mahalanobis distance. Points outside this envelope are considered anomalies/outliers.
+Given a data set $\mathbf{X}$ with $n$ samples in $p$ variables (i.e, data from $p$ sensors), mean and covariance matrix are easily computed. However, in the presence of outliers, both are distorted and the Mahalanobis distance is rendered useless, hence a robust method, i.e., a method that is little affected by outliers, would be desired. In Fig. 1, the support of a Gaussian distribution for some two-dimensional sensor data set $\mathbf{X}$ is plotted; just like with the $Z$-score (e.g., $\pm 1.96\sigma$), an envelope around the data set can be constructed by choosing a critical value of the Mahalanobis distance. Points outside this envelope are considered anomalies/outliers.
 
+<center>
+<figure>
 <img src="/images/theory/robust_covariance.png" width="400">
+<figcaption><b>Fig. 1:</b> Estimate of the support.</figcaption>
+</figure>
+</center>
 
 ## Robust Covariance
 
