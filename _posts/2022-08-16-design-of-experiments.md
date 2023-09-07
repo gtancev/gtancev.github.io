@@ -40,7 +40,7 @@ In fractional factorial designs (Fig. 1b), abbreviated as $2^{k-p}$, subsets of 
 To provide a better intuition for aliasing, a full factorial design for two variables $X_1$ and $X_2$ is depicted in the table below.
 
 | Experiment | $X_1$ | $X_2$ | $X_1 X_2 = X_3$ |
-|--------------------|-------|-----------------|
+|:----------:|:-----:|:-----:|:---------------:|
 | 1          | $-1$  | $-1$  | $+1$            |
 | 2          | $-1$  | $+1$  | $-1$            |
 | 3          | $+1$  | $-1$  | $-1$            |
