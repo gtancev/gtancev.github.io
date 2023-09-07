@@ -17,18 +17,23 @@ Experiments are essential when exploring systems.[^1] They generate data that ca
 
 The most basic experimental design, the "full factorial", includes samples of $k$ variables at $n$ levels, resulting in $n^k$ data points, which is only feasible for few variables and levels as otherwise the number of experiments becomes too large. Furthermore, due to this poor scaling of the workload, the number of levels is limited to two (or three) in most applications, usually coded as $-1$ and $+1$, corresponding to an interval from low to high "expression".
 
-Thus, it is also known as $2^k$ full factorial design (left sketch below). With only two levels per variable, it is not possible to include power terms in a model. In some situations, e.g., if the noise is high, it might be reasonable to replicate all runs. A design is stored as matrix $\mathbf{X}$ in which each row $x^T = [X_1, ..., X_k]^T$ corresponds to an experiment and each column $\mathbf{x}$ represents a variable $X$. In this matrix, variable configurations are orthogonal (i.e., $\mathbf{x}_i^T\mathbf{x}_j = 0$), which guarantees that the individual contributions of the inputs to the output(s) can be properly extracted.
+Thus, it is also known as $2^k$ full factorial design (Fig. 1a). With only two levels per variable, it is not possible to include power terms in a model. In some situations, e.g., if the noise is high, it might be reasonable to replicate all runs. A design is stored as matrix $\mathbf{X}$ in which each row $x^T = [X_1, ..., X_k]^T$ corresponds to an experiment and each column $\mathbf{x}$ represents a variable $X$. In this matrix, variable configurations are orthogonal (i.e., $\mathbf{x}_i^T\mathbf{x}_j = 0$), which guarantees that the individual contributions of the inputs to the output(s) can be properly extracted.
 
+<center>
+<figure>
 <div class="gallery" data-columns="2">
 	<img src="/images/theory/fullfact.png">
     <img src="/images/theory/fracfact.png">
 </div>
+<figcaption><b>Fig. 1: (a)</b> Full factorial design. <b>(b):</b> Fractional factorial design.</figcaption>
+</figure>
+</center>
 
 The more factors are included in a design, the higher the order of potential interaction effects that can be estimated, although it is questionable if interactions higher than order two or three are significant. Reducing the set of potential interactions decreases the number of parameters and increases the number of degrees of freedom (the difference between number of data points and number of free parameters), and in that case, more efficient designs with less degrees of freedom (hence higher efficiency) would be preferred.
 
 ## Fractional Factorial Designs
 
-In fractional factorial designs (right sketch above), abbreviated as $2^{k-p}$, subsets of complete designs are used, in which some higher order interactions between variables are "aliased" with main effects or other higher order interactions. Aliasing is the phenomenon of lower and higher order effects becoming indistinguishable as they contain the same information, and the degree of aliasing is characterized by the resolution of a design (written in Roman numerals). The higher the resolution, the higher the order of interactions that can be estimated without aliasing them with lower order terms. To increase the resolution, more experiments need to be conducted, which enables determination of higher order effects acting on a system.
+In fractional factorial designs (Fig. 1b), abbreviated as $2^{k-p}$, subsets of complete designs are used, in which some higher order interactions between variables are "aliased" with main effects or other higher order interactions. Aliasing is the phenomenon of lower and higher order effects becoming indistinguishable as they contain the same information, and the degree of aliasing is characterized by the resolution of a design (written in Roman numerals). The higher the resolution, the higher the order of interactions that can be estimated without aliasing them with lower order terms. To increase the resolution, more experiments need to be conducted, which enables determination of higher order effects acting on a system.
 
 ### Aliasing and Resolution
 
