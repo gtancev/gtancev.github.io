@@ -49,11 +49,20 @@ Instead of using the complete data set of $n$ samples, a mini-batch or only the 
 
 ## Neural Networks
 
-If the underlying relationships are non-linear, it is beneficial to add additional variables to $\mathbf{X}$ via basis expansion (i.e., $X_i^2$, $X_iX_j$, and so on). If interpretability is not crucial, one can apply a cascade of $L-1$ non-linear transformations instead, e.g., the sigmoid $\phi(z) = \frac{1}{1+e^{-z}} = \sigma(z)$, and a last affine ("linear") transformation, each parameterized by a set of parameters $\mathbf{W}^{[l]} \in \mathbb{R}^{n_{l}\times n_{l-1}}$ for transformation $l$ (Eq. \ref{nn}). The approach is supported by an [universal approximation theorem](https://en.wikipedia.org/wiki/Universal_approximation_theorem) and the resulting model is known as multilayer perceptron or feedforward artificial neural network (Fig. 2).
+If the underlying relationships are non-linear, it is beneficial to add additional variables to $\mathbf{X}$ via basis expansion (i.e., $X_i^2$, $X_iX_j$, and so on). If interpretability is not crucial, one can apply a cascade of $L-1$ non-linear transformations instead, e.g., the sigmoid $\phi(z) = \frac{1}{1+e^{-z}} = \sigma(z)$, and a last affine ("linear") transformation, each parameterized by a set of parameters $\mathbf{W}^{[l]} \in \mathbb{R}^{n_{l}\times n_{l-1}}$ for transformation $l$ (Eq. \ref{nn}).
 
 \begin{align}
 \mathbf{y}^T = \phi_{\mathbf{W}^{[L]}} \circ \phi_{\mathbf{W}^{[L-1]}} \circ ... \circ \phi_{\mathbf{W}^{[1]}}(\mathbf{X}^T) +\boldsymbol\epsilon^T = \mathbf{W}^{[L]}\sigma(\mathbf{W}^{[L-1]}\sigma(...\sigma(\mathbf{W}^{[1]}\mathbf{X}^T)))+\boldsymbol\epsilon^T \label{nn}
 \end{align}
+
+The approach is supported by an [universal approximation theorem](https://en.wikipedia.org/wiki/Universal_approximation_theorem) and the resulting model is known as multilayer perceptron or feedforward artificial neural network (Fig. 2).
+
+<center>
+<figure>
+<img src="/images/posts/machine-learning/mlp.png" width="600">
+<figcaption><b>Fig. 2:</b> Multilayer perceptron.</figcaption>
+</figure>
+</center>
 
 The variables $L$ and $n_l$ for $l\in\{1, ... , L-1\}$ are design parameters. Decomposing the expression from above, with $\mathbf{Z}^{[0]} = \mathbf{X}^T$ and $\mathbf{Z}^{[L]} = \mathbf{y}^T$, results in the intermediate values $\mathbf{Z}^{[l]}$ of the hidden nodes in layers $l\in \{1, ..., L\}$. Eqs. \ref{nn1} & \ref{nn2} are the so-called forward pass.
 
@@ -78,13 +87,6 @@ The loss (Eq. \ref{mse}) remains but an analytical solution does not exist. The 
 \label{backprop2}
 \mathbf{W}^{[l]} \gets \mathbf{W}^{[l]} - \gamma \frac{\partial \mathcal{L}}{\partial \mathbf{W}^{[l]}}
 \end{align}
-
-<center>
-<figure>
-<img src="/images/posts/machine-learning/mlp.png" width="600">
-<figcaption><b>Fig. 2:</b> Multilayer perceptron.</figcaption>
-</figure>
-</center>
 
 ## Bias-Variance Trade-Off and Regularization
 
