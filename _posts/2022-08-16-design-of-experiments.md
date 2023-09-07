@@ -25,7 +25,7 @@ Thus, it is also known as $2^k$ full factorial design (Fig. 1a). With only two l
 	<img src="/images/theory/fullfact.png">
     <img src="/images/theory/fracfact.png">
 </div>
-<figcaption><b>Fig. 1: (a)</b> Full factorial design. <b>(b):</b> Fractional factorial design.</figcaption>
+<figcaption><b>Fig. 1: (a)</b> Full factorial design.<b> (b):</b> Fractional factorial design.</figcaption>
 </figure>
 </center>
 

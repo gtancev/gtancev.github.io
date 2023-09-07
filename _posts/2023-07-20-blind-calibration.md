@@ -17,7 +17,7 @@ How to keep sensor networks calibrated has therefore been the subject of researc
 
 ## Theoretical Background
 
-The starting point is a sensor network consisting of $n$ nodes, each sensing a certain process. At time $t$, the individual measurements are collected as in a vector $\mathbf{y} = \[y_1, …, y_n\]$. If the individual sensors "see the same thing", their signals will be **correlated** to a large degree. Such correlation can happen if the phenomenon to be measured behaves similarly at different locations or all sensors are at the same location measuring the same or different processes that are coupled. As a consequence, the collection of measurements will lie in a subspace of dimensionality $r < n$. Although the sensors will be calibrated initially, gain $\alpha \in \mathbb{R}^n$ and offset $\beta \in \mathbb{R}^n$ drift (shown in the Fig. below) will make recalibration necessary (Eq. \ref{eq1}),
+The starting point is a sensor network consisting of $n$ nodes, each sensing a certain process. At time $t$, the individual measurements are collected as in a vector $\mathbf{y} = \[y_1, …, y_n\]$. If the individual sensors "see the same thing", their signals will be **correlated** to a large degree. Such correlation can happen if the phenomenon to be measured behaves similarly at different locations or all sensors are at the same location measuring the same or different processes that are coupled. As a consequence, the collection of measurements will lie in a subspace of dimensionality $r < n$. Although the sensors will be calibrated initially, gain $\alpha \in \mathbb{R}^n$ and offset $\beta \in \mathbb{R}^n$ drift (shown in Fig. 1) will make recalibration necessary (Eq. \ref{eq1}),
 
 \begin{equation}
 x = \mathbf{Y}\alpha + \beta,
@@ -26,7 +26,12 @@ x = \mathbf{Y}\alpha + \beta,
 
 with $\mathbf{Y}$ = diag($\mathbf{y}$).
 
-![Sensors signals after drift.](/images/posts/blind-calibration/signals.png "Sensors signals after drift.")
+<center>
+<figure>
+<img src="/images/posts/blind-calibration/signals.png" width="1000">
+<figcaption><b>Fig. 1:</b> Sensors signals after drift.</figcaption>
+</figure>
+</center>
 
 If we learn the projection matrix $\mathbf{P}$ of dimensionality $n - r$ associated with the signal nullspace (i.e., the orthogonal complement to the signal subspace $\mathcal{S}$), we can try to estimate the correct gain and offset coefficients. The idea is that the true signals should remain in the signal subspace $\mathcal{S}$ at all times (Eq. \ref{eq2}),
 
@@ -181,17 +186,32 @@ for i in range(n):
 
 ## Results
 
-The first Fig. illustrates the original signals and the ones after blind calibration. It becomes clear that the drift could be almost completely eliminated. In addition, the correct signal was restored because the individual signals overlapped with the dashed line. 
+Fig. 2 illustrates the original signals and the ones after blind calibration. It becomes clear that the drift could be almost completely eliminated. In addition, the correct signal was restored because the individual signals overlapped with the dashed line. 
 
-![Uncorrected versus corrected sensor signals. Dashed line corresponds to ground truth.](/images/posts/blind-calibration/error_reduction_2.png "Uncorrected versus corrected sensor signals. Dashed line corresponds to ground truth.")
+<center>
+<figure>
+<img src="/images/posts/blind-calibration/error_reduction_2.png" width="1000">
+<figcaption><b>Fig. 2:</b> Uncorrected versus corrected sensor signals. Dashed line corresponds to ground truth.</figcaption>
+</figure>
+</center>
 
-The second Fig. relates the estimated gains and offsets to the correct ones. By and large, the parameters match, although a slight mismatch can be observed in the gain. 
+Fig. 3 relates the estimated gains and offsets to the correct ones. By and large, the parameters match, although a slight mismatch can be observed in the gain. 
 
-![Estimated vs. true gains and offsets.](/images/posts/blind-calibration/parameters.png "Estimated vs. true gains and offsets.")
+<center>
+<figure>
+<img src="/images/posts/blind-calibration/parameters.png" width="1000">
+<figcaption><b>Fig. 3:</b> Estimated vs. true gains and offsets.</figcaption>
+</figure>
+</center>
 
-Finally, the third and last Fig. compares the improvement of the measurement with respect to the root-mean-square error. Here we can clearly see that the improvement is not negligible.
+Finally, Fig. 4 compares the improvement of the measurement with respect to the root-mean-square error. Here we can clearly see that the improvement is not negligible.
 
-![Reduction of root-mean-square error after blind calibration.](/images/posts/blind-calibration/error_reduction.png "Reduction of root-mean-square error after blind calibration.")
+<center>
+<figure>
+<img src="/images/posts/blind-calibration/error_reduction.png" width="1000">
+<figcaption><b>Fig. 4:</b> Reduction of root-mean-square error after blind calibration.</figcaption>
+</figure>
+</center>
 
 ## Conclusion
 
