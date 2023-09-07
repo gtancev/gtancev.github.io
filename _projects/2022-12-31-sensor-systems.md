@@ -18,7 +18,12 @@ featured_image: '/images/projects/sensor-systems/1.jpg'
 
 First, the relocation problem with field calibrated systems was revised and [traced back to lacking representativeness of the calibration data](https://www.mdpi.com/1424-8220/20/21/6198), typically followed by concept drift. In other words, the performance of the equipment degrades when it is moved to a different location, but it can also degrade over time after it has been in the same location. This work replicated such calibrations and examined the data and models. The main finding was that the cause was the lack of representativeness of the calibration data and the strong correlations between the measured variables. If the relationships between the variables change, the calibration model also becomes invalid. It was concluded that this problem could be solved by using [orthogonal experimental designs](https://gtancev.github.io/blog/design-of-experiments).
 
+<center>
+<figure>
 <img src="/images/projects/sensor-systems/wf_1.png" width="800">
+<figcaption><b>Fig. 1:</b> Workflow of the data analysis.</figcaption>
+</figure>
+</center>
 
 ---
 
@@ -26,7 +31,12 @@ First, the relocation problem with field calibrated systems was revised and [tra
 
 With this knowledge, a [compact continuous-flow automaton](https://ieeexplore.ieee.org/abstract/document/9856703) that allows characterizing cross-sensitivities and interferences with environmental factors as well as resolving spatial and temporal relocation problems was developed. It generates orthogonal atmospheres, i.e., gas mixtures at different relative humidities and temperatures, in an efficient manner using fractional factorial designs for the simultaneous calibration of an array of low-cost sensor systems in the laboratory. Such devices can then serve as mobile references (e.g., on top of buses or trams) to recalibrate other low-cost devices.
 
+<center>
+<figure>
 <img src="/images/projects/sensor-systems/wf_2.png" width="800">
+<figcaption><b>Fig. 2:</b> Specifications of the laboratory calibration.</figcaption>
+</figure>
+</center>
 
 ---
 
@@ -34,7 +44,12 @@ With this knowledge, a [compact continuous-flow automaton](https://ieeexplore.ie
 
 For field calibrated systems, which are heavily affected by concept drift, [machine learning algorithms that monitor the trustworthiness of incoming measurements](https://www.mdpi.com/1424-8220/21/9/3298) were proposed and discussed. [Anomalies are detected by estimating the support of the sensor signal distribution and by assessing the position of new signals with respected to this support](https://gtancev.github.io/blog/robust-covariance). Moreover, it was demonstrated how such algorithms might be evaluated with strategies from software validation (i.e., evaluation in virtual evironments via numerical simulations).
 
+<center>
+<figure>
 <img src="/images/projects/sensor-systems/wf_3.png" width="800">
+<figcaption><b>Fig. 3:</b> Usage of predictive maintenance.</figcaption>
+</figure>
+</center>
 
 ---
 
@@ -42,4 +57,9 @@ For field calibrated systems, which are heavily affected by concept drift, [mach
 
 Finally, a theoretical concept for the [stochastic online recalibration](https://gtancev.github.io/blog/stochastic-calibration) of gas sensor networks by means of mobile reference instruments was presented. In essence, measured values would be compared during encounters and the calibration models would be adjusted by means of stochastic gradient updates. Recently developed gradient update rules such as RMSProp (with and without momentum) were explored. [The analysis suggested that the reliability of the measurements could be maintained in this manner as sensor aging and concept drift are continuously compensated](https://ieeexplore.ieee.org/abstract/document/9690889).
 
+<center>
+<figure>
 <img src="/images/projects/sensor-systems/wf_4.png" width="800">
+<figcaption><b>Fig. 4:</b> Stochastic online calibration with mobile references.</figcaption>
+</figure>
+</center>
