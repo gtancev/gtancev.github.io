@@ -39,13 +39,17 @@ In fractional factorial designs (Fig. 1b), abbreviated as $2^{k-p}$, subsets of 
 
 To provide a better intuition for aliasing, a full factorial design for two variables $X_1$ and $X_2$ is depicted in Tab. 1.
 
+<table>
 <caption><b>Tab. 1:</b> Orthogonal experimental design.</caption>
+
 | Experiment | $X_1$ | $X_2$ | $X_1 X_2 = X_3$ |
 |:----------:|:-----:|:-----:|:---------------:|
 | 1          | $-1$  | $-1$  | $+1$            |
 | 2          | $-1$  | $+1$  | $-1$            |
 | 3          | $+1$  | $-1$  | $-1$            |
 | 4          | $+1$  | $+1$  | $+1$            |
+
+</table>
 
 The last column covers the values for the interaction effect, which is obtained by multiplying $X_1$ with $X_2$. Suppose that a third variable $X_3$ should be added to the design; a full factorial design with three variables (and two levels) would contain eight experiments. Instead of adding four more experiments, it would be possible to use the configurations of the interaction term $X_1X_2$ for variable $x_3$. Therefore, $X_1X_2$ and $X_3$ would contain the same information, and it would be not possible to distinguish them (they are aliased). As a consequence, the interaction term would be omitted from the model. This is an example for a $2_{\text{III}}^{3-1}$ factorial design, i.e., three factors in one-half fraction with resolution III. If an interaction were negligible, this would  be a reasonable design for a calibration model since four data points are available for four parameters (three factors and an intercept).
 
