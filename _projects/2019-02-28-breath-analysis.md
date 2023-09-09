@@ -17,5 +17,4 @@ Our exhaled breath is made up of thousands of organic molecules that can be anal
     <img src="/images/projects/breath-analysis/visualization.png">
 	<img src="/images/projects/breath-analysis/boxplot_biomarkers_0.png">
     <img src="/images/projects/breath-analysis/boxplot_biomarkers_1.png">
-    <img src="/images/projects/breath-analysis/boxplot_biomarkers_2.png">
 </div>
