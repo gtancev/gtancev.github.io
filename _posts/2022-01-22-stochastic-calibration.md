@@ -1,7 +1,7 @@
 ---
-title: 'Stochastic Online Calibration'
+title: 'Stochastic Optimization'
 date: 2022-01-22 00:00:00
-description: Stochastic Online Calibration
+description: Stochastic Optimization
 featured_image: '/images/posts/machine-learning/MC.jpg'
 ---
 
