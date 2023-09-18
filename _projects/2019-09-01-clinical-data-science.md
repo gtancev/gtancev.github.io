@@ -14,7 +14,7 @@ Various parameters must be considered for **dialysis** intensity dosing in **ped
 
 [The analysis showed that certain variables are good predictors of mortality](https://academic.oup.com/ndt/article/36/3/519/5854486). Some biomarkers were already known from the literature, others were new and required contextualization and careful discussion. Interestingly, one of the most important findings was that the therapy was quite optimal in terms of dosage, as mortality changed most around the recommended levels.[^1]
 
-[^1]: [These results were also presented at a conference](https://www.page-meeting.org/default.asp?abstract=9828).
+[^1]: These results were also presented [at a conference](https://www.page-meeting.org/default.asp?abstract=9828).
 
 <div class="gallery" data-columns="3">
 	<img src="/images/projects/clinical-data-analysis/feature_importance.png">
