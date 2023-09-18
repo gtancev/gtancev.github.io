@@ -56,7 +56,7 @@ Instead of using the complete data set of $n$ samples, a mini-batch or only the 
 
 ## Neural Networks
 
-If the underlying relationships are non-linear, it is beneficial to add additional variables to $\mathbf{X}$ via basis expansion (i.e., $X_i^2$, $X_iX_j$, and so on). If interpretability is not crucial, one can apply a cascade of $L-1$ non-linear transformations instead, e.g., the sigmoid $\phi(z) = \frac{1}{1+e^{-z}} = \sigma(z)$, and a last affine ("linear") transformation, each parameterized by a set of parameters $\mathbf{W}^{[l]} \in \mathbb{R}^{n_{l}\times n_{l-1}}$ for transformation $l$ (Eq. \ref{nn}).
+If the underlying relationships are non-linear, it is beneficial to add additional variables to $\mathbf{X}$ via basis expansion (i.e., $X_i^2$, $X_iX_j$, and so on). If interpretability is not crucial, one can apply [a cascade of $L-1$ non-linear transformations](https://en.wikipedia.org/wiki/Function_composition) instead, e.g., the sigmoid $\phi(z) = \frac{1}{1+e^{-z}} = \sigma(z)$, and a last affine ("linear") transformation, each parameterized by a set of parameters $\mathbf{W}^{[l]} \in \mathbb{R}^{n_{l}\times n_{l-1}}$ for transformation $l$ (Eq. \ref{nn}).
 
 \begin{align}
 \mathbf{y}^T = \phi_{\mathbf{W}^{[L]}} \circ \phi_{\mathbf{W}^{[L-1]}} \circ ... \circ \phi_{\mathbf{W}^{[1]}}(\mathbf{X}^T) +\boldsymbol\epsilon^T \label{nn}
