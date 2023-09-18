@@ -2,7 +2,7 @@
 title: 'Stochastic Optimization'
 date: 2022-01-22 00:00:00
 description: Stochastic Optimization
-featured_image: '/images/posts/machine-learning/MC.jpg'
+featured_image: '/images/posts/machine-learning/MC_alt.jpg'
 ---
 
 ![](/images/posts/machine-learning/MC_alt.jpg)
