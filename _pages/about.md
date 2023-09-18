@@ -7,10 +7,8 @@ featured_image: /images/photography/me/picture.jpg
 
 <div class="gallery" data-columns="3">
 	<img src="/images/me/1.jpeg">
-	<!-- <img src="/images/me/2.jpeg"> -->
-    <img src="/images/me/3.jpeg">
-    <!-- <img src="/images/me/4.jpeg"> -->
     <img src="/images/me/5.jpeg">
+    <img src="/images/me/3.jpeg">
 </div>
 
 I'm a research scientist with degrees in **engineering** and **computer science** and with a passion for optimizing existing products and processes or designing new ones. For this purpose, I identify current weaknesses and capture people's needs. I like to ask if and how the established can be rethought. When it comes to generating ideas, I get inspiration by other domains, as similar problems may have already been solved elsewhere.
