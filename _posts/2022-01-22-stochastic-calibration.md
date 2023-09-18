@@ -5,7 +5,7 @@ description: Stochastic Optimization
 featured_image: '/images/posts/machine-learning/MC.jpg'
 ---
 
-![](/images/posts/machine-learning/MC.jpg)
+![](/images/posts/machine-learning/MC_alt.jpg)
 
 ## Introduction
 
