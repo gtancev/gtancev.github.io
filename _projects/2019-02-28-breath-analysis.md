@@ -1,8 +1,8 @@
 ---
-title: 'Exhaled Breath Analysis'
+title: 'Breath Metabolomics'
 subtitle: 'Diagnosing dieases from exhaled breath.'
 date: 2019-02-28 00:00:00
-description: Exhaled Breath Analysis
+description: Breath Metabolomics
 featured_image: '/images/projects/breath-analysis/1.jpg'
 ---
 
