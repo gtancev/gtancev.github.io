@@ -14,7 +14,7 @@ featured_image: '/images/projects/sensor-systems/1.jpg'
 
 <center>
 <figure>
-<img src="/images/projects/sensor-systems/low_cost_gas_sensor.jpeg" width="500">
+<img src="/images/projects/sensor-systems/low_cost_gas_sensor.jpg" width="500">
 <figcaption><b>Fig. 1:</b> Schema of an electrochemical low-cost gas sensor.</figcaption>
 </figure>
 </center>
