@@ -31,11 +31,11 @@ The loss function $\mathcal{L}$ can be motivated from an algebraic perspective b
 
 ## Gradient-Based Optimization
 
-Solving the system in this manner is not always possible because an analytical solution does not exist in every case. Fortunately, the problem is also solvable in an iterative manner by means of gradient descent (Fig. 1). The main idea is to move along the loss landscape towards the steepest direction (i.e., the gradient) in small steps $t$ until reaching an optimum. To do so, the objective function must be differentiable; also, a starting point $w_{(0)}$ and a learning rate $\gamma$ are required. The update rule in Eq. \ref{sgd} is then applied until convergence.
+Solving the system in this manner is not always possible because an analytical solution does not exist in every case. Fortunately, the problem is also solvable in an iterative manner by means of gradient descent (Fig. 1). The main idea is to move along the loss landscape towards the steepest direction (i.e., the gradient) in small steps $t$ until reaching an optimum (Eq. \ref{sgd1}). 
 
 \begin{equation}
-\label{sgd}
-w_{(t+1)} \gets w_{(t)} - \gamma\left.\frac{\partial \mathcal{L}}{\partial w}\right\vert_{w=w_{(t)}} = w_{(t)} - \gamma\mathbf{X}^T(\mathbf{y}-\mathbf{X}w_{(t)})
+\label{sgd1}
+w_{(t+1)} \gets w_{(t)} - \gamma\left.\frac{\partial \mathcal{L}}{\partial w}\right\vert_{w=w_{(t)}}
 \end{equation}
 
 <center>
@@ -45,6 +45,13 @@ w_{(t+1)} \gets w_{(t)} - \gamma\left.\frac{\partial \mathcal{L}}{\partial w}\ri
 </figure>
 </center>
 
+To do so, the objective function must be differentiable; also, a starting point $w_{(0)}$ and a learning rate $\gamma$ are required. For a linear model, the update rule in Eq. \ref{sgd2} is then applied until convergence.
+
+\begin{equation}
+\label{sgd2}
+w_{(t+1)} \gets w_{(t)} - \gamma\mathbf{X}^T(\mathbf{y}-\mathbf{X}w_{(t)})
+\end{equation}
+
 Instead of using the complete data set of $n$ samples, a mini-batch or only the $k$-th random sample $x_{k}^T$ can be picked and the update is performed only with instance. This is known as stochastic gradient descent. Updating parameters with single observations is reasonable in situations in which new data are becoming available, i.e., in [online learning](https://en.wikipedia.org/wiki/Online_machine_learning), and when models need to be updated due to [changes in the underlying probability distributions](https://en.wikipedia.org/wiki/Concept_drift).
 
 ## Neural Networks
@@ -52,7 +59,7 @@ Instead of using the complete data set of $n$ samples, a mini-batch or only the 
 If the underlying relationships are non-linear, it is beneficial to add additional variables to $\mathbf{X}$ via basis expansion (i.e., $X_i^2$, $X_iX_j$, and so on). If interpretability is not crucial, one can apply a cascade of $L-1$ non-linear transformations instead, e.g., the sigmoid $\phi(z) = \frac{1}{1+e^{-z}} = \sigma(z)$, and a last affine ("linear") transformation, each parameterized by a set of parameters $\mathbf{W}^{[l]} \in \mathbb{R}^{n_{l}\times n_{l-1}}$ for transformation $l$ (Eq. \ref{nn}).
 
 \begin{align}
-\mathbf{y}^T = \phi_{\mathbf{W}^{[L]}} \circ \phi_{\mathbf{W}^{[L-1]}} \circ ... \circ \phi_{\mathbf{W}^{[1]}}(\mathbf{X}^T) +\boldsymbol\epsilon^T = \mathbf{W}^{[L]}\sigma(\mathbf{W}^{[L-1]}\sigma(...\sigma(\mathbf{W}^{[1]}\mathbf{X}^T)))+\boldsymbol\epsilon^T \label{nn}
+\mathbf{y}^T = \phi_{\mathbf{W}^{[L]}} \circ \phi_{\mathbf{W}^{[L-1]}} \circ ... \circ \phi_{\mathbf{W}^{[1]}}(\mathbf{X}^T) +\boldsymbol\epsilon^T \label{nn}
 \end{align}
 
 The approach is supported by an [universal approximation theorem](https://en.wikipedia.org/wiki/Universal_approximation_theorem) and the resulting model is known as multilayer perceptron or feedforward artificial neural network (Fig. 2).
@@ -80,7 +87,7 @@ The loss (Eq. \ref{mse}) remains but an analytical solution does not exist. The 
 
 \begin{align}
 \label{backprop1}
-\frac{\partial \mathcal{L}}{\partial \mathbf{W}^{[l]}} = \frac{\partial \mathcal{L}}{\partial \mathbf{Z}^{[L]}} \frac{\partial \mathbf{Z}^{[L]}}{\partial \mathbf{A}^{[L]}} \frac{\partial \mathbf{A}^{[L]}}{\partial \mathbf{Z}^{[L-1]}}...\frac{\partial \mathbf{Z}^{[l+1]}}{\partial \mathbf{A}^{[l]}}  \frac{\partial \mathbf{A}^{[l]}}{\partial \mathbf{W}^{[l]}}
+\frac{\partial \mathcal{L}}{\partial \mathbf{W}^{[l]}} = \frac{\partial \mathcal{L}}{\partial \mathbf{Z}^{[L]}} \frac{\partial \mathbf{Z}^{[L]}}{\partial \mathbf{A}^{[L]}} \frac{\partial \mathbf{A}^{[L]}}{\partial \mathbf{Z}^{[L-1]}}... \frac{\partial \mathbf{A}^{[l]}}{\partial \mathbf{W}^{[l]}}
 \end{align}
 
 \begin{align}
