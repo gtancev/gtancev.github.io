@@ -3,10 +3,10 @@ title: 'Low-Cost Gas Sensor Networks'
 subtitle: 'Defining protocols for reliable air pollution monitoring.'
 date: 2022-12-31 00:00:00
 description: Low-Cost Gas Sensor Networks
-featured_image: '/images/projects/sensor-systems/1.jpg'
+featured_image: '/images/projects/sensor-systems/1_alt.jpg'
 ---
 
-![](/images/projects/sensor-systems/1.jpg)
+![](/images/projects/sensor-systems/1_alt.jpg)
 
 ## Summary
 
