@@ -3,10 +3,10 @@ title: 'Chemical Process Design'
 subtitle: 'Minimizing drug development time through decision support systems.'
 date: 2018-03-31 00:00:00
 description: Chemical Process Design
-featured_image: '/images/projects/decision-support/1.jpg'
+featured_image: '/images/projects/decision-support/1_mod.jpg'
 ---
 
-![](/images/projects/decision-support/1.jpg)
+![](/images/projects/decision-support/1_mod.jpg)
 
 ## Summary
 
@@ -19,4 +19,4 @@ In drug development, the appropriate processes for manufacturing must be designe
 </figure>
 </center>
 
-I worked on such issues during my internship at Novartis. I put these things into software and defined metrics that could be used to make decisions.
+I worked on such issues during my internship at [Novartis](https://www.novartis.com) in Basel. I put these things into software and defined metrics that could be used to make decisions.
