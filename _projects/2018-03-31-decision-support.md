@@ -10,7 +10,7 @@ featured_image: '/images/projects/decision-support/1_mod.jpg'
 
 ## Summary
 
-In drug development, the appropriate processes for manufacturing must be designed. This involves many decisions or design choices, which are often only made through experiments. However, these are time-consuming and costly. In order to make this process more efficient, mathematical models and numerical simulations can be used, for example. The parameters of the chemical system under consideration serve as input. Afterwards, it can be decided which route is more suitable (Fig. 1).
+Drug development requires designing the appropriate manufacturing processes. This involves many decisions that are often made only through experimentation. However, this is time consuming and costly. To make the work more efficient, mathematical models and numerical simulations can be used instead. The prerequisite is that they adequately reflect reality. The characteristics of the chemical system under consideration serve as input. It is then possible to decide which route is more appropriate (Fig. 1).
 
 <center>
 <figure>
