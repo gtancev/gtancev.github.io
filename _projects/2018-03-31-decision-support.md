@@ -10,7 +10,7 @@ featured_image: '/images/projects/decision-support/1_mod.jpg'
 
 ## Summary
 
-Drug development requires designing the appropriate manufacturing processes. This involves many decisions that are often made only through experimentation. However, this is time consuming and costly. To make the work more efficient, mathematical models and numerical simulations can be used instead. The prerequisite is that they adequately reflect reality. The characteristics of the chemical system under consideration serve as input. It is then possible to decide which route is more appropriate (Fig. 1).
+Drug development requires designing the appropriate manufacturing processes. This involves many decisions that are often made only through experimentation. However, this is time consuming and costly. To make the work more efficient, mathematical models and numerical simulations can be used instead. The prerequisite is that they adequately reflect reality. The characteristics of the chemical system under consideration serve as input. By knowing the outputs under different transformations, one can judge which of them lead to the desired output (and which do not). It is then possible to decide which route is the most appropriate (Fig. 1).
 
 <center>
 <figure>
