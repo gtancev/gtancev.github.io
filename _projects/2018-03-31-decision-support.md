@@ -1,8 +1,8 @@
 ---
-title: 'Decision Support'
+title: 'Chemical Process Design'
 subtitle: 'Minimizing drug development time.'
 date: 2018-03-31 00:00:00
-description: Decision Support
+description: Chemical Process Design
 featured_image: '/images/projects/decision-support/1.jpg'
 ---
 
@@ -10,7 +10,7 @@ featured_image: '/images/projects/decision-support/1.jpg'
 
 ## Summary
 
-In drug development, the appropriate processes for manufacturing must be designed. This involves many decisions or design choices, which are often only made through experiments. However, these are time-consuming and costly. In order to make this process more efficient, simulations can be used, for example. The parameters of the chemical system under consideration serve as input. Afterwards, it can be decided which route is more suitable (Fig. 1).
+In drug development, the appropriate processes for manufacturing must be designed. This involves many decisions or design choices, which are often only made through experiments. However, these are time-consuming and costly. In order to make this process more efficient, mathematical models and numerical simulations can be used, for example. The parameters of the chemical system under consideration serve as input. Afterwards, it can be decided which route is more suitable (Fig. 1).
 
 <center>
 <figure>
@@ -19,4 +19,4 @@ In drug development, the appropriate processes for manufacturing must be designe
 </figure>
 </center>
 
-I worked on such issues during my internship at Novartis. I implemented simulations and defined metrics that can be used to make decisions.
+I worked on such issues during my internship at Novartis. I put these things into software and defined metrics that could be used to make decisions.
