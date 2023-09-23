@@ -1,8 +1,8 @@
 ---
-title: 'Decision Support for Chemical Process Development'
+title: 'Decision Support'
 subtitle: 'Minimizing drug development time.'
 date: 2018-03-31 00:00:00
-description: Decision Support for Chemical Process Development
+description: Decision Support
 featured_image: '/images/projects/decision-support/1.jpg'
 ---
 
