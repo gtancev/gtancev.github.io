@@ -2,10 +2,10 @@
 title: Hello, I'm Georgi.
 subtitle: Nice to meet you!
 description: Hello, I'm Georgi.
-featured_image: /images/photography/me/1.jpg
+featured_image: /images/me/1.jpg
 ---
 
-![](/images/photography/me/1.jpg)
+![](/images/me/1.jpg)
 
 I'm a research scientist with degrees in **engineering** and **computer science** and with a passion for optimizing existing products and processes or designing new ones. For this purpose, I identify current weaknesses and capture people's needs. I like to ask if and how the established can be rethought. When it comes to generating ideas, I get inspiration by other domains, as similar problems may have already been solved elsewhere.
 
