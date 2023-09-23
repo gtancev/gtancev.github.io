@@ -6,7 +6,7 @@ description: Low-Cost Gas Sensor Networks
 featured_image: '/images/projects/sensor-systems/1_alt.jpg'
 ---
 
-![](/images/projects/sensor-systems/1_alt.jpg)
+![](/images/projects/sensor-systems/1.jpg)
 
 ## Summary
 
