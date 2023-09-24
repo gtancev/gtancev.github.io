@@ -23,13 +23,13 @@ Outside of work, I spend my free time traveling, photographing, writing and read
 
 **G. Tancev**, A. Ackermann, G. Schaller, and C. Pascale, "Efficient and Automated Generation of Orthogonal Atmospheres for the Characterization of Low-Cost Gas Sensor Systems in Air Quality Monitoring," IEEE Transactions on Instrumentation and Measurement, vol. 71, 2022. DOI: [10.1109/TIM.2022.3198747](https://doi.org/10.1109/TIM.2022.3198747).
 
-**G. Tancev** and F. Grasso Toro, "Stochastic Online Calibration of Low-Cost Gas Sensor Networks with Mobile References," IEEE Access, vol. 10, pp. 13 901–13 910, 2022. DOI: [10.1109/access.2022.3145945](https://doi.org/10.1109/access.2022.3145945).
+**G. Tancev** and F. Grasso Toro, "Stochastic Online Calibration of Low-Cost Gas Sensor Networks with Mobile References," IEEE Access, vol. 10, pp. 13901–13910, 2022. DOI: [10.1109/access.2022.3145945](https://doi.org/10.1109/access.2022.3145945).
 
-**G. Tancev** and F. Grasso Toro, "Variational Bayesian calibration of low-cost gas sensor systems in air quality monitoring," Measurement: Sensors, vol. 19, p. 100 365, 2022. DOI: [10.1016/j.measen.2021.100365](https://doi.org/10.1016/j.measen.2021.100365).
+**G. Tancev** and F. Grasso Toro, "Variational Bayesian calibration of low-cost gas sensor systems in air quality monitoring," Measurement: Sensors, vol. 19, p. 100365, 2022. DOI: [10.1016/j.measen.2021.100365](https://doi.org/10.1016/j.measen.2021.100365).
 
 ### 2021
 
-**G. Tancev** and F. Grasso Toro, "Sequential Recalibration of Wireless Sensor Networks with (Stochastic) Gradient Descent and Mobile References," vol. 18, 2021, p. 100 115. DOI: [10.1016/j.measen.2021.100115](https://doi.org/10.1016/j.measen.2021.100115).
+**G. Tancev** and F. Grasso Toro, "Sequential Recalibration of Wireless Sensor Networks with (Stochastic) Gradient Descent and Mobile References," vol. 18, 2021, p. 100115. DOI: [10.1016/j.measen.2021.100115](https://doi.org/10.1016/j.measen.2021.100115).
 
 V. Gotta, **G. Tancev**, O. Marsenic, J. E. Vogt, and M. Pfister, "Identifying key predictors of mortality in young patients on chronic haemodialysis - A machine learning approach," Nephrology Dialysis Transplantation, vol. 36, no. 3, pp. 519–528, 2021. DOI: [10.1093/ndt/gfaa128](https://doi.org/10.1093/ndt/gfaa128).
 
