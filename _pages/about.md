@@ -11,7 +11,13 @@ I'm a research scientist with degrees in **engineering** and **computer science*
 
 My **continuous learning** mindset comes in handy when elaborating designs and solution strategies. Data and extracting knowledge from them through algorithms have become part of my craft, but I have learned to question whether the desired information is available at all. The philosophical aspects of my work are close to my heart because today's solutions can become tomorrow's problems. After all, we are the creators of tomorrow's world. I firmly believe that with **creativity**, **collaboration**, and **communication**, great things can be created. Once the goal is set, I push to make sure it is achieved.
 
-In previous activities, for instance, I have [helped **pharmaceutical companies** become more efficient at evaluating process steps by developing **decision-support tools** based on experimental data and numerical simulations](https://gtancev.github.io/project/decision-support), [assisted **physicians** predict mortality and assess existing therapies by **machine learning applied to clinical data**](https://gtancev.github.io/project/clinical-data-science), or [enabled **environmental authorities** perform reliable measurements through the **automation** and **data-driven design** of **maintenance operations**](https://gtancev.github.io/project/sensor-systems).
+In previous activities, for instance, I have:
+
+[helped **pharmaceutical companies** become more efficient at evaluating process steps by developing **decision-support tools** based on experimental data and numerical simulations](https://gtancev.github.io/project/decision-support),
+
+[assisted **physicians** predict mortality and assess existing therapies by **machine learning applied to clinical data**](https://gtancev.github.io/project/clinical-data-science), 
+
+or [enabled **environmental authorities** perform reliable measurements through the **automation** and **data-driven design** of **maintenance operations**](https://gtancev.github.io/project/sensor-systems).
 
 Outside of work, I spend my free time traveling, photographing, writing and reading, or playing sports.
 
