@@ -13,8 +13,8 @@ My **continuous learning** mindset comes in handy when elaborating designs and s
 
 In previous activities, for instance, I have:
 
-* helped **pharmaceutical companies** become more efficient at evaluating process steps by developing **decision-support tools** based on experimental data and numerical simulations,
-* assisted **physicians** predict mortality and assess existing therapies by **machine learning applied to clinical data**,
-* or enabled **environmental authorities** perform reliable measurements through the **automation** and **data-driven design** of **maintenance operations**.
+* [helped **pharmaceutical companies** become more efficient at evaluating process steps by developing **decision-support tools** based on experimental data and numerical simulations](https://gtancev.github.io/project/decision-support),
+* [assisted **physicians** predict mortality and assess existing therapies by **machine learning applied to clinical data**](https://gtancev.github.io/project/clinical-data-science),
+* or [enabled **environmental authorities** perform reliable measurements through the **automation** and **data-driven design** of **maintenance operations**](https://gtancev.github.io/project/sensor-systems).
 
 Outside of work, I spend my free time traveling, photographing, writing and reading, or playing sports.
