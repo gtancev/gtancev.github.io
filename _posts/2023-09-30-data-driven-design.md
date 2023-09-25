@@ -18,7 +18,7 @@ Thinking this further, similar transformations should induce similar process des
 <center>
 <figure>
 <img src="/images/posts/data-driven-design/proposal.png" width="600">
-<figcaption><b>Fig. 1:</b> The process development knowledge contained in the completed work is used to create a representation of it. It is then accessed to obtain designs for new compounds.</figcaption>
+<figcaption><b>Fig. 1:</b> Workflow.</figcaption>
 </figure>
 </center>
 
