@@ -13,11 +13,12 @@ Process development and design are labor-intensive, costly endeavors. By reachin
 
 The rules and heuristics that are applied in this field are latent in the design choices made. This is typically triggered by the molecular structures inducing microscopic properties. A molecule without functional groups, for example, only dissolves in apolar solvents. Therefore, only such solvents can be used for its homogeneous reaction. This implicitly results in the rule that "similar things dissolve in similar things." In the appropriate process documentation, this would be recovered.
 
-Thinking this further, similar transformations should induce similar process designs. After all, such rules are also applied by experts when they solve problems. If one succeeded in adequately extracting and representing this knowledge from data, then one could search for design proposals as a function of compounds or chemical transformations.
+Thinking this further, similar transformations should induce similar process designs. After all, such rules are also applied by experts when they solve problems. If one succeeded in adequately extracting and representing this knowledge from data, then one could search for design proposals as a function of compounds or chemical transformations (Fig. 1).
 
 <center>
 <figure>
 <img src="/images/posts/data-driven-design/proposal.png" width="600">
+<figcaption><b>Fig. 1:</b> Workflow.</figcaption>
 </figure>
 </center>
 
