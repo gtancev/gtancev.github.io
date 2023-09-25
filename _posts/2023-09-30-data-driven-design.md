@@ -1,6 +1,6 @@
 ---
 title: 'Data-Driven Chemical Process Design'
-date: 2023-09-25 00:00:00
+date: 2040-09-01 00:00:00
 description: Data-Driven Chemical Process Design
 featured_image: '/images/posts/data-driven-design/1.jpg'
 ---
