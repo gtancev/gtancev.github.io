@@ -19,7 +19,7 @@ featured_image: '/images/projects/sensor-systems/1.jpg'
 </figure>
 </center>
 
-Nonetheless, the low gas sensor price comes at the expense of lower reliability. Cross-sensitivities (i.e., a lack of selectivity), interferences with environmental factors such as temperature and humidity, high unit-to-unit variability, sensor aging, and concept drift are common deficiencies. Typically, these systems are calibrated using field data and machine learning algorithms (e.g., random forests or neural networks) to overcome some of these shortcomings.
+Nonetheless, the low price comes at the expense of lower reliability. Cross-sensitivities (i.e., a lack of selectivity), interferences with environmental factors such as temperature and humidity, high unit-to-unit variability, sensor aging, and concept drift are common deficiencies. Typically, these systems are calibrated using field data and machine learning algorithms (e.g., random forests or neural networks) to overcome some of these shortcomings.
 
 Still, the operation of a larger sensor network in a city is very challenging due to the number and frequency of maintenance (i.e., recalibration) required. Although solutions exist with algorithms such as [blind calibration](https://gtancev.github.io/blog/blind-calibration), these only work if certain assumptions are met, [which does not seem to be the case for air pollution monitoring](https://ieeexplore.ieee.org/document/8405565).
 
