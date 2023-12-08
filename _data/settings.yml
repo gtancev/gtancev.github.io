@@ -35,7 +35,6 @@ contact_settings:
 social_settings:
   facebook_url: ''
   twitter_url: ''
-  instagram_url: 'https://www.instagram.com/prandtl/'
   snapchat_url: ''
   youtube_url: ''
   google-plus_url: ''
@@ -59,6 +58,7 @@ social_settings:
   spotify_url: ''
   bandcamp_url: ''
   linkedin_url: 'https://www.linkedin.com/in/gtancev/'
+  instagram_url: 'https://www.instagram.com/prandtl/'
 
 color_settings:
   background_color: '#ffffff'
