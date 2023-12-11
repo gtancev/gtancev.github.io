@@ -23,7 +23,7 @@ Nonetheless, the low price comes at the expense of lower reliability. Cross-sens
 
 Still, the operation of a larger sensor network in a city is very challenging due to the number and frequency of maintenance (i.e., recalibration) required. Although solutions exist with algorithms such as [blind calibration](https://gtancev.github.io/blog/blind-calibration), these only work if certain assumptions are met, [which does not seem to be the case for air pollution monitoring](https://ieeexplore.ieee.org/document/8405565).
 
-The aim of [this project](https://www.aramis.admin.ch/Beteiligte/?ProjectID=44523) was to address the remaining failure modes and design protocols to increase or track the reliability. Also, the question arose as to what extent algorithms are trustworthy at all. I worked on this as a research scientist at [METAS](https://www.metas.ch/metas/en/home.html) and the peer-reviewed publications eventually became the basis for my doctoral degree.
+The aim of [this project](https://www.aramis.admin.ch/Beteiligte/?ProjectID=44523) was to address the remaining failure modes and design protocols to increase or track the reliability. Also, the question arose as to what extent algorithms are trustworthy at all. I worked on this as a research scientist at [METAS](https://www.metas.ch/metas/en/home.html) and the peer-reviewed publications eventually became the basis for [my dissertation](https://researchportal.port.ac.uk/en/studentTheses/reliable-air-quality-monitoring-with-low-cost-gas-sensor-systems-).
 
 ---
 
