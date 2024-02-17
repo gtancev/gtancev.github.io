@@ -19,7 +19,7 @@ Outside of work, I spend my free time traveling, photographing, writing and read
 
 ### 2023
 
-[**G. Tancev**, "Reliable Air Quality Monitoring with Low-Cost Gas Sensor Systems in Smart Cities," 2023](https://researchportal.port.ac.uk/en/studentTheses/reliable-air-quality-monitoring-with-low-cost-gas-sensor-systems-).
+**G. Tancev**, "Reliable Air Quality Monitoring with Low-Cost Gas Sensor Systems in Smart Cities," 2023. [Thesis](https://researchportal.port.ac.uk/en/studentTheses/reliable-air-quality-monitoring-with-low-cost-gas-sensor-systems-).
 
 ### 2022
 
