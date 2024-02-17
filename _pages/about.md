@@ -17,6 +17,10 @@ Outside of work, I spend my free time traveling, photographing, writing and read
 
 ## Publications
 
+### 2023
+
+[**G. Tancev**, "Reliable Air Quality Monitoring with Low-Cost Gas Sensor Systems in Smart Cities," 2023](https://researchportal.port.ac.uk/en/studentTheses/reliable-air-quality-monitoring-with-low-cost-gas-sensor-systems-).
+
 ### 2022
 
 **G. Tancev** and F. G. Toro, "Towards a Digital Twin for Air Quality Monitoring Networks in Smart Cities," in ISC2 2022 - 8th IEEE International Smart Cities Conference, IEEE, 2022, pp. 1–4, ISBN: 9781665485616. DOI: [10.1109/ISC255366.2022.9921782](https://doi.org/10.1109/ISC255366.2022.9921782).
