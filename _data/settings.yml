@@ -58,7 +58,7 @@ social_settings:
   soundcloud_url: ''
   spotify_url: ''
   bandcamp_url: ''
-  instagram_url: 'https://www.instagram.com/prandtl/'
+  instagram_url: ''
 
 color_settings:
   background_color: '#ffffff'
