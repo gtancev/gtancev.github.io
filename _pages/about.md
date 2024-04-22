@@ -5,8 +5,6 @@ description: Hello, I'm Georgi.
 featured_image: /images/me/1.jpg
 ---
 
-![](/images/me/1.jpg)
-
 ## Who am I?
 
 I am a scientist and engineer with degrees in chemical engineering and computer science with a passion for data science and digitalization. I like to ask if and how established products or processes can be rethought. To do this, I identify current technological limitations, capture business and people needs, and define the ideal specifications. When it comes to generating solutions, I like to be inspired by other domains, as similar problems may already have been solved elsewhere. That's how I discovered digital as a way to innovate.
