@@ -20,3 +20,9 @@ Drug development requires designing the appropriate manufacturing processes. Thi
 </center>
 
 I worked on such issues during my internship at [Novartis](https://www.novartis.com) in Basel. I put these things into software and defined metrics that could be used to make decisions.
+
+<div class="gallery" data-columns="3">
+	<img src="/images/projects/decision-support/performance_temperatureoscillation.png">
+    <img src="/images/projects/decision-support/performance_hydrcyclone.png">
+    <img src="/images/projects/decision-support/performance_criterion.png">
+</div>
