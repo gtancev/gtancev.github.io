@@ -55,7 +55,7 @@ With this knowledge, a [compact continuous-flow automaton](https://ieeexplore.ie
 
 ### Using predictive maintanance.
 
-For field calibrated systems, which are heavily affected by concept drift, [machine learning algorithms that monitor the trustworthiness of incoming measurements](https://www.mdpi.com/1424-8220/21/9/3298) were proposed and discussed. [Anomalies are detected by estimating the support of the sensor signal distribution and by assessing the position of new signals with respected to this support](https://gtancev.github.io/blog/robust-covariance). Moreover, it was demonstrated how such algorithms might be evaluated with strategies from software testing (i.e., evaluation in "virtual evironments" via numerical simulations based on finite difference equations representing physical phenomena).
+For field calibrated systems, which are heavily affected by concept drift, [machine learning algorithms that monitor the trustworthiness of incoming measurements](https://www.mdpi.com/1424-8220/21/9/3298) were proposed and discussed. [Anomalies are detected by estimating the support of the sensor signal distribution and by assessing the position of new signals with respected to this support](https://gtancev.github.io/blog/robust-covariance). This would allow dynamic maintenance of the sensor systems. Moreover, it was demonstrated how such algorithms might be evaluated with strategies from software testing (i.e., evaluation in "virtual evironments" via numerical simulations based on finite difference equations representing physical phenomena).
 
 <center>
 <figure>
@@ -68,7 +68,7 @@ For field calibrated systems, which are heavily affected by concept drift, [mach
 
 ### Designing a field recalibration method.
 
-Finally, a theoretical concept for the [stochastic online recalibration](https://gtancev.github.io/blog/stochastic-calibration) of gas sensor networks by means of mobile reference instruments was presented. In essence, measured values would be compared during encounters and the calibration models would be adjusted by means of stochastic gradient updates. Recently developed gradient update rules such as RMSProp (with and without momentum) were explored. The algorithms and their design parameters were evaluated using Monte Carlo simulations. [The analysis suggested that the reliability of the measurements could be maintained in this manner as sensor aging and concept drift are continuously compensated](https://ieeexplore.ieee.org/abstract/document/9690889).
+Finally, a theoretical concept for the [stochastic online recalibration](https://gtancev.github.io/blog/stochastic-calibration) of gas sensor networks by means of mobile reference instruments was presented. In essence, measured values would be compared during encounters and the calibration models would be adjusted by means of stochastic gradient updates. Recently developed gradient update rules such as RMSProp (with and without momentum) were explored. The algorithms and their design parameters were evaluated using Monte Carlo simulations. [The analysis suggested that the reliability of the measurements could be maintained in this manner as sensor aging and concept drift are continuously compensated for](https://ieeexplore.ieee.org/abstract/document/9690889).
 
 <center>
 <figure>
