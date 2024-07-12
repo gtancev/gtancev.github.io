@@ -7,7 +7,7 @@ featured_image: /images/me/1.jpg
 
 ## Who am I?
 
-I am a scientist and engineer with a background in chemical engineering and computer science and with a passion for data science and digitalization. I like to ask if and how established products or processes can be rethought. To do this, I identify current technological limitations, capture needs, and define the adequate specifications. When it comes to generating solutions, I like to be inspired by other domains, as similar problems may already have been solved elsewhere. That's how I discovered digital as a way to innovate.
+I am a scientist and engineer with a background in chemical engineering and computer science. I like to ask if and how established products or processes can be rethought. To do this, I identify current technological limitations, capture needs, and define adequate specifications. When it comes to generating solutions, I like to be inspired by other domains, as similar problems may already have been solved elsewhere. That's how I discovered digital as a way to innovate.
 
 My continuous learning mindset helps me stay on top of the latest developments. Data and extracting knowledge from it through algorithms has been a critical part of my craft, but I have learned to question whether the information I want is even available. Furthermore, the philosophical aspects of my work are close to my heart because today's solutions can become tomorrow's problems. After all, we are the creators of tomorrow's world. I firmly believe that great things can be achieved through creativity, collaboration, and communication. Once the goal is set, I push to make sure it is achieved.
 
