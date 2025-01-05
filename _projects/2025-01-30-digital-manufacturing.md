@@ -30,7 +30,7 @@ A plethora of data is generated, which can be utilised for decision-making or fo
 
 ### Data Analytics
 
-<div class="gallery" data-columns="3">
+<div class="gallery" data-columns="1">
     <img src="/images/projects/digital-manufacturing/digital_hub.png">
 	<img src="/images/projects/digital-manufacturing/yields.png">
     <img src="/images/projects/digital-manufacturing/yields_1.png">
@@ -44,11 +44,11 @@ A plethora of data is generated, which can be utilised for decision-making or fo
 
 **User**: What are relevant principles applied to sterile manufacturing?
 
-> **Assistant**: The relevant principles applied to sterile manufacturing can be summarized as follows:
+**Assistant**: The relevant principles applied to sterile manufacturing can be summarized as follows:
 
-> 1. **Facility, Equipment, and Process Design**:
-> * Must be optimized, qualified, and validated according to Good Manufacturing Practices (GMP) guidelines. Use of appropriate technology such as Restricted Access Barriers Systems (RABS), isolators, and rapid microbial testing systems to protect the product from potential contamination.[^1]
-> * Should include measures to prevent contamination, such as cleanrooms, airlocks, RABS, and isolator.
+1. **Facility, Equipment, and Process Design**:
+* Must be optimized, qualified, and validated according to Good Manufacturing Practices (GMP) guidelines. Use of appropriate technology such as Restricted Access Barriers Systems (RABS), isolators, and rapid microbial testing systems to protect the product from potential contamination.[^1]
+* Should include measures to prevent contamination, such as cleanrooms, airlocks, RABS, and isolator.
 
 2. **Personnel**:
     * Personnel should possess adequate qualifications, experience, training, and attitude focused on protecting sterile products during manufacturing, packaging, and distribution.
