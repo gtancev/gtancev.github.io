@@ -1,7 +1,7 @@
 ---
 title: 'Data-Driven Manufacturing Operations'
 subtitle: 'Fostering a culture of data-driven decision-making in pharmaceutical manufacturing.'
-date: 2025-01-30 00:00:00
+date: 2025-01-01 00:00:00
 description: 'Data-Driven Manufacturing Operations'
 featured_image: '/images/projects/digital-manufacturing/1.jpg'
 ---
