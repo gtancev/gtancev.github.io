@@ -20,7 +20,9 @@ In the final step in the production of biologics (i.e., large molecules), the dr
 </figure>
 </center>
 
-In particular, a variety of data is generated that can be used to support decision making. This includes data from electronic batch records, sensor and alarm data from the operational historian, or business data from the enterprise resource system. The aim of this work was to scrutinise and digitalise the manual processes and tap into the available data in order to implement data-driven operations.
+In particular, a variety of data is generated that can be used to guide decision making or to sample from. This includes data from manufacturing instructions, deviation reports, electronic batch records, sensor and alarm data from the operational historian, or business data from the enterprise resource system. The aim of this work was to scrutinise and digitalise the manual processes and tap into the available data in order to foster a culture of data-driven pharmaceutical manufacturing.
+
+### Data Analytics
 
 <div class="gallery" data-columns="3">
     <img src="/images/projects/digital-manufacturing/digital_hub.png">
@@ -30,3 +32,43 @@ In particular, a variety of data is generated that can be used to support decisi
     <img src="/images/projects/digital-manufacturing/root_cause_analysis_2.pdf">
     <img src="/images/projects/digital-manufacturing/requalification_assessment_1.pdf">
 </div>
+
+### (Generative) Artificial Intelligence
+
+**User**
+What are relevant principles applied to sterile manufacturing?
+
+**Assistant**
+The relevant principles applied to sterile manufacturing can be summarized as follows:
+
+1. **Facility, Equipment, and Process Design**:
+   - Must be optimized, qualified, and validated according to Good Manufacturing Practices (GMP) guidelines. Use of appropriate technology such as Restricted Access Barriers Systems (RABS), isolators, and rapid microbial testing systems to protect the product from potential contamination^1^.
+   - Should include measures to prevent contamination, such as cleanrooms, airlocks, RABS, and isolators【24†source】
+
+2. **Personnel**:
+   - Personnel should possess adequate qualifications, experience, training, and attitude focused on protecting sterile products during manufacturing, packaging, and distribution【24:1†source】【24:1†source】.
+   - Proper gowning and hygiene practices are crucial to minimizing contamination risks【24:0†source】.
+
+3. **Quality Risk Management (QRM)**:
+   - Processes, equipment, facilities, and activities should be managed in accordance with QRM principles to proactively identify, evaluate, and control potential risks to quality【24:2†source】.
+   - QRM should be integrated into all areas of the product life cycle, aiming to minimize microbial contamination and ensure product quality【24:0†source】.
+
+4. **Quality Assurance and Quality Control (QA/QC)**:
+   - Quality Assurance (QA) should involve established and validated methods of manufacturing and control, and a Contamination Control Strategy (CCS) covering all critical control points and assessing the effectiveness of contamination control measures must be implemented【24:2†source】【24:0†source】.
+   - QC includes specific requirements for testing raw materials, components, products, and environmental monitoring, especially focusing on microbial quality and bioburden testing【24:0†source】【24:1†source】.
+
+5. **Premises and Cleanroom Standards**:
+   - Sterile manufacturing must be carried out in appropriately designed cleanrooms maintained to specific cleanliness standards and fitted with efficient air filtration systems. There are defined grades (A, B, C, and D) for cleanroom environments based on the activity and contamination risk involved【24:0†source】【24:12†source】【24:4†source】.
+
+6. **Production and Sterilization Technologies**:
+   - Specific approaches and technologies for aseptic and terminal sterilization processes, including handling of materials, equipment sterilization, and microbial contamination detection must be employed. The process simulation and validation are important to ensure sterility throughout the production【24:3†source】【24:14†source】【24:9†source】.
+
+7. **Contamination Control**:
+   - Continuous and effective contamination control, including cleaning, disinfection, and depyrogenation (removal/inactivation of pyrogens) are critical. Proper environment monitoring, including viable and non-viable particle monitoring, is essential to ensure ongoing sterility compliance【24:16†source】【24:13†source】【14:20†source】.
+
+8. **Documentation and Record Keeping**:
+   - Thorough documentation and review of records related to aseptic processing, including process simulations, interventions, environmental monitoring data, and microbial testing results, are required to verify compliance and address any issues effectively【24:17†source】【24:4†source】.
+
+Understanding and implementing these principles are key to maintaining the quality and sterility of manufactured products, ensuring their safety and efficacy for patients【24†source】【14:5†source】【14:6†source】.
+
+^1.^ 2020_annex1ps_sterile_medicinal_products_en_0.pdf
