@@ -28,6 +28,5 @@ In particular, a variety of data is generated that can be used to support decisi
     <img src="/images/projects/digital-manufacturing/yields_1.pdf">
     <img src="/images/projects/digital-manufacturing/root_cause_analysis_1.pdf">
     <img src="/images/projects/digital-manufacturing/root_cause_analysis_2.pdf">
-    <img src="/images/projects/digital-manufacturing/requalification_assessment.pdf">
     <img src="/images/projects/digital-manufacturing/requalification_assessment_1.pdf">
 </div>
