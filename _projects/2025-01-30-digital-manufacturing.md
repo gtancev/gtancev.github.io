@@ -3,10 +3,10 @@ title: 'Data-Driven Manufacturing Operations'
 subtitle: 'Fostering a culture of data-driven decision-making in pharmaceutical manufacturing.'
 date: 2025-01-01 00:00:00
 description: 'Data-Driven Manufacturing Operations'
-featured_image: '/images/projects/digital-manufacturing/1.jpg'
+featured_image: '/images/projects/digital-manufacturing/3.jpg'
 ---
 
-![](/images/projects/digital-manufacturing/1.jpg)
+![](/images/projects/digital-manufacturing/3.jpg)
 
 ## Summary
 
@@ -22,12 +22,12 @@ In the final step in the production of biologics (i.e., large molecules), the dr
 
 In particular, a variety of data is generated that can be used to support decision making. This includes data from electronic batch records, sensor and alarm data from the operational historian, or business data from the enterprise resource system. The aim of this work was to scrutinise and digitalise the manual processes and tap into the available data in order to implement data-driven operations.
 
-<div class="gallery" data-columns="2">
+<div class="gallery" data-columns="3">
     <img src="/images/projects/digital-manufacturing/digital_hub.png">
 	<img src="/images/projects/digital-manufacturing/yields.pdf">
     <img src="/images/projects/digital-manufacturing/yields_1.pdf">
     <img src="/images/projects/digital-manufacturing/root_cause_analysis_1.pdf">
     <img src="/images/projects/digital-manufacturing/root_cause_analysis_2.pdf">
-    <img src="/images/projects/digital-manufacturing/requalificiation_assessment.pdf">
-    <img src="/images/projects/digital-manufacturing/requalificiation_assessment_1.pdf">
+    <img src="/images/projects/digital-manufacturing/requalification_assessment.pdf">
+    <img src="/images/projects/digital-manufacturing/requalification_assessment_1.pdf">
 </div>
