@@ -15,7 +15,7 @@ In the final step in the production of biologics (i.e., large molecules), the dr
 
 <center>
 <figure>
-<img src="/images/projects/digital-manufacturing/schema.png" width="900">
+<img src="/images/projects/digital-manufacturing/schema.png" width="1000">
 <figcaption><b>Fig. 1:</b> Operational workflow diagram.</figcaption>
 </figure>
 </center>
@@ -26,13 +26,13 @@ In particular, a variety of data is generated that can be used to guide decision
 
 ### Data Analytics
 
-<div class="gallery" data-columns="1">
+<div class="gallery" data-columns="2">
     <img src="/images/projects/digital-manufacturing/digital_hub.png">
-	<img src="/images/projects/digital-manufacturing/yields.pdf">
-    <img src="/images/projects/digital-manufacturing/yields_1.pdf">
-    <img src="/images/projects/digital-manufacturing/root_cause_analysis_1.pdf">
-    <img src="/images/projects/digital-manufacturing/root_cause_analysis_2.pdf">
-    <img src="/images/projects/digital-manufacturing/requalification_assessment_1.pdf">
+	<img src="/images/projects/digital-manufacturing/yields.png">
+    <img src="/images/projects/digital-manufacturing/yields_1.png">
+    <img src="/images/projects/digital-manufacturing/root_cause_analysis_1.png">
+    <img src="/images/projects/digital-manufacturing/root_cause_analysis_2.png">
+    <img src="/images/projects/digital-manufacturing/requalification_assessment_1.png">
 </div>
 
 
