@@ -22,7 +22,11 @@ In the final step in the production of biologics (i.e., large molecules), the dr
 
 In particular, a variety of data is generated that can be used to guide decision making or to sample from. This includes data from manufacturing instructions, deviation reports, electronic batch records, sensor and alarm data from the operational historian, or business data from the enterprise resource system. The aim of this work was to scrutinise and digitalise the manual processes and tap into the available data in order to foster a culture of data-driven pharmaceutical manufacturing.
 
-## Examples
+<div class="gallery" data-columns="1">
+    <img src="/images/projects/digital-manufacturing/digital_hub.png">
+</div>
+
+<!-- ## Examples
 
 ### Data Analytics
 
@@ -74,4 +78,4 @@ In particular, a variety of data is generated that can be used to guide decision
 
 Understanding and implementing these principles are key to maintaining the quality and sterility of manufactured products, ensuring their safety and efficacy for patients.
 
-[^1]: 2020_annex1ps_sterile_medicinal_products_en_0.pdf
+[^1]: 2020_annex1ps_sterile_medicinal_products_en_0.pdf -->
