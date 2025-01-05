@@ -26,7 +26,9 @@ A plethora of data is generated, which can be utilised for decision-making or fo
     <img src="/images/projects/digital-manufacturing/digital_hub.png">
 </div>
 
-> "Do not wait; the time will never be 'just right.' Start where you stand, and work with whatever tools you may have at your command, and better tools will be found as you go along." - George Herbert
+<!-- > "Do not wait; the time will never be 'just right.' Start where you stand, and work with whatever tools you may have at your command, and better tools will be found as you go along." - George Herbert -->
+
+---
 
 ## Examples
 
@@ -67,6 +69,8 @@ A plethora of data is generated, which can be utilised for decision-making or fo
 Understanding and implementing these principles are key to maintaining the quality and sterility of manufactured products, ensuring their safety and efficacy for patients.
 
 [^1]: 2020_annex1ps_sterile_medicinal_products_en_0.pdf
+
+---
 
 ### Data Analytics
 
