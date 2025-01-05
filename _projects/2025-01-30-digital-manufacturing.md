@@ -15,7 +15,7 @@ In the final step in the production of biologics (i.e., large molecules), the dr
 
 <center>
 <figure>
-<img src="/images/projects/digital-manufacturing/schema.png" width="800">
+<img src="/images/projects/digital-manufacturing/schema.png" width="900">
 <figcaption><b>Fig. 1:</b> Operational workflow diagram.</figcaption>
 </figure>
 </center>
@@ -47,9 +47,11 @@ In particular, a variety of data is generated that can be used to guide decision
 * Should include measures to prevent contamination, such as cleanrooms, airlocks, RABS, and isolator.
 
 
+
 2. **Personnel**:
 * Personnel should possess adequate qualifications, experience, training, and attitude focused on protecting sterile products during manufacturing, packaging, and distribution.
 * Proper gowning and hygiene practices are crucial to minimizing contamination risks.
+
 
 
 3. **Quality Risk Management (QRM)**:
@@ -57,21 +59,26 @@ In particular, a variety of data is generated that can be used to guide decision
 * QRM should be integrated into all areas of the product life cycle, aiming to minimize microbial contamination and ensure product quality.
 
 
+
 4. **Quality Assurance and Quality Control (QA/QC)**:
 * Quality Assurance (QA) should involve established and validated methods of manufacturing and control, and a Contamination Control Strategy (CCS) covering all critical control points and assessing the effectiveness of contamination control measures must be implemented.
 * QC includes specific requirements for testing raw materials, components, products, and environmental monitoring, especially focusing on microbial quality and bioburden testing.
+
 
 
 5. **Premises and Cleanroom Standards**:
 * Sterile manufacturing must be carried out in appropriately designed cleanrooms maintained to specific cleanliness standards and fitted with efficient air filtration systems. There are defined grades (A, B, C, and D) for cleanroom environments based on the activity and contamination risk involved.
 
 
+
 6. **Production and Sterilization Technologies**:
 * Specific approaches and technologies for aseptic and terminal sterilization processes, including handling of materials, equipment sterilization, and microbial contamination detection must be employed. The process simulation and validation are important to ensure sterility throughout the production.
 
 
+
 7. **Contamination Control**:
 * Continuous and effective contamination control, including cleaning, disinfection, and depyrogenation (removal/inactivation of pyrogens) are critical. Proper environment monitoring, including viable and non-viable particle monitoring, is essential to ensure ongoing sterility compliance.
+
 
 
 8. **Documentation and Record Keeping**:
