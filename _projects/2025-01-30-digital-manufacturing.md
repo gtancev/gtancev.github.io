@@ -26,19 +26,9 @@ A plethora of data is generated, which can be utilised for decision-making or fo
     <img src="/images/projects/digital-manufacturing/digital_hub.png">
 </div>
 
+> "Do not wait; the time will never be 'just right.' Start where you stand, and work with whatever tools you may have at your command, and better tools will be found as you go along." - George Herbert
+
 ## Examples
-
-### Data Analytics
-
-<div class="gallery" data-columns="1">
-    <img src="/images/projects/digital-manufacturing/requalification_assessment.png">
-    <img src="/images/projects/digital-manufacturing/requalification_assessment_1.png">
-    <img src="/images/projects/digital-manufacturing/root_cause_analysis_1.png">
-    <img src="/images/projects/digital-manufacturing/root_cause_analysis_2.png">
-    <img src="/images/projects/digital-manufacturing/yields_1.png">
-    <img src="/images/projects/digital-manufacturing/yields.png">
-</div>
-
 
 ### Retrieval-Augmented Generation
 
@@ -77,3 +67,14 @@ A plethora of data is generated, which can be utilised for decision-making or fo
 Understanding and implementing these principles are key to maintaining the quality and sterility of manufactured products, ensuring their safety and efficacy for patients.
 
 [^1]: 2020_annex1ps_sterile_medicinal_products_en_0.pdf
+
+### Data Analytics
+
+<div class="gallery" data-columns="1">
+    <img src="/images/projects/digital-manufacturing/requalification_assessment.png">
+    <img src="/images/projects/digital-manufacturing/requalification_assessment_1.png">
+    <img src="/images/projects/digital-manufacturing/root_cause_analysis_1.png">
+    <img src="/images/projects/digital-manufacturing/root_cause_analysis_2.png">
+    <img src="/images/projects/digital-manufacturing/yields_1.png">
+    <img src="/images/projects/digital-manufacturing/yields.png">
+</div>
