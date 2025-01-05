@@ -11,7 +11,7 @@ featured_image: '/images/projects/digital-manufacturing/3.jpg'
 ## Summary
 
 
-In the final step in the production of biologics (i.e., large molecules), the drug substance, excipients and water must be mixed and filled into the appropriate containers (e.g., vials or syringes). Although the actual production processes are automated, many other processes such as planning and troubleshooting are manual and time-consuming.
+In the final stage of the (sterile) manufacture of biologics (large molecules), the drug substance, excipients and water must be amalgamated and transferred into the designated containers (e.g. vials or syringes). Despite the automation of the actual production processes, numerous other processes such as planning and troubleshooting are manual and time-consuming.
 
 <center>
 <figure>
@@ -20,7 +20,7 @@ In the final step in the production of biologics (i.e., large molecules), the dr
 </figure>
 </center>
 
-In particular, a variety of data is generated that can be used to guide decision making or to sample from. This includes data from manufacturing instructions, deviation reports, electronic batch records, sensor and alarm data from the operational historian, or business data from the enterprise resource system. The aim of this work was to scrutinise and digitalise the manual processes and tap into the available data in order to foster a culture of data-driven pharmaceutical manufacturing.
+A plethora of data is generated, which can be utilised for decision-making or for sampling. This encompasses data from manufacturing instructions, deviation reports, electronic batch records, sensor and alarm data from the operational historian, or business data from the enterprise resource system. The objective of this endeavour was to scrutinise and digitalise the manual processes and to leverage the available data to cultivate a culture of data-driven pharmaceutical manufacturing. This culminated in the establishment of a digital hub.
 
 <div class="gallery" data-columns="1">
     <img src="/images/projects/digital-manufacturing/digital_hub.png">
