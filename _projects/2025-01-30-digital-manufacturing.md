@@ -68,7 +68,7 @@ A plethora of data is generated, which can be utilised for decision-making or fo
 
 Understanding and implementing these principles are key to maintaining the quality and sterility of manufactured products, ensuring their safety and efficacy for patients.
 
-[^1]: 2020_annex1ps_sterile_medicinal_products_en_0.pdf
+[^1]: EU Guidelines for Good Manufacturing Practice for Medicinal Products for Human and Veterinary Use
 
 ---
 
