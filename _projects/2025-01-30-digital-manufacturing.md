@@ -141,11 +141,11 @@ This means the Overall Asset Effectiveness for the packaging line is 74.8%.
 
 This example illustrates the application of OAE to measure and improve asset utilization, performance, and quality within a manufacturing setup.
 
-For further details on the metrics, calculations, and examples, please refer to the NOSSCE metrics and handbooks provided in the documents [^1] [^2] [^3].
+For further details on the metrics, calculations, and examples, please refer to the NOSSCE metrics and handbooks provided in the documents [^2] [^3] [^4].
 
-[^1]: Supply Model_Stein Steriles_V6.pdf
-[^2]: NOSSCE Manual Sites v4.0.pdf
-[^3]: NOSSCE Metrics Handbook DP FP Sites v7.0.pdf
+[^2]: Supply Model_Stein Steriles_V6.pdf
+[^3]: NOSSCE Manual Sites v4.0.pdf
+[^4]: NOSSCE Metrics Handbook DP FP Sites v7.0.pdf
 
 ### Data Analytics
 
