@@ -125,7 +125,7 @@ $\text{OAE} = \text{Availability} \times \text{Performance} \times \text{Quality
 7. **Good Units Produced**: 5700 units
 
 ###### Calculation Components:
-- **Availability**: 
+- **Availability**:
 $\frac{420}{480} = 0.875$
 
 - **Performance**:
