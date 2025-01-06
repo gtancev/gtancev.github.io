@@ -10,7 +10,6 @@ featured_image: '/images/projects/digital-manufacturing/3.jpg'
 
 ## Summary
 
-
 In the final stage of the (sterile) manufacture of biologics (large molecules), the drug substance, excipients and water must be amalgamated and transferred into the designated containers (e.g. vials or syringes). Despite the automation of the actual production processes, numerous other processes such as planning and troubleshooting are manual and time-consuming.
 
 <center>
@@ -28,11 +27,11 @@ A plethora of data is generated, which can be utilised for decision-making or fo
 
 <!-- > "Do not wait; the time will never be 'just right.' Start where you stand, and work with whatever tools you may have at your command, and better tools will be found as you go along." - George Herbert -->
 
----
-
 ## Examples
 
 ### Retrieval-Augmented Generation
+
+#### Regulatory Bot
 
 **User**: What are relevant principles applicable to sterile manufacturing?
 
@@ -70,7 +69,85 @@ Understanding and implementing these principles are key to maintaining the quali
 
 [^1]: EU Guidelines for Good Manufacturing Practice for Medicinal Products for Human and Veterinary Use
 
----
+#### Operational Excellence Bot
+
+**User**
+What is overall asset effectiveness and how is it defined?
+
+**Assistant**
+Overall Asset Effectiveness (OAE) is a metric used to measure the utilization and efficiency of assets within a production environment. It is typically calculated by evaluating several key factors related to the performance and utilization of assets over a given period. This metric helps in ensuring that assets are being used optimally to maximize productivity and minimize downtime.
+
+The specific definition and calculation methods for Overall Asset Effectiveness are detailed in the relevant documentation for Novartis Operational Standards for Supply Chain Excellence (NOSSCE).
+
+The precise definition and applicable methods may vary slightly based on the implementation details from the NOSSCE manual for different sites or aspects of the supply chain. Therefore, for the most accurate and complete understanding, it is recommended to refer to the specific metrics handbook and related documents.
+
+If you have any more specific questions or need further details, feel free to ask! 
+
+**User**
+Okay, great! Can you give one example for any type of asset?
+
+**Assistant**
+Sure! Let's consider an example of Overall Asset Effectiveness (OAE) for a production line in a manufacturing plant, such as a packaging line for pharmaceuticals.
+
+###### Example: Pharmaceutical Packaging Line**
+
+To calculate OAE for a pharmaceutical packaging line, you would gather data on three main components:
+1. **Availability**
+2. **Performance**
+3. **Quality**
+
+###### Availability
+Availability is the ratio of the actual operating time to the planned operating time. It accounts for downtime due to scheduled maintenance, breakdowns, and other stoppages.
+
+- **Formula**: 
+\[ \text{Availability} = \frac{\text{Operating Time}}{\text{Scheduled Production Time} - \text{Downtime}} \]
+
+###### Performance
+Performance measures how well the line is running during the actual operating time compared to its designed speed.
+
+- **Formula**: 
+\[ \text{Performance} = \frac{\text{Actual Output}}{\text{Theoretical Output}} \]
+
+###### Quality
+Quality is the ratio of the number of good units produced to the total units started. This accounts for defects and reworks.
+
+- **Formula**: 
+\[ \text{Quality} = \frac{\text{Good Units}}{\text{Total Units Started}} \]
+
+Finally, to calculate the Overall Asset Effectiveness:
+\[ \text{OAE} = \text{Availability} \times \text{Performance} \times \text{Quality} \]
+
+###### Practical Example Calculation:
+1. **Scheduled Production Time**: 480 minutes (8 hours shift)
+2. **Downtime**: 60 minutes (breaks, maintenance)
+3. **Operating Time**: 420 minutes (480 - 60)
+4. **Theoretical Line Speed**: 1000 units/hour
+5. **Actual Line Speed**: 900 units/hour
+6. **Total Units Started**: 6000 units
+7. **Good Units Produced**: 5700 units
+
+###### Calculation Components:
+- **Availability**: 
+\[ \frac{420}{480} = 0.875 \]
+
+- **Performance**:
+\[ \frac{900 \times 7}{1000 \times 7} = 0.9 \]
+
+- **Quality**:
+\[ \frac{5700}{6000} = 0.95 \]
+
+###### OAE Calculation:
+\[ \text{OAE} = 0.875 \times 0.9 \times 0.95 = 0.748 \]
+
+This means the Overall Asset Effectiveness for the packaging line is 74.8%.
+
+This example illustrates the application of OAE to measure and improve asset utilization, performance, and quality within a manufacturing setup.
+
+For further details on the metrics, calculations, and examples, please refer to the NOSSCE metrics and handbooks provided in the documents [^1] [^2] [^3].
+
+[^1]: Supply Model_Stein Steriles_V6.pdf
+[^2]: NOSSCE Manual Sites v4.0.pdf
+[^3]: NOSSCE Metrics Handbook DP FP Sites v7.0.pdf
 
 ### Data Analytics
 
