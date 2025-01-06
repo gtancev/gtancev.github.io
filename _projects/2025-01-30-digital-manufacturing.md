@@ -81,6 +81,8 @@ The precise definition and applicable methods may vary slightly based on the imp
 
 If you have any more specific questions or need further details, feel free to ask! 
 
+---
+
 **User**: Okay, great! Can you give one example for any type of asset?
 
 **Assistant**: Sure! Let's consider an example of Overall Asset Effectiveness (OAE) for a production line in a manufacturing plant, such as a packaging line for pharmaceuticals.
@@ -96,7 +98,7 @@ To calculate OAE for a pharmaceutical packaging line, you would gather data on t
 Availability is the ratio of the actual operating time to the planned operating time. It accounts for downtime due to scheduled maintenance, breakdowns, and other stoppages.
 
 - **Formula**: 
-\[ \text{Availability} = \frac{\text{Operating Time}}{\text{Scheduled Production Time} - \text{Downtime}} \]
+$\text{Availability} = \frac{\text{Operating Time}}{\text{Scheduled Production Time} - \text{Downtime}}$
 
 ###### Performance
 Performance measures how well the line is running during the actual operating time compared to its designed speed.
@@ -133,7 +135,7 @@ $\frac{900 \times 7}{1000 \times 7} = 0.9$
 $\frac{5700}{6000} = 0.95$
 
 ###### OAE Calculation:
-$\text{OAE} = 0.875 \times 0.9 \times 0.95 = 0.748.
+$\text{OAE} = 0.875 \times 0.9 \times 0.95 = 0.748$.
 
 This means the Overall Asset Effectiveness for the packaging line is 74.8%.
 
