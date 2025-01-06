@@ -71,11 +71,9 @@ Understanding and implementing these principles are key to maintaining the quali
 
 #### Operational Excellence Bot
 
-**User**
-What is overall asset effectiveness and how is it defined?
+**User**: What is overall asset effectiveness and how is it defined?
 
-**Assistant**
-Overall Asset Effectiveness (OAE) is a metric used to measure the utilization and efficiency of assets within a production environment. It is typically calculated by evaluating several key factors related to the performance and utilization of assets over a given period. This metric helps in ensuring that assets are being used optimally to maximize productivity and minimize downtime.
+**Assistant**: Overall Asset Effectiveness (OAE) is a metric used to measure the utilization and efficiency of assets within a production environment. It is typically calculated by evaluating several key factors related to the performance and utilization of assets over a given period. This metric helps in ensuring that assets are being used optimally to maximize productivity and minimize downtime.
 
 The specific definition and calculation methods for Overall Asset Effectiveness are detailed in the relevant documentation for Novartis Operational Standards for Supply Chain Excellence (NOSSCE).
 
@@ -83,13 +81,11 @@ The precise definition and applicable methods may vary slightly based on the imp
 
 If you have any more specific questions or need further details, feel free to ask! 
 
-**User**
-Okay, great! Can you give one example for any type of asset?
+**User**: Okay, great! Can you give one example for any type of asset?
 
-**Assistant**
-Sure! Let's consider an example of Overall Asset Effectiveness (OAE) for a production line in a manufacturing plant, such as a packaging line for pharmaceuticals.
+**Assistant**: Sure! Let's consider an example of Overall Asset Effectiveness (OAE) for a production line in a manufacturing plant, such as a packaging line for pharmaceuticals.
 
-###### Example: Pharmaceutical Packaging Line**
+###### Example: Pharmaceutical Packaging Line
 
 To calculate OAE for a pharmaceutical packaging line, you would gather data on three main components:
 1. **Availability**
@@ -106,16 +102,16 @@ Availability is the ratio of the actual operating time to the planned operating 
 Performance measures how well the line is running during the actual operating time compared to its designed speed.
 
 - **Formula**: 
-\[ \text{Performance} = \frac{\text{Actual Output}}{\text{Theoretical Output}} \]
+$\text{Performance} = \frac{\text{Actual Output}}{\text{Theoretical Output}}$
 
 ###### Quality
 Quality is the ratio of the number of good units produced to the total units started. This accounts for defects and reworks.
 
 - **Formula**: 
-\[ \text{Quality} = \frac{\text{Good Units}}{\text{Total Units Started}} \]
+$\text{Quality} = \frac{\text{Good Units}}{\text{Total Units Started}}$
 
 Finally, to calculate the Overall Asset Effectiveness:
-\[ \text{OAE} = \text{Availability} \times \text{Performance} \times \text{Quality} \]
+$\text{OAE} = \text{Availability} \times \text{Performance} \times \text{Quality}$
 
 ###### Practical Example Calculation:
 1. **Scheduled Production Time**: 480 minutes (8 hours shift)
@@ -128,16 +124,16 @@ Finally, to calculate the Overall Asset Effectiveness:
 
 ###### Calculation Components:
 - **Availability**: 
-\[ \frac{420}{480} = 0.875 \]
+$\frac{420}{480} = 0.875$
 
 - **Performance**:
-\[ \frac{900 \times 7}{1000 \times 7} = 0.9 \]
+$\frac{900 \times 7}{1000 \times 7} = 0.9$
 
 - **Quality**:
-\[ \frac{5700}{6000} = 0.95 \]
+$\frac{5700}{6000} = 0.95$
 
 ###### OAE Calculation:
-\[ \text{OAE} = 0.875 \times 0.9 \times 0.95 = 0.748 \]
+$\text{OAE} = 0.875 \times 0.9 \times 0.95 = 0.748.
 
 This means the Overall Asset Effectiveness for the packaging line is 74.8%.
 
