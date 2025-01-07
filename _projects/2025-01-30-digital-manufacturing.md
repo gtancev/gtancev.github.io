@@ -21,9 +21,16 @@ In the final stage of the (sterile) manufacture of biologics (large molecules), 
 
 A plethora of data is generated, which can be utilised for decision-making or for sampling. This encompasses data from manufacturing instructions, deviation reports, electronic batch records, sensor and alarm data from the operational historian, or business data from the enterprise resource system. The objective of this endeavour was to scrutinise and digitalise the manual processes and to leverage the available data to cultivate a culture of data-driven pharmaceutical manufacturing. This culminated in the establishment of a **digital hub**.
 
-<div class="gallery" data-columns="1">
+<!-- <div class="gallery" data-columns="1">
     <img src="/images/projects/digital-manufacturing/digital_hub.png">
-</div>
+</div> -->
+
+<center>
+<figure>
+<img src="/images/projects/digital-manufacturing/digital_hub.png" width="1000">
+<figcaption><b>Fig. 2:</b> Digital hub.</figcaption>
+</figure>
+</center>
 
 <!-- > "Do not wait; the time will never be 'just right.' Start where you stand, and work with whatever tools you may have at your command, and better tools will be found as you go along." - George Herbert -->
 
@@ -149,7 +156,7 @@ For further details on the metrics, calculations, and examples, please refer to 
 
 ### Data Analytics
 
-<div class="gallery" data-columns="1">
+<div class="gallery" data-columns="3">
     <img src="/images/projects/digital-manufacturing/requalification_assessment.png">
     <img src="/images/projects/digital-manufacturing/requalification_assessment_1.png">
     <img src="/images/projects/digital-manufacturing/root_cause_analysis_1.png">
