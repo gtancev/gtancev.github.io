@@ -156,6 +156,6 @@ For further details on the metrics, calculations, and examples, please refer to 
     <img src="/images/projects/digital-manufacturing/requalification_assessment_1.png">
     <img src="/images/projects/digital-manufacturing/root_cause_analysis_1.png">
     <img src="/images/projects/digital-manufacturing/root_cause_analysis_2.png">
-    <img src="/images/projects/digital-manufacturing/yields_1.png">
     <img src="/images/projects/digital-manufacturing/yields.png">
+    <img src="/images/projects/digital-manufacturing/yields_1.png">
 </div>
