@@ -10,7 +10,7 @@ featured_image: '/images/projects/digital-manufacturing/3.jpg'
 
 ## Summary
 
-In the final stage of the (sterile) manufacture of biologics (large molecules), the drug substance, excipients and water must be amalgamated and transferred into the designated containers (e.g. vials or syringes). Despite the automation of the actual production processes, numerous other processes such as planning and troubleshooting are manual and time-consuming.
+In the final stage of the (sterile) manufacture of biologics (i.e., large molecules), the drug substance, excipients and water must be amalgamated and transferred into the designated containers (i.e., vials or syringes). Despite the automation of the actual production processes, numerous other processes such as planning and troubleshooting are manual and time-consuming.
 
 <center>
 <figure>
@@ -19,7 +19,7 @@ In the final stage of the (sterile) manufacture of biologics (large molecules), 
 </figure>
 </center>
 
-A plethora of data is generated, which can be utilised for decision-making or for sampling. This encompasses data from manufacturing instructions, deviation reports, electronic batch records, sensor and alarm data from the operational historian, or business data from the enterprise resource system. The objective of this endeavour was to scrutinise and digitalise the manual processes and to leverage the available data to cultivate a culture of data-driven pharmaceutical manufacturing. This culminated in the establishment of a **digital hub**.
+A plethora of data is generated in this setting, which can be utilised for decision-making or for sampling. This encompasses data from manufacturing instructions, deviation reports, electronic batch records, sensor and alarm data from the operational historian, or business data from the enterprise resource system. The objective of this endeavour was to scrutinise and digitalise the manual processes and to leverage the available data to cultivate a culture of data-driven pharmaceutical manufacturing. This culminated in the establishment of a **digital hub**.
 
 <!-- <div class="gallery" data-columns="1">
     <img src="/images/projects/digital-manufacturing/digital_hub.png">
