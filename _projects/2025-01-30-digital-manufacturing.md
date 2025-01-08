@@ -151,7 +151,7 @@ For further details on the metrics, calculations, and examples, please refer to 
 
 ### Data Analytics
 
-<div class="gallery" data-columns="3">
+<div class="gallery" data-columns="1">
     <img src="/images/projects/digital-manufacturing/requalification_assessment.png">
     <img src="/images/projects/digital-manufacturing/requalification_assessment_1.png">
     <img src="/images/projects/digital-manufacturing/root_cause_analysis_1.png">
