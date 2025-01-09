@@ -19,7 +19,16 @@ In the final stage of the (sterile) manufacture of biologics (i.e., large molecu
 </figure>
 </center>
 
-A plethora of data is generated in this setting, which can be utilised for decision-making or for sampling. This encompasses data from manufacturing instructions, deviation reports, electronic batch records, sensor and alarm data from the operational historian, or business data from the enterprise resource system. The objective of this endeavour was to scrutinise and digitalise the manual processes and to leverage the available data to cultivate a culture of data-driven pharmaceutical manufacturing. This culminated in the establishment of a **digital hub**.
+A plethora of data is generated in this setting, which can be utilised for decision-making or for sampling. This encompasses data from manufacturing instructions, deviation reports, electronic batch records, sensor and alarm data from the operational historian, or business data from the enterprise resource system. 
+
+<center>
+<figure>
+<img src="/images/projects/digital-manufacturing/data_sources.png" width="1000">
+<figcaption><b>Fig. 2:</b> A subset of data sources and their relationship with each other.</figcaption>
+</figure>
+</center>
+
+The objective of this endeavour was to scrutinise and digitalise the manual processes and to leverage the available data to cultivate a culture of data-driven pharmaceutical manufacturing. This culminated in the establishment of a **digital hub**.
 
 <!-- <div class="gallery" data-columns="1">
     <img src="/images/projects/digital-manufacturing/digital_hub.png">
@@ -28,7 +37,7 @@ A plethora of data is generated in this setting, which can be utilised for decis
 <center>
 <figure>
 <img src="/images/projects/digital-manufacturing/digital_hub.png" width="1000">
-<figcaption><b>Fig. 2:</b> Digital hub.</figcaption>
+<figcaption><b>Fig. 3:</b> Digital hub.</figcaption>
 </figure>
 </center>
 
