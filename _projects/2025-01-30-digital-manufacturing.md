@@ -3,10 +3,10 @@ title: 'Data-Driven Manufacturing Operations'
 subtitle: 'Fostering a culture of data-driven decision-making in pharmaceutical manufacturing.'
 date: 2025-01-01 00:00:00
 description: 'Data-Driven Manufacturing Operations'
-featured_image: '/images/projects/digital-manufacturing/3.jpg'
+featured_image: '/images/projects/digital-manufacturing/1.jpg'
 ---
 
-![](/images/projects/digital-manufacturing/3.jpg)
+![](/images/projects/digital-manufacturing/1.jpg)
 
 ## Summary
 
@@ -19,7 +19,7 @@ In the final stage of the (sterile) manufacture of biologics (i.e., large molecu
 </figure>
 </center>
 
-A plethora of data is generated in this setting, which can be utilised for decision-making or for sampling. This encompasses data from manufacturing instructions, deviation reports, electronic batch records, sensor and alarm data from the operational historian, or business data from the enterprise resource system. 
+A plethora of data is generated in this setting, which can be utilised for decision-making or for sampling. This encompasses data from manufacturing instructions, deviation reports, electronic batch records, sensor and alarm data from the operational historian, or business data from the enterprise resource planning system. 
 
 <center>
 <figure>
