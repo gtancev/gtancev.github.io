@@ -3,10 +3,10 @@ title: 'Chemical Process Design'
 subtitle: 'Minimizing drug development time through decision support systems.'
 date: 2018-03-31 00:00:00
 description: Chemical Process Design
-featured_image: '/images/projects/decision-support/1_mod.jpg'
+featured_image: '/images/projects/decision-support/2.jpg'
 ---
 
-![](/images/projects/decision-support/1_mod.jpg)
+![](/images/projects/decision-support/2.jpg)
 
 ## Summary
 
