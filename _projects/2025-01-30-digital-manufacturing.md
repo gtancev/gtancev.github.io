@@ -47,6 +47,8 @@ The objective of this endeavour was to scrutinise and digitalise the manual proc
 
 ### Retrieval-Augmented Generation
 
+Important text documents can be manufacturing instructions, regulatory documents or guidelines for operational excellence, for example.
+
 #### Regulatory Bot
 
 **User**: What are relevant principles applicable to sterile manufacturing?
@@ -159,6 +161,8 @@ For further details on the metrics, calculations, and examples, please refer to 
 [^4]: NOSSCE Metrics Handbook DP FP Sites v7.0.pdf
 
 ### Data Analytics
+
+Some data sources that can be used for learning are sensor data from production equipment or entries in electronic batch records.
 
 <div class="gallery" data-columns="1">
     <img src="/images/projects/digital-manufacturing/requalification_assessment.png">
