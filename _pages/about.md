@@ -1,7 +1,7 @@
 ---
 title: Hello, I'm Georgi.
 subtitle: Nice to meet you!
-description: Hello, I'm Georgi.
+description: About
 featured_image: /images/me/1.jpg
 ---
 
