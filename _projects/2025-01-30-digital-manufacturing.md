@@ -19,7 +19,7 @@ A biopharmaceutical, also known as a biological medical product, or **biologic**
 </figure>
 </center>
 
-A plethora of data is generated in this setting, which can be utilised for decision-making or for sampling. This encompasses data from manufacturing instructions, deviation reports, electronic batch records, sensor and alarm data from the operational historian, or business data from the enterprise resource planning system. 
+A plethora of **data** is generated in this setting, which can be utilised for decision-making or for sampling. This encompasses data from manufacturing instructions, deviation reports, electronic batch records, sensor and alarm data from the operational historian, or business data from the enterprise resource planning system. 
 
 <center>
 <figure>
@@ -28,7 +28,7 @@ A plethora of data is generated in this setting, which can be utilised for decis
 </figure>
 </center>
 
-The objective of this endeavour was to scrutinise and digitalise the manual processes and to leverage the available data to cultivate a culture of data-driven pharmaceutical manufacturing. This culminated in the establishment of a **digital hub**.
+The objective of this endeavour was to scrutinize and digitalize the manual processes and to leverage the available data to cultivate a culture of data-driven pharmaceutical manufacturing. This culminated in the establishment of a **digital hub**.
 
 <!-- <div class="gallery" data-columns="1">
     <img src="/images/projects/digital-manufacturing/digital_hub.png">
