@@ -10,7 +10,7 @@ featured_image: '/images/projects/digital-manufacturing/1.jpg'
 
 ## Summary
 
-A biopharmaceutical, also known as a biological medical product, or **biologic**, is any pharmaceutical **drug product** manufactured in, extracted from, or semisynthesized from biological sources. Biopharmaceuticals may be produced from microbial cells, mammalian cell lines, or plant cell cultures in **bioreactors**. In the final stage of the (sterile) manufacture of such large molecules, the active pharmaceutical ingredient (or **drug substance**), excipients, and water must be amalgamated and transferred into the designated containers (i.e., vials or syringes). Despite the automation of the actual production processes, numerous other processes such as planning and troubleshooting are manual and time-consuming.
+A biopharmaceutical, also known as a biological medical product, or **biologic**, is any pharmaceutical **drug product** manufactured in, extracted from, or semisynthesized from biological sources. Biopharmaceuticals may be produced from microbial cells, mammalian cell lines, or plant cell cultures in **bioreactors**. In the final stage of the (sterile) manufacture of such large molecules, the active pharmaceutical ingredient (or **drug substance**), excipients, and water must be amalgamated and transferred into the designated containers (i.e., vials or syringes). Despite the automation of the actual production processes (e.g., filling or visual inspection), numerous other processes such as planning and troubleshooting are manual and time-consuming.
 
 <center>
 <figure>
@@ -19,7 +19,7 @@ A biopharmaceutical, also known as a biological medical product, or **biologic**
 </figure>
 </center>
 
-A plethora of **data** is generated in this setting, which can be utilised for decision-making or for sampling. This encompasses data from manufacturing instructions, deviation reports, electronic batch records, sensor and alarm data from the operational historian, or business data from the enterprise resource planning system. 
+A plethora of **data** is generated in this setting, which can be utilized for decision-making or for sampling. This encompasses data from manufacturing instructions, deviation reports, electronic batch records, sensor and alarm data from the operational historian, or business data from the enterprise resource planning system. 
 
 <center>
 <figure>
@@ -28,7 +28,7 @@ A plethora of **data** is generated in this setting, which can be utilised for d
 </figure>
 </center>
 
-The objective of this endeavour was to scrutinize and digitalize the manual processes and to leverage the available data to cultivate a culture of data-driven pharmaceutical manufacturing. This culminated in the establishment of a **digital hub**.
+The objective of this endeavour was to scrutinize and digitalize the (remaining) manual processes and to leverage the available data to cultivate a culture of data-driven pharmaceutical manufacturing. This culminated, for instance, in the establishment of a **digital hub**.
 
 <!-- <div class="gallery" data-columns="1">
     <img src="/images/projects/digital-manufacturing/digital_hub.png">
