@@ -45,9 +45,9 @@ The objective of this endeavour was to scrutinize and digitalize the (remaining)
 
 ## Examples
 
-### Retrieval-Augmented Generation
+### Artificial Intelligence
 
-Important text documents can be manufacturing instructions, regulatory documents or guidelines for operational excellence, for example.
+A large amount of documentation is typically generated during the commercialisation of pharmaceuticals. This documentation can include manufacturing instructions, regulatory documents, and guidelines for operational excellence, to name a few examples. Generative artificial intelligence has the potential to make this knowledge more accessible. Additionally, in certain cases, rough drafts of documents can be created.
 
 #### Regulatory Bot
 
@@ -160,9 +160,9 @@ For further details on the metrics, calculations, and examples, please refer to 
 [^3]: NOSSCE Manual Sites v4.0.pdf
 [^4]: NOSSCE Metrics Handbook DP FP Sites v7.0.pdf
 
-### Data Analytics
+### Data Science
 
-Some data sources that can be used for learning are sensor data from production equipment or entries in electronic batch records.
+There are several data sources that can be used for pattern recognition, including sensor data from production equipment and entries in electronic batch records.
 
 <div class="gallery" data-columns="1">
     <img src="/images/projects/digital-manufacturing/requalification_assessment.png">
