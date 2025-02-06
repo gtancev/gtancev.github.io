@@ -169,6 +169,7 @@ There are several data sources that can be used for pattern recognition, includi
     <img src="/images/projects/digital-manufacturing/requalification_assessment_1.png">
     <img src="/images/projects/digital-manufacturing/root_cause_analysis_1.png">
     <img src="/images/projects/digital-manufacturing/root_cause_analysis_2.png">
+    <img src="/images/projects/digital-manufacturing/root_cause_analysis_3.png">
     <img src="/images/projects/digital-manufacturing/yields.png">
     <img src="/images/projects/digital-manufacturing/yields_1.png">
 </div>
