@@ -165,8 +165,9 @@ For further details on the metrics, calculations, and examples, please refer to 
 There are several data sources that can be used for pattern recognition, including sensor data from production equipment and entries in electronic batch records.
 
 <div class="gallery" data-columns="1">
-    <img src="/images/projects/digital-manufacturing/requalification_assessment.png">
+    <!-- <img src="/images/projects/digital-manufacturing/requalification_assessment.png"> -->
     <img src="/images/projects/digital-manufacturing/requalification_assessment_1.png">
+    <img src="/images/projects/digital-manufacturing/holding_times.png">
     <img src="/images/projects/digital-manufacturing/root_cause_analysis_1.png">
     <img src="/images/projects/digital-manufacturing/root_cause_analysis_2.png">
     <img src="/images/projects/digital-manufacturing/root_cause_analysis_3.png">
