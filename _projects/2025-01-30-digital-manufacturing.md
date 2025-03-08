@@ -86,7 +86,7 @@ A large amount of documentation is typically generated during the commercialisat
 Understanding and implementing these principles are key to maintaining the quality and sterility of manufactured products, ensuring their safety and efficacy for patients.
 
 [^1]: EU Guidelines for Good Manufacturing Practice for Medicinal Products for Human and Veterinary Use
-
+<!-- 
 #### Operational Excellence Bot
 
 **User**: What is overall asset effectiveness and how is it defined?
@@ -158,7 +158,7 @@ For further details on the metrics, calculations, and examples, please refer to 
 
 [^2]: Supply Model_Stein Steriles_V6.pdf
 [^3]: NOSSCE Manual Sites v4.0.pdf
-[^4]: NOSSCE Metrics Handbook DP FP Sites v7.0.pdf
+[^4]: NOSSCE Metrics Handbook DP FP Sites v7.0.pdf -->
 
 ### Data Science
 
