@@ -53,12 +53,11 @@ A large amount of documentation is typically generated during the commercialisat
 
 <center>
 <figure>
-<img src="/images/projects/digital-manufacturing/digital_hub.png" width="1000">
+<img src="/images/projects/digital-manufacturing/rag.png" width="1000">
 <figcaption><b>Fig. 4:</b> Retrieval-augmented generation.</figcaption>
 </figure>
 </center>
 
-[^1]: EU Guidelines for Good Manufacturing Practice for Medicinal Products for Human and Veterinary Use
 <!-- 
 #### Operational Excellence Bot
 
