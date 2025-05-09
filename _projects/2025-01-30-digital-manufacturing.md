@@ -45,11 +45,9 @@ The objective of this endeavour was to automate or digitalize these other manual
 
 ## Examples
 
-### Artificial Intelligence
+### (Generative) Artificial Intelligence
 
 A large amount of documentation is typically generated during the commercialisation of pharmaceuticals. This documentation can include manufacturing instructions, regulatory documents, and guidelines for operational excellence, to name a few examples. Generative artificial intelligence has the potential to make this knowledge more accessible. Additionally, in certain cases, rough drafts of documents can be created.
-
-#### Quality Control Expert
 
 <center>
 <figure>
@@ -132,7 +130,7 @@ For further details on the metrics, calculations, and examples, please refer to 
 [^3]: NOSSCE Manual Sites v4.0.pdf
 [^4]: NOSSCE Metrics Handbook DP FP Sites v7.0.pdf -->
 
-### Data Science
+### Data Analytics
 
 There are several data sources that can be used for pattern recognition, including sensor data from production equipment and entries in electronic batch records.
 
