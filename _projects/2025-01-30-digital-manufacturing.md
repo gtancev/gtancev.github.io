@@ -10,7 +10,7 @@ featured_image: '/images/projects/digital-manufacturing/1.jpg'
 
 ## Summary
 
-A biopharmaceutical, also known as a biological medical product, or **biologic**, is any pharmaceutical **drug product** manufactured in, extracted from, or semisynthesized from biological sources. Biopharmaceuticals may be produced from microbial cells, mammalian cell lines, or plant cell cultures in **bioreactors**. In the final stage of the (sterile) manufacture of such large molecules, the active pharmaceutical ingredient (or **drug substance**), excipients, and water must be amalgamated and transferred into the designated containers (i.e., vials or syringes). Despite the automation of the actual production processes (e.g., filling or visual inspection), [numerous other processes such as reporting, planning, and troubleshooting are manual and time-consuming](https://medium.com/data-science-collective/data-analytics-for-pharmaceutical-manufacturing-794187f3a589).
+A biopharmaceutical, also known as a biological medical product, or **biologic**, is any pharmaceutical **drug product** manufactured in, extracted from, or semisynthesized from biological sources. Biopharmaceuticals may be produced from microbial cells, mammalian cell lines, or plant cell cultures in **bioreactors**. In the final stage of the (sterile) manufacture of such large molecules, the active pharmaceutical ingredient (or **drug substance**), excipients, and water must be amalgamated and transferred into the designated containers (i.e., vials or syringes). Despite the automation of the actual production processes (e.g., filling or visual inspection), numerous other processes such as reporting, planning, and troubleshooting are manual and time-consuming.
 
 <center>
 <figure>
@@ -19,7 +19,7 @@ A biopharmaceutical, also known as a biological medical product, or **biologic**
 </figure>
 </center>
 
-For instance, a plethora of **data** is generated in this setting, which can be utilized for decision support. This encompasses data from manufacturing instructions, deviation reports, electronic batch records, sensor and alarm data from the operational historian, or business data from the enterprise resource planning system. 
+[For instance, a plethora of **data** is generated in this setting, which can be utilized for decision support](https://medium.com/data-science-collective/data-analytics-for-pharmaceutical-manufacturing-794187f3a589). This encompasses data from manufacturing instructions, deviation reports, electronic batch records, sensor and alarm data from the operational historian, or business data from the enterprise resource planning system. 
 
 <center>
 <figure>
