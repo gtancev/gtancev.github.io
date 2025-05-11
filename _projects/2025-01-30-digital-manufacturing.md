@@ -10,7 +10,7 @@ featured_image: '/images/projects/digital-manufacturing/1.jpg'
 
 ## Summary
 
-A biopharmaceutical, also known as a biological medical product, or **biologic**, is any pharmaceutical **drug product** manufactured in, extracted from, or semisynthesized from biological sources. Biopharmaceuticals may be produced from microbial cells, mammalian cell lines, or plant cell cultures in **bioreactors**. In the final stage of the (sterile) manufacture of such large molecules, the active pharmaceutical ingredient (or **drug substance**), excipients, and water must be amalgamated and transferred into the designated containers (i.e., vials or syringes). Despite the automation of the actual production processes (e.g., filling or visual inspection), numerous other processes such as reporting, planning, and troubleshooting are manual and time-consuming.
+A biopharmaceutical, also known as a biological medical product, or **biologic**, is any pharmaceutical **drug product** manufactured in, extracted from, or semisynthesized from biological sources. Biopharmaceuticals may be produced from microbial cells, mammalian cell lines, or plant cell cultures in **bioreactors**. In the final stage of the (sterile) manufacture of such large molecules, the active pharmaceutical ingredient (or **drug substance**), excipients, and water must be amalgamated and transferred into the designated containers (i.e., vials or syringes). Despite the automation of the actual production processes (e.g., filling or visual inspection), [numerous other processes such as reporting, planning, and troubleshooting are manual and time-consuming](https://medium.com/data-science-collective/data-analytics-for-pharmaceutical-manufacturing-794187f3a589).
 
 <center>
 <figure>
@@ -44,17 +44,6 @@ The objective of this endeavour was to automate or digitalize these other manual
 <!-- > "Do not wait; the time will never be 'just right.' Start where you stand, and work with whatever tools you may have at your command, and better tools will be found as you go along." - George Herbert -->
 
 ## Examples
-
-### (Generative) Artificial Intelligence
-
-A large amount of documentation is typically generated during the commercialisation of pharmaceuticals. This documentation can include manufacturing instructions, regulatory documents, and guidelines for operational excellence, to name a few examples. Generative artificial intelligence has the potential to make this knowledge more accessible. Additionally, in certain cases, rough drafts of documents can be created.
-
-<center>
-<figure>
-<img src="/images/projects/digital-manufacturing/rag.png" width="1000">
-<figcaption><b>Fig. 4:</b> Retrieval-augmented generation.</figcaption>
-</figure>
-</center>
 
 <!-- 
 #### Operational Excellence Bot
@@ -132,7 +121,7 @@ For further details on the metrics, calculations, and examples, please refer to 
 
 ### Data Analytics
 
-There are several data sources that can be used for pattern recognition, including sensor data from production equipment and entries in electronic batch records.
+There are several data sets that can be used for pattern recognition, including sensor data from production equipment and entries in electronic batch records.
 
 <div class="gallery" data-columns="1">
     <!-- <img src="/images/projects/digital-manufacturing/requalification_assessment.png"> -->
@@ -144,3 +133,14 @@ There are several data sources that can be used for pattern recognition, includi
     <img src="/images/projects/digital-manufacturing/yields.png">
     <img src="/images/projects/digital-manufacturing/yields_1.png">
 </div>
+
+### (Generative) Artificial Intelligence
+
+A large amount of documentation is typically generated during the commercialisation of pharmaceuticals. This documentation can include manufacturing instructions, regulatory documents, and guidelines for operational excellence, to name a few examples. Generative artificial intelligence has the potential to make this knowledge more accessible. Additionally, in certain cases, rough drafts of documents can be created.
+
+<center>
+<figure>
+<img src="/images/projects/digital-manufacturing/rag.png" width="1000">
+<figcaption><b>Fig. 4:</b> Retrieval-augmented generation.</figcaption>
+</figure>
+</center>
