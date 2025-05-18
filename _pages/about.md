@@ -7,11 +7,13 @@ featured_image: /images/me/1.jpg
 
 ## Who am I?
 
-I am a scientist and engineer with a background in chemical engineering and computer science. I like to ask if and how established products or processes can be rethought. To do this, I identify current technological limitations, capture needs, and define adequate specifications. When it comes to generating solutions, I like to be inspired by other domains, as similar problems may already have been solved elsewhere. That's how I discovered digital as a way to innovate.
+I am a scientist and engineer with a background in chemical engineering and computer science, driven by a passion for rethinking established products and processes. I explore technological limitations, capture user needs, and define clear specifications-often drawing inspiration from other domains where similar challenges have already been addressed. This curiosity led me to embrace digital innovation as a powerful catalyst for change.
 
-My continuous learning mindset helps me stay on top of the latest developments. Data and extracting knowledge from it through algorithms has been a critical part of my craft, but I have learned to question whether the information I want is even available. Furthermore, the philosophical aspects of my work are close to my heart because today's solutions can become tomorrow's problems. After all, we are the creators of tomorrow's world. I firmly believe that great things can be achieved through creativity, collaboration, and communication. Once the goal is set, I push to make sure it is achieved.
+I bring a continuous learning mindset and a deep appreciation for the value-and the limitations-of data. While algorithms and analytics are central to my work, I always ask whether the insights I seek are truly accessible. I'm equally drawn to the philosophical dimensions of innovation, recognizing that today's breakthroughs may become tomorrow's dilemmas. As creators of the future, we hold that responsibility.
 
-Outside of work, I spend my free time traveling, photographing, writing and reading, or playing sports.
+I believe great outcomes stem from creativity, collaboration, and clear communication. Once a vision is defined, I commit fully to making it reality.
+
+Outside of work, I enjoy exploring the world through travel, photography, writing, reading, and sports.
 
 ## Publications
 
