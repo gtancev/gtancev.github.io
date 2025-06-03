@@ -7,13 +7,13 @@ featured_image: /images/me/1.jpg
 
 ## Who am I?
 
-I am a scientist and engineer with a background in chemical engineering and computer science, driven by a passion for rethinking established products and processes. I explore technological limitations, capture user needs, and define clear specifications-often drawing inspiration from other domains where similar challenges have already been addressed. This curiosity led me to embrace digital innovation as a powerful catalyst for change.
+I am a scientist and engineer with a unique dual background in **chemical engineering** and **computer science**, driven by a passion for challenging conventional thinking and reimagining established processes. With a strong foundation in **digital innovation**, I focus on uncovering user needs, addressing technological constraints, and drawing cross-disciplinary insights to inform impactful solutions.
 
-I bring a continuous learning mindset and a deep appreciation for the value-and the limitations-of data. While algorithms and analytics are central to my work, I always ask whether the insights I seek are truly accessible. I'm equally drawn to the philosophical dimensions of innovation, recognizing that today's breakthroughs may become tomorrow's dilemmas. As creators of the future, we hold that responsibility.
+My work sits at the intersection of data science, process systems, and product development, where I balance rigorous analytical thinking with philosophical reflection on the broader consequences of innovation. I bring a critical perspective on data-driven methodologies, always questioning whether meaningful insights are attainable and how they translate into real-world impact.
 
-I believe great outcomes stem from creativity, collaboration, and clear communication. Once a vision is defined, I commit fully to making it reality.
+Known for my curiosity, creativity, and collaborative mindset, I thrive in environments that value continuous learning and thoughtful experimentation. I am committed to turning visionary ideas into reality through clear communication and disciplined execution.
 
-Outside of work, I enjoy exploring the world through travel, photography, writing, reading, and sports.
+Beyond my professional endeavors, I enjoy travel, photography, writing, reading, and sports--activities that reflect my inquisitive nature and love for exploration.
 
 ## Publications
 
