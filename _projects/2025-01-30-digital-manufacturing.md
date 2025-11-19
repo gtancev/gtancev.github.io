@@ -8,9 +8,16 @@ featured_image: '/images/projects/digital-manufacturing/1.jpg'
 
 ![](/images/projects/digital-manufacturing/1.jpg)
 
-## Summary
+## A vision for modern pharmaceutical production — and how to operationalize it.
 
-A biopharmaceutical, also known as a biological medical product, or **biologic**, is any pharmaceutical **drug product** manufactured in, extracted from, or semisynthesized from biological sources. Biopharmaceuticals may be produced from microbial cells, mammalian cell lines, or plant cell cultures in **bioreactors**. In the final stage of the (sterile) manufacture of such large molecules, the active pharmaceutical ingredient (or **drug substance**), excipients, and water must be amalgamated and transferred into the designated containers (i.e., vials or syringes). Despite the automation of the actual production processes (e.g., filling or visual inspection), numerous other processes such as reporting, planning, and troubleshooting are manual and time-consuming.
+Pharmaceutical manufacturing has made extraordinary progress in automating the physical steps of drug production. Filling lines, inspection systems, bioreactors, and utilities are increasingly digitalized, controlled, and instrumented.
+
+Yet the industry still faces a fundamental constraint:
+**manufacturing decisions are not as data-driven as the equipment itself**.
+
+Much of the cognitive work — planning, troubleshooting, reporting, documentation, investigation, and optimization — remains manual, fragmented across systems, or dependent on local expertise. The result is slow decision-loops, operational friction, and limited ability to scale knowledge.
+
+This page outlines a practical vision for transitioning to **data-driven manufacturing operations**, focused on biopharmaceutical (drug product) production, i.e., fill-finish (Fig. 1). It starts with the high-level “why,” then moves toward actionable strategies for digital/AI leaders ready to operationalize this transformation.
 
 <center>
 <figure>
@@ -19,7 +26,15 @@ A biopharmaceutical, also known as a biological medical product, or **biologic**
 </figure>
 </center>
 
-For instance, a plethora of **data** is generated in this setting, which can be utilized for decision support. This encompasses data from manufacturing instructions, deviation reports, electronic batch records, sensor and alarm data from the operational historian, or business data from the enterprise resource planning system. 
+### 1. Why data-driven operations matter
+
+Large-molecule manufacturing is uniquely complex:
+- Products are derived from microbial, mammalian, or plant cell cultures
+- Processes span upstream, downstream, sterile operations, and fill-finish
+- Batch records can exceed thousands of parameters
+- Investigations, deviations, and regulatory burden add operational overhead
+
+Despite this complexity, the sector is rich in unused data. Sensors, alarms, historian systems, MES/EBR entries, ERP data, quality records, deviations, and SOPs represent a dense landscape of process knowledge (Fig. 2).
 
 <center>
 <figure>
@@ -28,11 +43,27 @@ For instance, a plethora of **data** is generated in this setting, which can be 
 </figure>
 </center>
 
-[The objective of this endeavour was to automate or digitalize these other manual processes and to leverage the available data to cultivate a culture of data-driven pharmaceutical manufacturing](https://medium.com/data-science-collective/data-analytics-for-pharmaceutical-manufacturing-794187f3a589). This culminated, for instance, in the establishment of a **digital hub**.
+But this knowledge is rarely integrated.
+
+The opportunity is not merely automation or dashboards.
+The opportunity is organizational intelligence: helping teams make faster, better, more consistent decisions by making process knowledge accessible, analyzable, and actionable.
 
 <!-- <div class="gallery" data-columns="1">
     <img src="/images/projects/digital-manufacturing/digital_hub.png">
 </div> -->
+
+### 2. The hidden bottleneck: manual support processes
+
+Although physical processes may run automatically, the surrounding workflows often do not:
+- Reporting requires manual data collection
+- Investigations depend on local, tacit knowledge
+- Planning cycles rely on offline spreadsheets
+- Troubleshooting is reactive instead of predictive
+- Documentation is hard to navigate and even harder to interpret
+
+These activities consume disproportionate time and attention. They slow down batch release, reduce productivity, and distract teams from continuous improvement.
+
+Digital leaders increasingly recognize that true productivity lies not in automating equipment, but in automating and augmenting the work around the equipment.
 
 <center>
 <figure>
@@ -41,87 +72,52 @@ For instance, a plethora of **data** is generated in this setting, which can be 
 </figure>
 </center>
 
-<!-- > "Do not wait; the time will never be 'just right.' Start where you stand, and work with whatever tools you may have at your command, and better tools will be found as you go along." - George Herbert -->
+### 3. A model for data-driven manufacturing operations
 
-## Examples
+A practical transformation model includes four pillars:
 
-<!-- 
-#### Operational Excellence Bot
+#### Pillar A — Accessible Knowledge
 
-**User**: What is overall asset effectiveness and how is it defined?
+Make operational knowledge searchable and retrievable.
+This includes:
+- SOPs
+- Manufacturing instructions
+- Deviation and investigation reports
+- Validation documents
+- Regulatory guidance
+- Process descriptions
 
-**Assistant**: Overall Asset Effectiveness (OAE) is a metric used to measure the utilization and efficiency of assets within a production environment. It is typically calculated by evaluating several key factors related to the performance and utilization of assets over a given period. This metric helps in ensuring that assets are being used optimally to maximize productivity and minimize downtime.
+Modern retrieval-augmented generation (RAG) systems can lift these documents out of static repositories and into conversational, context-aware workflows.
 
-The specific definition and calculation methods for Overall Asset Effectiveness are detailed in the relevant documentation for Novartis Operational Standards for Supply Chain Excellence (NOSSCE).
+<center>
+<figure>
+<img src="/images/projects/digital-manufacturing/rag.png" width="1000">
+<figcaption><b>Fig. 4:</b> Retrieval-augmented generation.</figcaption>
+</figure>
+</center>
 
-The precise definition and applicable methods may vary slightly based on the implementation details from the NOSSCE manual for different sites or aspects of the supply chain. Therefore, for the most accurate and complete understanding, it is recommended to refer to the specific metrics handbook and related documents.
+#### Pillar B — Integrated Data
 
-If you have any more specific questions or need further details, feel free to ask! 
+Connect process, equipment, and business data:
+- Sensor & historian signals
+- MES/EBR data
+- Alarm logs
+- ERP & supply data
+- Environmental monitoring
+- Laboratory systems
 
----
+The goal is a unified operational representation, not another dashboard.
 
-**User**: Okay, great! Can you give one example for any type of asset?
+#### Pillar C — Decision Augmentation
 
-**Assistant**: Sure! Let's consider an example of Overall Asset Effectiveness (OAE) for a production line in a manufacturing plant, such as a packaging line for pharmaceuticals.
+Use analytics and AI to support how people work:
+- Anomaly detection to spot irregularities early
+- Pattern recognition in deviations or alarms
+- Predictive maintenance
+- Root-cause analytics
+- Batch-to-batch performance comparisons
 
-###### Example: Pharmaceutical Packaging Line
-
-To calculate OAE for a pharmaceutical packaging line, you would gather data on three main components:
-1. **Availability**
-2. **Performance**
-3. **Quality**
-
-###### Availability
-Availability is the ratio of the actual operating time to the planned operating time. It accounts for downtime due to scheduled maintenance, breakdowns, and other stoppages.
-
-- **Formula**: 
-$\text{Availability} = \frac{\text{Operating Time}}{\text{Scheduled Production Time} - \text{Downtime}}$
-
-###### Performance
-Performance measures how well the line is running during the actual operating time compared to its designed speed.
-
-- **Formula**: 
-$\text{Performance} = \frac{\text{Actual Output}}{\text{Theoretical Output}}$
-
-###### Quality
-Quality is the ratio of the number of good units produced to the total units started. This accounts for defects and reworks.
-
-- **Formula**: 
-$\text{Quality} = \frac{\text{Good Units}}{\text{Total Units Started}}$
-
-Finally, to calculate the Overall Asset Effectiveness:
-$\text{OAE} = \text{Availability} \times \text{Performance} \times \text{Quality}$
-
-###### Practical Example Calculation:
-1. **Scheduled Production Time**: 480 minutes (8 hours shift)
-2. **Downtime**: 60 minutes (breaks, maintenance)
-3. **Operating Time**: 420 minutes (480 - 60)
-4. **Theoretical Line Speed**: 1000 units/hour
-5. **Actual Line Speed**: 900 units/hour
-6. **Total Units Started**: 6000 units
-7. **Good Units Produced**: 5700 units
-
-###### Calculation Components:
-* Availability: $\frac{420}{480} = 0.875$
-* Performance: $\frac{900 \times 7}{1000 \times 7} = 0.9$
-* Quality: $\frac{5700}{6000} = 0.95$
-
-###### OAE Calculation:
-$\text{OAE} = 0.875 \times 0.9 \times 0.95 = 0.748$.
-
-This means the Overall Asset Effectiveness for the packaging line is 74.8%.
-
-This example illustrates the application of OAE to measure and improve asset utilization, performance, and quality within a manufacturing setup.
-
-For further details on the metrics, calculations, and examples, please refer to the NOSSCE metrics and handbooks provided in the documents.[^2] [^3] [^4]
-
-[^2]: Supply Model_Stein Steriles_V6.pdf
-[^3]: NOSSCE Manual Sites v4.0.pdf
-[^4]: NOSSCE Metrics Handbook DP FP Sites v7.0.pdf -->
-
-### Data Analytics
-
-There are several data sets that can be used for pattern recognition, including sensor data from production equipment and entries in electronic batch records.
+The intent is not full autonomy; it is augmented expertise.
 
 <div class="gallery" data-columns="1">
     <!-- <img src="/images/projects/digital-manufacturing/requalification_assessment.png"> -->
@@ -132,13 +128,54 @@ There are several data sets that can be used for pattern recognition, including 
     <img src="/images/projects/digital-manufacturing/yields_1.png">
 </div>
 
-### (Generative) Artificial Intelligence
+#### Pillar D — Workflow Automation
 
-A large amount of documentation is typically generated during the commercialisation of pharmaceuticals. This documentation can include manufacturing instructions, regulatory documents, and guidelines for operational excellence, to name a few examples. Generative artificial intelligence has the potential to make this knowledge more accessible. Additionally, in certain cases, rough drafts of documents can be created.
+Automate repetitive, structured tasks:
+- Reporting
+- Batch release coordination
+- Data collation
+- Cleaning and holding-time tracking
+- Tier-meeting preparation
+- KPI extraction from EBRs
 
-<center>
-<figure>
-<img src="/images/projects/digital-manufacturing/rag.png" width="1000">
-<figcaption><b>Fig. 4:</b> Retrieval-augmented generation.</figcaption>
-</figure>
-</center>
+Focus is on time-to-action, not simply time-to-data.
+
+<!-- > "Do not wait; the time will never be 'just right.' Start where you stand, and work with whatever tools you may have at your command, and better tools will be found as you go along." - George Herbert -->
+
+#### 5. What this enables
+
+A fully data-driven operating model moves teams from reactive to proactive modes:
+
+| From          | To            |
+| ------------- | ------------- |
+| Searching for information	| Direct answers through context-aware retrieval |
+| Manual investigation | Pattern-driven diagnostics |
+| KPI reporting | Automated performance insight |
+|Local expertise | Institutionalized knowledge |
+| “Check the systems” | “Here is what matters today” |
+
+Digital and AI leaders in pharma increasingly align on this ambition:
+**operational excellence through augmented decision-making**.
+
+This is not about replacing people; it is about giving teams superpowers.
+
+#### 6. How to get started
+
+A practical digital-transformation journey often follows these steps:
+
+1. Identify high-friction workflows (reporting, investigations, planning)
+2. Map the existing data landscape (what exists, how accessible it is)
+3. Deploy targeted analytics on one or two use cases
+4. Roll out knowledge access via RAG to reduce documentation burden
+5. Automate supporting workflows where structure allows
+6. Scale horizontally across sites
+
+Success depends on governance, trust, and adoption, not technology alone.
+
+### Closing
+
+Data-driven manufacturing operations are not a futuristic concept — all the ingredients already exist within modern pharmaceutical sites. The challenge is orchestrating data, knowledge, and workflows into a coherent operational fabric.
+
+With the right digital and AI strategy, manufacturing can evolve from automation of equipment to **augmentation of people** — turning routine operations into a resilient, intelligent, and continuously improving system.
+
+If you want to discuss implementation, architecture, or use-case design, feel free to reach out.
