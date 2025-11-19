@@ -76,8 +76,7 @@ Digital leaders increasingly recognize that true productivity lies not in automa
 
 A practical transformation model includes four pillars:
 
-
-#### Pillar A — Accessible Knowledge
+#### Pillar A — Accessible Knowledge
 
 Make operational knowledge searchable and retrievable.
 This includes:
@@ -110,8 +109,7 @@ Connect process, equipment, and business data:
 
 The goal is a unified operational representation, not another dashboard.
 
-
-#### Pillar C — Decision Augmentation
+#### Pillar C — Decision Augmentation
 
 Use analytics and AI to support how people work:
 - Anomaly detection to spot irregularities early
@@ -131,8 +129,7 @@ The intent is not full autonomy; it is augmented expertise.
     <img src="/images/projects/digital-manufacturing/yields_1.png">
 </div>
 
-
-#### Pillar D — Workflow Automation
+#### Pillar D — Workflow Automation
 
 Automate repetitive, structured tasks:
 - Reporting
