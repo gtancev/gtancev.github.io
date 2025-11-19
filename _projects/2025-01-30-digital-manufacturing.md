@@ -76,6 +76,7 @@ Digital leaders increasingly recognize that true productivity lies not in automa
 
 A practical transformation model includes four pillars:
 
+
 #### Pillar A — Accessible Knowledge
 
 Make operational knowledge searchable and retrievable.
@@ -96,6 +97,7 @@ Modern retrieval-augmented generation (RAG) systems can lift these documents out
 </figure>
 </center>
 
+
 #### Pillar B — Integrated Data
 
 Connect process, equipment, and business data:
@@ -107,6 +109,7 @@ Connect process, equipment, and business data:
 - Laboratory systems
 
 The goal is a unified operational representation, not another dashboard.
+
 
 #### Pillar C — Decision Augmentation
 
@@ -127,6 +130,7 @@ The intent is not full autonomy; it is augmented expertise.
     <img src="/images/projects/digital-manufacturing/root_cause_analysis_4.png">
     <img src="/images/projects/digital-manufacturing/yields_1.png">
 </div>
+
 
 #### Pillar D — Workflow Automation
 
