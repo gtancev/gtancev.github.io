@@ -120,15 +120,6 @@ Use analytics and AI to support how people work:
 
 The intent is not full autonomy; it is augmented expertise.
 
-<div class="gallery" data-columns="1">
-    <!-- <img src="/images/projects/digital-manufacturing/requalification_assessment.png"> -->
-    <img src="/images/projects/digital-manufacturing/requalification_assessment_1.png">
-    <img src="/images/projects/digital-manufacturing/holding_times.png">
-    <img src="/images/projects/digital-manufacturing/root_cause_analysis_1.png">
-    <img src="/images/projects/digital-manufacturing/root_cause_analysis_4.png">
-    <img src="/images/projects/digital-manufacturing/yields_1.png">
-</div>
-
 #### Pillar D — Workflow Automation
 
 Automate repetitive, structured tasks:
@@ -140,6 +131,15 @@ Automate repetitive, structured tasks:
 - KPI extraction from EBRs
 
 Focus is on time-to-action, not simply time-to-data.
+
+<div class="gallery" data-columns="1">
+    <!-- <img src="/images/projects/digital-manufacturing/requalification_assessment.png"> -->
+    <img src="/images/projects/digital-manufacturing/requalification_assessment_1.png">
+    <img src="/images/projects/digital-manufacturing/holding_times.png">
+    <img src="/images/projects/digital-manufacturing/root_cause_analysis_1.png">
+    <img src="/images/projects/digital-manufacturing/root_cause_analysis_4.png">
+    <img src="/images/projects/digital-manufacturing/yields_1.png">
+</div>
 
 <!-- > "Do not wait; the time will never be 'just right.' Start where you stand, and work with whatever tools you may have at your command, and better tools will be found as you go along." - George Herbert -->
 
