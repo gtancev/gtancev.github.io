@@ -65,13 +65,6 @@ These activities consume disproportionate time and attention. They slow down bat
 
 Digital leaders increasingly recognize that true productivity lies not in automating equipment, but in automating and augmenting the work around the equipment.
 
-<center>
-<figure>
-<img src="/images/projects/digital-manufacturing/digital_hub.png" width="1000">
-<figcaption><b>Fig. 3:</b> Digital hub.</figcaption>
-</figure>
-</center>
-
 ### 3. A model for data-driven manufacturing operations
 
 A practical transformation model includes four pillars:
@@ -87,12 +80,12 @@ This includes:
 - Regulatory guidance
 - Process descriptions
 
-Modern retrieval-augmented generation (RAG) systems can lift these documents out of static repositories and into conversational, context-aware workflows.
+Modern retrieval-augmented generation (RAG) systems can lift these documents out of static repositories and into conversational, context-aware workflows (Fig. 3).
 
 <center>
 <figure>
 <img src="/images/projects/digital-manufacturing/rag.png" width="1000">
-<figcaption><b>Fig. 4:</b> Retrieval-augmented generation.</figcaption>
+<figcaption><b>Fig. 3:</b> Retrieval-augmented generation.</figcaption>
 </figure>
 </center>
 
@@ -107,7 +100,14 @@ Connect process, equipment, and business data:
 - Environmental monitoring
 - Laboratory systems
 
-The goal is a unified operational representation, not another dashboard.
+The goal is a unified operational representation, not another dashboard (Fig. 4).
+
+<center>
+<figure>
+<img src="/images/projects/digital-manufacturing/digital_hub.png" width="1000">
+<figcaption><b>Fig. 4:</b> Digital hub.</figcaption>
+</figure>
+</center>
 
 #### Pillar C — Decision Augmentation
 
