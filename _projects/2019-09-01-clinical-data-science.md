@@ -21,13 +21,13 @@ The work is directly linked to the publication [Identifying key predictors of mo
 I was responsible for the full data-science pipeline:
 
 - Data preparation and feature engineering
-	Cleaning, structuring, and enhancing the clinical database (demographics, labs, treatment parameters), including derivation of additional features.
+	- Cleaning, structuring, and enhancing the clinical database (demographics, labs, treatment parameters), including derivation of additional features.
 - Exploratory data analysis
-	Examination of potential risk factors, initial hypothesis generation, and visual pattern analysis.
+	- Examination of potential risk factors, initial hypothesis generation, and visual pattern analysis.
 - Machine-learning modelling
-	Application of modern ML methods (e.g., Random Forests, Gradient Boosting) to identify key predictors of mortality and quantify their importance robustly.
+	- Application of modern ML methods (e.g., Random Forests, Gradient Boosting) to identify key predictors of mortality and quantify their importance robustly.
 - Interpretation in clinical context
-	Extraction of the most relevant factors (e.g., albumin, inflammatory markers, dialysis parameters) and contextualisation of results together with clinical collaborators.
+	- Extraction of the most relevant factors (e.g., albumin, inflammatory markers, dialysis parameters) and contextualisation of results together with clinical collaborators.
 
 ### Outcome
 
