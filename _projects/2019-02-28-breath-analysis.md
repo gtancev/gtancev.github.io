@@ -22,7 +22,7 @@ I was responsible for the core analytical and data-processing components:
 - Identifying systematic patterns in the concentration profiles of volatile compounds, particularly across different aldehyde classes
 - Providing methodological recommendations for standardised sampling procedures (e.g., excluding the first exhalations) to enable cross-subject and cross-centre comparability
 
-### Outcome
+### Outcome
 
 The project demonstrated that SESI-HRMS can provide highly stable real-time breath measurements and that individuals have characteristic, quantifiable breath signatures. The resulting recommendations form a crucial step toward standardised breath analysis, enabling future clinical applications from metabolic monitoring to non-invasive diagnostics.
 
