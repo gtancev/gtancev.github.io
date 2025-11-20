@@ -10,7 +10,23 @@ featured_image: '/images/projects/breath-analysis/1.jpg'
 
 ## Summary
 
-Our exhaled breath is made up of thousands of organic molecules that can be analyzed by [secondary electrospray ionization mass spectrometry (SESI-MS)](https://en.wikipedia.org/wiki/Secondary_electrospray_ionization). The concentration of these molecules in the breath is proportional to their concentration in the blood and therefore reflects metabolism. This can be used, for example, to detect degradation products of drugs, which enables research into pharmacokinetics. But it can also be used to detect the metabolites of bacteria in the lungs, which enables more precise administration of antiobiotics for pneumonia. I worked on this topic as part of [Pablo Sinues' group at the University Children's Hospital in Basel](https://www.ukbb.ch/en/personal/personen/sinues-pablo.php). The aim was to further standardize the diagnostic method. [I carried out experiments, collected metabolomics data, and analyzed them using MATLAB](https://link.springer.com/article/10.1007/s00216-019-01764-8). In addition, I was also responsible for laboratory management, external communication, and interaction with patients (as I was the only German speaker in the group).
+### Motivation
+
+In this project, I contributed to developing and standardising a platform for real-time breath analysis using Secondary Electrospray Ionization coupled with high-resolution mass spectrometry (SESI-HRMS). The goal was to make breath signatures reliable, reproducible, and clinically interpretable – a critical foundation for future applications in diagnostics and personalised medicine.
+
+### My contribution
+
+I was responsible for the core analytical and data-processing components:
+- Building the SESI-HRMS data pipeline, including preprocessing, signal normalisation, and alignment with respiratory parameters (CO₂, flow rate, exhaled volume)
+- Analysing reproducibility and variability across and within subjects, including CV calculations and temporal stability assessments
+- Identifying systematic patterns in the concentration profiles of volatile compounds, particularly across different aldehyde classes
+- Providing methodological recommendations for standardised sampling procedures (e.g., excluding the first exhalations) to enable cross-subject and cross-centre comparability
+
+### Outcome
+
+The project demonstrated that SESI-HRMS can provide highly stable real-time breath measurements and that individuals have characteristic, quantifiable breath signatures. The resulting recommendations form a crucial step toward standardised breath analysis, enabling future clinical applications from metabolic monitoring to non-invasive diagnostics.
+
+[This work](https://link.springer.com/article/10.1007/s00216-019-01764-8) illustrates how advanced analytical chemistry, data engineering, and statistical modelling can be combined into a clinically robust measurement approach.
 
 <div class="gallery" data-columns="3">
     <img src="/images/projects/breath-analysis/dendrogram.png">
