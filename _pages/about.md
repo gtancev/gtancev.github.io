@@ -7,13 +7,10 @@ featured_image: /images/me/1.jpg
 
 ## Who am I?
 
-I am a scientist and engineer with a unique dual background in **chemical engineering** and **computer science**, driven by a passion for challenging conventional thinking and reimagining established processes. With a strong foundation in **digital innovation**, I focus on uncovering user needs, addressing technological constraints, and drawing cross-disciplinary insights to inform impactful solutions.
-
-My work sits at the intersection of data science, process systems, and product development, where I balance rigorous analytical thinking with philosophical reflection on the broader consequences of innovation. I bring a critical perspective on data-driven methodologies, always questioning whether meaningful insights are attainable and how they translate into real-world impact.
-
-Known for my curiosity, creativity, and collaborative mindset, I thrive in environments that value continuous learning and thoughtful experimentation. I am committed to turning visionary ideas into reality through clear communication and disciplined execution.
-
-Beyond my professional endeavors, I enjoy travel, photography, writing, reading, and sports--activities that reflect my inquisitive nature and love for exploration.
+I am a scientist–engineer with a dual foundation in **chemical engineering** and **computer science**, shaped by a long-standing drive to question assumptions and redesign how things work. My professional center of gravity lies in **digital transformation** for **life sciences**, where I combine data science, process systems thinking, and user-driven design to build solutions that are both technically robust and operationally meaningful.
+What differentiates me is a **concept-builder mentality**: I enjoy synthesizing insights across disciplines, exposing constraints early, and architecting systems that scale rather than merely optimizing what already exists. I am deeply analytical, yet equally reflective—constantly examining whether data-driven approaches truly generate insight or simply add noise, and how technology choices shape long-term capability rather than short-term output.
+Colleagues describe me as curious, creative, and intellectually rigorous. I thrive in environments that value depth of thought, cross-functional collaboration, and the courage to rethink established workflows. My energy comes from turning ambiguity into clarity, and transforming promising ideas into practical, well-structured solutions.
+Outside of work, I pursue travel, photography, writing, and sports—activities that mirror my inclination to explore, observe, and understand the world from multiple angles.
 
 ## Publications
 
