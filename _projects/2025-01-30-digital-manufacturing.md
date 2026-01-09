@@ -17,14 +17,7 @@ Yet the industry still faces a fundamental constraint:
 
 Much of the cognitive work — planning, troubleshooting, reporting, documentation, investigation, and optimization — remains manual, fragmented across systems, or dependent on local expertise. The result is slow decision-loops, operational friction, and limited ability to scale knowledge.
 
-This page outlines a practical vision for transitioning to **data-driven manufacturing operations**, focused on biopharmaceutical (drug product) production, i.e., fill-finish (Fig. 1). It starts with the high-level “why,” then moves toward actionable strategies for digital/AI leaders ready to operationalize this transformation.
-
-<center>
-<figure>
-<img src="/images/projects/digital-manufacturing/schema.png" width="1000">
-<figcaption><b>Fig. 1:</b> Operational workflow diagram.</figcaption>
-</figure>
-</center>
+This page outlines a practical vision for transitioning to **data-driven manufacturing operations**, focused on biopharmaceutical (drug product) production, i.e., fill-finish. It starts with the high-level “why,” then moves toward actionable strategies for digital/AI leaders ready to operationalize this transformation.
 
 ### 1. Why data-driven operations matter
 
@@ -34,14 +27,7 @@ Large-molecule manufacturing is uniquely complex:
 - Batch records can exceed thousands of parameters
 - Investigations, deviations, and regulatory burden add operational overhead
 
-Despite this complexity, the sector is rich in unused data. Sensors, alarms, historian systems, MES/EBR entries, ERP data, quality records, deviations, and SOPs represent a dense landscape of process knowledge (Fig. 2).
-
-<center>
-<figure>
-<img src="/images/projects/digital-manufacturing/data_sources.png" width="1000">
-<figcaption><b>Fig. 2:</b> A subset of data sources and their relationship with each other.</figcaption>
-</figure>
-</center>
+Despite this complexity, the sector is rich in unused data. Sensors, alarms, historian systems, MES/EBR entries, ERP data, quality records, deviations, and SOPs represent a dense landscape of process knowledge.
 
 But this knowledge is rarely integrated.
 
@@ -80,14 +66,7 @@ This includes:
 - Regulatory guidance
 - Process descriptions
 
-Modern retrieval-augmented generation (RAG) systems can lift these documents out of static repositories and into conversational, context-aware workflows (Fig. 3).
-
-<center>
-<figure>
-<img src="/images/projects/digital-manufacturing/rag.png" width="1000">
-<figcaption><b>Fig. 3:</b> Retrieval-augmented generation.</figcaption>
-</figure>
-</center>
+Modern retrieval-augmented generation (RAG) systems can lift these documents out of static repositories and into conversational, context-aware workflows.
 
 
 #### Pillar B — Integrated Data
@@ -100,14 +79,7 @@ Connect process, equipment, and business data:
 - Environmental monitoring
 - Laboratory systems
 
-The goal is a unified operational representation, not another dashboard (Fig. 4).
-
-<center>
-<figure>
-<img src="/images/projects/digital-manufacturing/digital_hub.png" width="1000">
-<figcaption><b>Fig. 4:</b> Digital hub.</figcaption>
-</figure>
-</center>
+The goal is a unified operational representation, not another dashboard.
 
 #### Pillar C — Decision Augmentation
 
@@ -131,15 +103,6 @@ Automate repetitive, structured tasks:
 - KPI extraction from EBRs
 
 Focus is on time-to-action, not simply time-to-data.
-
-<div class="gallery" data-columns="1">
-    <!-- <img src="/images/projects/digital-manufacturing/requalification_assessment.png"> -->
-    <img src="/images/projects/digital-manufacturing/requalification_assessment_1.png">
-    <img src="/images/projects/digital-manufacturing/holding_times.png">
-    <img src="/images/projects/digital-manufacturing/root_cause_analysis_1.png">
-    <img src="/images/projects/digital-manufacturing/root_cause_analysis_4.png">
-    <img src="/images/projects/digital-manufacturing/yields_1.png">
-</div>
 
 <!-- > "Do not wait; the time will never be 'just right.' Start where you stand, and work with whatever tools you may have at your command, and better tools will be found as you go along." - George Herbert -->
 
